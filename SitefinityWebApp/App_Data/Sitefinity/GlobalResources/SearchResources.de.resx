@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AutoIndex" lastModified="2011-12-19T10:27:46">
+    <value>Auto-Index</value>
+    <comment>phrase: Auto-index</comment>
+  </data>
+  <data name="BackToItems" lastModified="2011-12-19T10:27:46">
+    <value>Zurück</value>
+    <comment>phrase: Go back</comment>
+  </data>
+  <data name="CreateSearchIndex" lastModified="2011-12-19T10:27:46">
+    <value>Suchindex erstellen</value>
+    <comment>phrase: Create a search index</comment>
+  </data>
+  <data name="CreateThisSearchIndex" lastModified="2011-12-19T10:27:46">
+    <value>Diesen Suchindex erstellen</value>
+    <comment>phrase: Create this search index</comment>
+  </data>
+  <data name="DefineWhatTypeOfContentWillBeIndexed" lastModified="2011-12-19T10:27:46">
+    <value>Definieren Sie, welche Inhaltsarten indiziert werden sollen</value>
+    <comment>Word: Define what type of content will be indexed</comment>
+  </data>
+  <data name="DuplicateSearchIndexTitle" lastModified="2011-12-19T10:27:46">
+    <value>Ein Suchindex mit diesem Namen existiert bereits.</value>
+    <comment>Error message: Duplicate search index title.</comment>
+  </data>
+  <data name="EditSearchIndex" lastModified="2011-12-19T10:27:46">
+    <value>Suchindex bearbeiten</value>
+    <comment>phrase: Edit a search index</comment>
+  </data>
+  <data name="Index" lastModified="2011-12-19T10:27:46">
+    <value>Index</value>
+    <comment>word: Index</comment>
+  </data>
+  <data name="IndexingInProgress" lastModified="2011-12-19T10:27:46">
+    <value>Indizierung wird ausgeführt...</value>
+    <comment>phrase: Indexing in progress...</comment>
+  </data>
+  <data name="InvalidIndex" lastModified="2011-12-19T10:27:46">
+    <value>Ungültiger Index: {0}</value>
+    <comment>Phrase: Invalid index: {0}</comment>
+  </data>
+  <data name="LastIndexing" lastModified="2011-12-19T10:27:46">
+    <value>Letzte Indizierung</value>
+    <comment>phrase: Last indexing</comment>
+  </data>
+  <data name="ModuleDescription" lastModified="2011-12-19T10:27:46">
+    <value>Stellt eine Benutzerschnittstelle für das Erstellen und Verwalten von Indizes und zum Steuern des Suchverhaltens zur Verfügung.</value>
+    <comment>The description of this class.</comment>
+  </data>
+  <data name="ModuleTitle" lastModified="2011-12-19T10:27:46">
+    <value>Suche und Indizes</value>
+    <comment>The title of the search module.</comment>
+  </data>
+  <data name="Name" lastModified="2011-12-19T10:27:46">
+    <value>Name</value>
+    <comment>word: Name</comment>
+  </data>
+  <data name="NameCannotBeEmpty" lastModified="2011-12-19T10:27:46">
+    <value>Name darf nicht leer sein</value>
+    <comment>phrase: Name cannot be empty</comment>
+  </data>
+  <data name="NoSearchIndexes" lastModified="2011-12-19T10:27:46">
+    <value>Es wurde noch kein Suchindex erstellt</value>
+    <comment>phrase: No search indexes have been created yet</comment>
+  </data>
+  <data name="NotAutoIndex" lastModified="2011-12-19T10:27:46">
+    <value>Kein Auto-Index</value>
+    <comment>phrase: Not auto-index</comment>
+  </data>
+  <data name="PageGroupNodeDescription" lastModified="2011-12-19T10:27:46">
+    <value>Seitengruppe für das Publishing-Modul</value>
+    <comment>Search Page Group Description</comment>
+  </data>
+  <data name="PageGroupNodeTitle" lastModified="2011-12-19T10:27:46">
+    <value>Suchindizes</value>
+    <comment>Page group for the Search module.</comment>
+  </data>
+  <data name="Reindex" lastModified="2011-12-19T10:27:46">
+    <value>Neu indizieren</value>
+    <comment>phrase: Start indexing now</comment>
+  </data>
+  <data name="SaveChanges" lastModified="2011-12-19T10:27:46">
+    <value>Änderungen speichern</value>
+    <comment>phrase: Save changes</comment>
+  </data>
+  <data name="Scope" lastModified="2011-12-19T10:27:46">
+    <value>Umfang</value>
+    <comment>Word: Scope</comment>
+  </data>
+  <data name="Search" lastModified="2011-12-19T10:27:46">
+    <value>Suchen</value>
+    <comment>Word: Search</comment>
+  </data>
+  <data name="SearchBoxDescription" lastModified="2011-12-19T10:27:46">
+    <value>Suchfeld</value>
+    <comment>Control description: A search box control for entering search criteria.</comment>
+  </data>
+  <data name="SearchBoxDesignerIndexDescription" lastModified="2011-12-19T10:27:46">
+    <value>Hier sind Suchindizes aufgelistet, die in &lt;br /&gt;&lt;em&gt;Verwaltung &amp;gt; Suchindizes&lt;/em&gt; erstellt wurden</value>
+    <comment>phrase: Here are listed search indexes created in&lt;br /&gt;&lt;em&gt;Administration &amp;gt; Search indexes&lt;/em&gt;</comment>
+  </data>
+  <data name="SearchBoxDesignerIndexTitle" lastModified="2011-12-19T10:27:46">
+    <value>Wo soll gesucht werden?</value>
+    <comment>phrase: Where to search?</comment>
+  </data>
+  <data name="SearchBoxDesignerNoSearchIndexesCreated" lastModified="2011-12-19T10:27:46">
+    <value>Keine Suchindizes erstellt</value>
+    <comment>phrase: No search indexes created</comment>
+  </data>
+  <data name="SearchBoxDesignerPageDescription" lastModified="2011-12-19T10:27:46">
+    <value>Dies ist die Seite, wo Sie das &lt;em&gt;Suchergebnis&lt;/em&gt;-Widget &lt;strong&gt;abgelegt&lt;/strong&gt; haben</value>
+    <comment>phrase: This is the page where you have &lt;strong&gt;dropped &lt;em&gt;Search results&lt;/em&gt; widget&lt;/strong&gt;</comment>
+  </data>
+  <data name="SearchBoxDesignerPageTitle" lastModified="2011-12-19T10:27:46">
+    <value>Wo sollen die Suchergebnisse angezeigt werden?</value>
+    <comment>phrase: Where to display search results?</comment>
+  </data>
+  <data name="SearchBoxDesignerRequiredIndexMessage" lastModified="2011-12-19T10:27:46">
+    <value>Bitte wählen Sie den Such-Ort aus.</value>
+    <comment>phrase: Please select where to search.</comment>
+  </data>
+  <data name="SearchBoxDesignerRequiredPageMessage" lastModified="2011-12-19T10:27:46">
+    <value>Bitte wählen Sie aus, wo die Suchergebnisse angezeigt werden sollen.</value>
+    <comment>phrase: Please select where to display search results.</comment>
+  </data>
+  <data name="SearchBoxEmptyLinkText" lastModified="2011-12-19T10:27:46">
+    <value>Suchort setzen</value>
+    <comment>phrase: Set where to search</comment>
+  </data>
+  <data name="SearchBoxTitle" lastModified="2011-12-19T10:27:46">
+    <value>Suchen</value>
+    <comment>Control title: Search</comment>
+  </data>
+  <data name="SearchConfig" lastModified="2011-12-19T10:27:46">
+    <value>Sucheinstellungen</value>
+    <comment>phrase: Search settings</comment>
+  </data>
+  <data name="SearchHtmlTitle" lastModified="2011-12-19T10:27:46">
+    <value>Suche und Indizes</value>
+    <comment>The html title of the search module.</comment>
+  </data>
+  <data name="SearchIndexes" lastModified="2011-12-19T10:27:46">
+    <value>Suchindizes</value>
+    <comment>phrase: Search indexes</comment>
+  </data>
+  <data name="SearchResourcesDescription" lastModified="2011-12-19T10:27:46">
+    <value>Enthält lokalisierbare Ressourcen für das Dienstmodul 'Suchen und Indizieren' </value>
+    <comment>The description of this class.</comment>
+  </data>
+  <data name="SearchResourcesTitle" lastModified="2011-12-19T10:27:46">
+    <value>Suche und Indizes</value>
+    <comment>The title of this class.</comment>
+  </data>
+  <data name="SearchResourcesTitlePlural" lastModified="2011-12-19T10:27:46">
+    <value>Suche und Indizes</value>
+    <comment>The title plural of this class.</comment>
+  </data>
+  <data name="SearchResultsDescription" lastModified="2011-12-19T10:27:46">
+    <value>Liste der Such-Ergebnisse</value>
+    <comment>Control description: A control for displaying search results.</comment>
+  </data>
+  <data name="SearchResultsStatusMessage" lastModified="2011-12-19T10:27:46">
+    <value>{0} Suchergebnisse für &lt;strong&gt;{1}&lt;/strong&gt;</value>
+    <comment>Phrase: {0} search results for &lt;strong&gt;{1}&lt;/strong&gt;</comment>
+  </data>
+  <data name="SearchResultsTitle" lastModified="2011-12-19T10:27:46">
+    <value>Such-Ergebnisse</value>
+    <comment>Control title: Search results</comment>
+  </data>
+  <data name="SearchResultsViewFriendlyName" lastModified="2011-12-19T10:27:46">
+    <value>Suchergebnisse - Liste</value>
+    <comment>Phrase: Search results - list</comment>
+  </data>
+  <data name="SearchUrlName" lastModified="2011-12-19T10:27:46">
+    <value>Suchen</value>
+    <comment>Search URL name.</comment>
+  </data>
+  <data name="SelectIndex" lastModified="2011-12-19T10:27:46">
+    <value>Suchindex auswählen</value>
+    <comment>phrase: Select index</comment>
+  </data>
+  <data name="ShowSearchBoxAbove" lastModified="2011-12-19T10:27:46">
+    <value>Suchfeld über den Resultaten anzeigen</value>
+    <comment>phrase: Show searchbox above the results</comment>
+  </data>
+  <data name="ShowSearchBoxBelow" lastModified="2011-12-19T10:27:46">
+    <value>Suchfeld unter den Resultaten anzeigen</value>
+    <comment>phrase: Show searchbox below the results.</comment>
+  </data>
+  <data name="WhatDoYouWantToDoNow" lastModified="2011-12-19T10:27:46">
+    <value>Was möchten Sie jetzt tun?</value>
+    <comment>phrase: What do you want to do now?</comment>
+  </data>
+</root>

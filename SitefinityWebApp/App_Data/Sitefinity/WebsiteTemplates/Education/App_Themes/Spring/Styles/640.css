@@ -1,0 +1,103 @@
+
+
+
+@media screen and (max-width: 640px) {
+	#headers-rotator {
+		display: none;
+	}	
+	
+	ul.sflanguagesVerticalList {
+		display:none;
+	}
+	
+	.RadTabStrip_education {
+		position: relative;
+		display:none;
+		width:100%;
+		line-height: 40px;
+		margin: 0 auto;
+		padding-top: 0px;
+	}
+	.RadTabStrip_education .rtsLI, .RadTabStrip_education .rtsUL{
+		width: 100%;
+		position: relative;
+		float: left;
+	}
+	.RadTabStrip_education .rtsLI {
+		
+		
+	}
+	.RadTabStrip_education .rtsLink{
+		text-decoration: none;
+		font-size: 12px;
+		font-weight: normal;
+		color: #c0c0c0;
+		letter-spacing: 0;
+		border-right: 1px solid #626262;
+		line-height: 40px;
+		margin-bottom: 0px;
+		padding-top: 0px;
+		text-align: left;
+	}
+
+	.RadTabStrip_education .rtsLink.rtsSelected{
+		border-right: 0px;
+		background-color: white;
+		color: #000;
+		padding-bottom: 0px;
+		margin-bottom: 0px;
+	}
+	
+	.sf_colsOut  {
+		width: 100%;
+	}
+	
+	.sf_2cols_2_50 .sf_2cols_2in_50  {
+		margin: 0px !important;
+		padding:0px !important;
+	}
+	
+	#content .sfContentBlock h1 {
+		font-size: 18px;
+	}
+	
+	#open-navigation {
+		line-height: 30px;
+		display:block;
+		border-top: 1px solid #666;
+		cursor: pointer;
+		position: relative;
+		font-size: 12px;
+		font-weight: bold;
+		width: 100%;
+		text-align: center;
+	}
+	#content .sfnewsList .sfnewsListItem {
+		margin-top: 3px;
+		margin-bottom: 3px;
+		padding-bottom: 3px;
+	}
+	#content .sfnewsList .sfnewsListItem h3,
+	#content h3.sfeventTitle{
+		font-family: Arial;
+		font-size: 12px;
+		font-weight: bold;
+		margin: 0px;
+	}
+	
+	.sfnewsSummary {
+		line-height: 15px;
+	}
+	
+	.sfimageWrp img{
+		display:none;
+	}
+	
+	.sfContentBlock img {
+		display:none;
+	}
+	
+	.sfPageBrowseAndEditToolbarWrp {
+		display:none !important;
+	}
+}

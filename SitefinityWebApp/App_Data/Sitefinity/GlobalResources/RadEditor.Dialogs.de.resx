@@ -1,0 +1,2588 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About_Copyright" lastModified="2011-12-19T10:27:46">
+    <value>Copyright 2002-2010 ©Telerik  Alle Rechte vorbehalten.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="About_Title" lastModified="2011-12-19T10:27:46">
+    <value>RadEditor von Telerik</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_ActualSize" lastModified="2011-12-19T10:27:46">
+    <value>Tatsächliche Größe</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_Add" lastModified="2011-12-19T10:27:46">
+    <value>Hinzufügen</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_AddCustomColor" lastModified="2011-12-19T10:27:46">
+    <value>Benutzerdefinierte Farbe hinzufügen...</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_AddCustomTarget" lastModified="2011-12-19T10:27:46">
+    <value>[benutzerdefiniertes Ziel hinzufügen...]</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_AllowedExtensions" lastModified="2011-12-19T10:27:46">
+    <value>Erlaubte Dateiendungen</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_AllProperties" lastModified="2011-12-19T10:27:46">
+    <value>Alle Eigenschaften...</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_ApplyClass" lastModified="2011-12-19T10:27:46">
+    <value>Klasse anwenden</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_Back" lastModified="2011-12-19T10:27:46">
+    <value>Zurück</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_BackgroundColor" lastModified="2011-12-19T10:27:46">
+    <value>Hintergrundfarbe</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_BackgroundImage" lastModified="2011-12-19T10:27:46">
+    <value>Hintergrundbild</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_BestFit" lastModified="2011-12-19T10:27:46">
+    <value>Optimieren</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_Black" lastModified="2011-12-19T10:27:46">
+    <value>Schwarz</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_Blue" lastModified="2011-12-19T10:27:46">
+    <value>Blau</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_BorderColor" lastModified="2011-12-19T10:27:46">
+    <value>Randfarbe</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_BorderWidth" lastModified="2011-12-19T10:27:46">
+    <value>Randbreite</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_Bottom" lastModified="2011-12-19T10:27:46">
+    <value>Unten</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_bytes" lastModified="2011-12-19T10:27:46">
+    <value>Bytes</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_Cancel" lastModified="2011-12-19T10:27:46">
+    <value>Abbrechen</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_CellCss" lastModified="2011-12-19T10:27:46">
+    <value>Zellen-CSS</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_ClassID" lastModified="2011-12-19T10:27:46">
+    <value>Klassen-ID angeben</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_ClassIDText" lastModified="2011-12-19T10:27:46">
+    <value>Klassen-ID</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_Clear" lastModified="2011-12-19T10:27:46">
+    <value>Leeren</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_ClearClass" lastModified="2011-12-19T10:27:46">
+    <value>Klasse entfernen</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_Client_AlertFile" lastModified="2011-12-19T10:27:46">
+    <value>Bitte wählen Sie eine Datei zum Hochladen aus!</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_Close" lastModified="2011-12-19T10:27:46">
+    <value>Schließen</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_ConfirmDelete" lastModified="2011-12-19T10:27:46">
+    <value>Sind Sie sicher, dass Sie die ausgewählten Objekte löschen wollen? Es wird möglicherweise verwendet. Nach dem Löschen werden manche Seiten nicht korrekt angezeigt. Drücken Sie zur Bestätigung auf "OK".</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_ConstrainProportions" lastModified="2011-12-19T10:27:46">
+    <value>Proportionen einschränken</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_ControlButtons" lastModified="2011-12-19T10:27:46">
+    <value>Steuer-Buttons</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_Copy" lastModified="2011-12-19T10:27:46">
+    <value>Kopieren</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_Create" lastModified="2011-12-19T10:27:46">
+    <value>Erstellen</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_CreateNewFolder" lastModified="2011-12-19T10:27:46">
+    <value>Neuen Ordnernamen eingeben</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_CreateThumbnail" lastModified="2011-12-19T10:27:46">
+    <value>Vorschaubild erstellen</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_CssClass" lastModified="2011-12-19T10:27:46">
+    <value>CSS-Klasse</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_CustomTargets" lastModified="2011-12-19T10:27:46">
+    <value>Benutzerdefinierte Ziele</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_Decrease" lastModified="2011-12-19T10:27:46">
+    <value>Verringern</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_Delete" lastModified="2011-12-19T10:27:46">
+    <value>Löschen</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_DimensionUnit" lastModified="2011-12-19T10:27:46">
+    <value>Messeinheit</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_FileExists" lastModified="2011-12-19T10:27:46">
+    <value>Eine Datei mit dem gleichen Namen wie das Ziel existiert bereits!</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_Forward" lastModified="2011-12-19T10:27:46">
+    <value>Vorwärts</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_Green" lastModified="2011-12-19T10:27:46">
+    <value>Grün</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_GridPagerText" lastModified="2011-12-19T10:27:46">
+    <value>{4} Seite &lt;strong&gt;{0}&lt;/strong&gt; von &lt;strong&gt;{1}&lt;/strong&gt;. Elemente &lt;strong&gt;{2}&lt;/strong&gt; bis &lt;strong&gt;{3}&lt;/strong&gt; von &lt;strong&gt;{5}&lt;/strong&gt;</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_GridSortedAscToolTip" lastModified="2011-12-19T10:27:46">
+    <value>Aufst. sortieren</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_GridSortedDescToolTip" lastModified="2011-12-19T10:27:46">
+    <value>Abst. sortieren</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_GridSortToolTip" lastModified="2011-12-19T10:27:46">
+    <value>Zum Sortieren hier klicken</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_Height" lastModified="2011-12-19T10:27:46">
+    <value>Höhe</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_Id" lastModified="2011-12-19T10:27:46">
+    <value>ID</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_ImageAltText" lastModified="2011-12-19T10:27:46">
+    <value>Alt. Text</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_ImageEditor" lastModified="2011-12-19T10:27:46">
+    <value>Bildeditor</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_ImageFieldSet" lastModified="2011-12-19T10:27:46">
+    <value>Bildeigenschaften</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_Increase" lastModified="2011-12-19T10:27:46">
+    <value>Erhöhen</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_Insert" lastModified="2011-12-19T10:27:46">
+    <value>Eingeben</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_InvalidCharactersInPath" lastModified="2011-12-19T10:27:46">
+    <value>Ungültige Zeichen in Ordnername</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_InvalidFileExtension" lastModified="2011-12-19T10:27:46">
+    <value>Die Dateiendung der hochgeladenen Datei ist ungültig. Bitte eine gültige Datei hochladen!</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_InvalidFileSize" lastModified="2011-12-19T10:27:46">
+    <value>Die Größe der hochgeladenen Datei überschreitet die erlaubte Maximalgröße</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_Kilobytes" lastModified="2011-12-19T10:27:46">
+    <value>KB</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_Left" lastModified="2011-12-19T10:27:46">
+    <value>Links</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_LookIn" lastModified="2011-12-19T10:27:46">
+    <value>Nachsehen in</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_Margin" lastModified="2011-12-19T10:27:46">
+    <value>Seitenrand</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_MaxFileSize" lastModified="2011-12-19T10:27:46">
+    <value>Max. erlaubte Dateigröße</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_Megabytes" lastModified="2011-12-19T10:27:46">
+    <value>MB</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_MessageCannotWriteToFolder" lastModified="2011-12-19T10:27:46">
+    <value>Schreiben in Zielordner nicht möglich!</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_MessageNoValidDimensions" lastModified="2011-12-19T10:27:46">
+    <value>Bitte geben Sie gültige Bildabmessungen an</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_MessageSourceNotLocal" lastModified="2011-12-19T10:27:46">
+    <value>Das zur Konvertierung angegebene Bild liegt auf einem anderen Server!</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_Middle" lastModified="2011-12-19T10:27:46">
+    <value>Mitte</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_NameExists" lastModified="2011-12-19T10:27:46">
+    <value>Ein Objekt mit dem gleichen Namen ist in diesem Verzeichnis bereits vorhanden!</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_NewFolder" lastModified="2011-12-19T10:27:46">
+    <value>Neuer Ordner</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_NewImageName" lastModified="2011-12-19T10:27:46">
+    <value>Neuer Bildname</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_No" lastModified="2011-12-19T10:27:46">
+    <value>Nein</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_NoColor" lastModified="2011-12-19T10:27:46">
+    <value>Keine Farbe</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_None" lastModified="2011-12-19T10:27:46">
+    <value>Keine</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_NoPermissionsToCreateFolder" lastModified="2011-12-19T10:27:46">
+    <value>Der ausgewählte Ordner konnte nicht erstellt werden, da die Andwendung nicht genügend Rechte besitzt. Bitte wenden Sie sich an den Administrator.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_NoPermissionsToDeleteFile" lastModified="2011-12-19T10:27:46">
+    <value>Die ausgewählte Datei konnte nicht gelöscht werden, da die Andwendung nicht genügend Rechte besitzt. Bitte wenden Sie sich an den Administrator.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_NoPermissionsToDeleteFolder" lastModified="2011-12-19T10:27:46">
+    <value>Der ausgewählte Ordner konnte nicht gelöscht werden, da die Andwendung nicht genügend Rechte besitzt. Bitte wenden Sie sich an den Administrator.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_NoUploadedFile" lastModified="2011-12-19T10:27:46">
+    <value>Bitte hochzuladende Datei auswählen!</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_OK" lastModified="2011-12-19T10:27:46">
+    <value>OK</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_Open" lastModified="2011-12-19T10:27:46">
+    <value>Öffnen</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_Orange" lastModified="2011-12-19T10:27:46">
+    <value>Orange</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_OverwriteExisting" lastModified="2011-12-19T10:27:46">
+    <value>Überschreiben, falls Datei vorhanden?</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_Paste" lastModified="2011-12-19T10:27:46">
+    <value>Einfügen</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_PasteHtmlMessage" lastModified="2011-12-19T10:27:46">
+    <value>Bitte geben Sie den HTML-Inhalt ein, der eingefügt werden soll</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_Percent" lastModified="2011-12-19T10:27:46">
+    <value>Prozent</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_Pixel" lastModified="2011-12-19T10:27:46">
+    <value>Pixel</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_PresetTargets" lastModified="2011-12-19T10:27:46">
+    <value>Ziele vorgeben</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_Preview" lastModified="2011-12-19T10:27:46">
+    <value>Vorschau</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_Properties" lastModified="2011-12-19T10:27:46">
+    <value>Eigenschaften</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_PropertiesPanel" lastModified="2011-12-19T10:27:46">
+    <value>Eigenschaftenfeld</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_Red" lastModified="2011-12-19T10:27:46">
+    <value>Rot</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_Refresh" lastModified="2011-12-19T10:27:46">
+    <value>Ansicht aktualisieren</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_Remove" lastModified="2011-12-19T10:27:46">
+    <value>Entfernen</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_Rename" lastModified="2011-12-19T10:27:46">
+    <value>Umbenennen</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_Right" lastModified="2011-12-19T10:27:46">
+    <value>Rechts</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_Select" lastModified="2011-12-19T10:27:46">
+    <value>Auswählen</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_SelectFile" lastModified="2011-12-19T10:27:46">
+    <value>Datei auswählen</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_SortByExt" lastModified="2011-12-19T10:27:46">
+    <value>Endung</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_SortByExtTitle" lastModified="2011-12-19T10:27:46">
+    <value>Nach Dateiendung sortieren</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_SortByFilename" lastModified="2011-12-19T10:27:46">
+    <value>Dateiname</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_SortByFilenameTitle" lastModified="2011-12-19T10:27:46">
+    <value>Nach Dateinamen sortieren</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_SortBySize" lastModified="2011-12-19T10:27:46">
+    <value>Größe</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_SortBySizeTitle" lastModified="2011-12-19T10:27:46">
+    <value>Nach Größe sortieren</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_StyleBuilder" lastModified="2011-12-19T10:27:46">
+    <value>Style-Builder</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_TableCss" lastModified="2011-12-19T10:27:46">
+    <value>Tabellen-CSS</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_Target" lastModified="2011-12-19T10:27:46">
+    <value>Ziel</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_TargetBlank" lastModified="2011-12-19T10:27:46">
+    <value>Neues Fenster</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_TargetMedia" lastModified="2011-12-19T10:27:46">
+    <value>Medienausschnitt</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_TargetParent" lastModified="2011-12-19T10:27:46">
+    <value>Parent-Fenster</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_TargetSearch" lastModified="2011-12-19T10:27:46">
+    <value>Suchfeld</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_TargetSelf" lastModified="2011-12-19T10:27:46">
+    <value>Gleiches Fenster</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_TargetTop" lastModified="2011-12-19T10:27:46">
+    <value>Browser-Fenster</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_Top" lastModified="2011-12-19T10:27:46">
+    <value>Oben</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_Up" lastModified="2011-12-19T10:27:46">
+    <value>Nach oben</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_Upload" lastModified="2011-12-19T10:27:46">
+    <value>Hochladen</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_UploadFile" lastModified="2011-12-19T10:27:46">
+    <value>Hochladen</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_Uploading" lastModified="2011-12-19T10:27:46">
+    <value>Wird hochgeladen...</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_Url" lastModified="2011-12-19T10:27:46">
+    <value>URL</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_UseControlVMessage" lastModified="2011-12-19T10:27:46">
+    <value>Bitte verwenden Sie CTRL + V, um unterhalb des Inhalts, der gesäubert werden soll, einzufügen.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_White" lastModified="2011-12-19T10:27:46">
+    <value>Weiß</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_Width" lastModified="2011-12-19T10:27:46">
+    <value>Breite</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_Yellow" lastModified="2011-12-19T10:27:46">
+    <value>Gelb</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_Yes" lastModified="2011-12-19T10:27:46">
+    <value>Ja</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_ZoomIn" lastModified="2011-12-19T10:27:46">
+    <value>Vergrößern</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="Common_ZoomOut" lastModified="2011-12-19T10:27:46">
+    <value>Verkleinern</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="DocumentManager_DocumentPropertiesLegend" lastModified="2011-12-19T10:27:46">
+    <value>Dokumenteigenschaften</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="DocumentManager_Title" lastModified="2011-12-19T10:27:46">
+    <value>Dokumenten-Manager</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="DocumentManager_Tooltip" lastModified="2011-12-19T10:27:46">
+    <value>Tooltip</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="FindAndReplace_AllReplaced" lastModified="2011-12-19T10:27:46">
+    <value>{0} Ersetzungen wurden im Text vorgenommen!</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="FindAndReplace_CaseSensitive" lastModified="2011-12-19T10:27:46">
+    <value>Case-sensitive</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="FindAndReplace_Down" lastModified="2011-12-19T10:27:46">
+    <value>Nach unten</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="FindAndReplace_EntireText" lastModified="2011-12-19T10:27:46">
+    <value>Ganzer Text</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="FindAndReplace_Find" lastModified="2011-12-19T10:27:46">
+    <value>Finden</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="FindAndReplace_FindNext" lastModified="2011-12-19T10:27:46">
+    <value>Nächstes finden</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="FindAndReplace_MatchCase" lastModified="2011-12-19T10:27:46">
+    <value>Groß-/Kleinschreibung</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="FindAndReplace_MatchWholeWords" lastModified="2011-12-19T10:27:46">
+    <value>Ganze Wörter</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="FindAndReplace_NotFound" lastModified="2011-12-19T10:27:46">
+    <value>Der Suchbegriff wurde nicht gefunden</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="FindAndReplace_NotSupported" lastModified="2011-12-19T10:27:46">
+    <value>Die Suchfunktion wird von diesem Browser nicht unterstützt?</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="FindAndReplace_Replace" lastModified="2011-12-19T10:27:46">
+    <value>Ersetzen</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="FindAndReplace_ReplaceAll" lastModified="2011-12-19T10:27:46">
+    <value>Alle ersetzen</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="FindAndReplace_ReplaceWith" lastModified="2011-12-19T10:27:46">
+    <value>Ersetzen mit</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="FindAndReplace_Search" lastModified="2011-12-19T10:27:46">
+    <value>Suchen</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="FindAndReplace_SearchDirection" lastModified="2011-12-19T10:27:46">
+    <value>Richtung</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="FindAndReplace_SearchIn" lastModified="2011-12-19T10:27:46">
+    <value>Suchen in</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="FindAndReplace_SearchOptions" lastModified="2011-12-19T10:27:46">
+    <value>Suchoptionen</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="FindAndReplace_SearchText" lastModified="2011-12-19T10:27:46">
+    <value>Finden</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="FindAndReplace_Selection" lastModified="2011-12-19T10:27:46">
+    <value>Auswahl</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="FindAndReplace_Title" lastModified="2011-12-19T10:27:46">
+    <value>Suchen &amp;amp; Ersetzen</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="FlashManager_AlertClassID" lastModified="2011-12-19T10:27:46">
+    <value>Bitte Klassen-ID eingeben!</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="FlashManager_AlertWidthHeight" lastModified="2011-12-19T10:27:46">
+    <value>Bitte Breite und Höhe der Flash-Datei eingeben!</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="FlashManager_Baseline" lastModified="2011-12-19T10:27:46">
+    <value>Grundlinie</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="FlashManager_CenterBottom" lastModified="2011-12-19T10:27:46">
+    <value>Mitte unten</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="FlashManager_CenterCenter" lastModified="2011-12-19T10:27:46">
+    <value>Mitte</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="FlashManager_CenterTop" lastModified="2011-12-19T10:27:46">
+    <value>Mitte oben</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="FlashManager_Custom" lastModified="2011-12-19T10:27:46">
+    <value>benutzerdefiniert</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="FlashManager_FlashAlign" lastModified="2011-12-19T10:27:46">
+    <value>Flash-Ausrichtung</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="FlashManager_FlashMenu" lastModified="2011-12-19T10:27:46">
+    <value>Flash-Menü</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="FlashManager_FlashPropertiesLegend" lastModified="2011-12-19T10:27:46">
+    <value>Flash-Filmeigenschaften</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="FlashManager_High" lastModified="2011-12-19T10:27:46">
+    <value>Hoch</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="FlashManager_HtmlAlign" lastModified="2011-12-19T10:27:46">
+    <value>HTML-Ausrichtung</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="FlashManager_Left" lastModified="2011-12-19T10:27:46">
+    <value>Links</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="FlashManager_LeftBottom" lastModified="2011-12-19T10:27:46">
+    <value>Links unten</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="FlashManager_LeftCenter" lastModified="2011-12-19T10:27:46">
+    <value>Links Mitte</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="FlashManager_LeftTop" lastModified="2011-12-19T10:27:46">
+    <value>Links oben</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="FlashManager_Loop" lastModified="2011-12-19T10:27:46">
+    <value>Schleife</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="FlashManager_Low" lastModified="2011-12-19T10:27:46">
+    <value>Tief</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="FlashManager_Medium" lastModified="2011-12-19T10:27:46">
+    <value>Mittel</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="FlashManager_Middle" lastModified="2011-12-19T10:27:46">
+    <value>Mitte</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="FlashManager_Play" lastModified="2011-12-19T10:27:46">
+    <value>Abspielen</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="FlashManager_Quality" lastModified="2011-12-19T10:27:46">
+    <value>Qualität</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="FlashManager_Right" lastModified="2011-12-19T10:27:46">
+    <value>Rechts</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="FlashManager_RightBottom" lastModified="2011-12-19T10:27:46">
+    <value>Rechts unten</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="FlashManager_RightCenter" lastModified="2011-12-19T10:27:46">
+    <value>Rechts Mitte</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="FlashManager_RightTop" lastModified="2011-12-19T10:27:46">
+    <value>Rechts oben</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="FlashManager_TextTop" lastModified="2011-12-19T10:27:46">
+    <value>Textkopf</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="FlashManager_Title" lastModified="2011-12-19T10:27:46">
+    <value>Flash-Manager</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="FlashManager_Top" lastModified="2011-12-19T10:27:46">
+    <value>Oben</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="FlashManager_Transparent" lastModified="2011-12-19T10:27:46">
+    <value>Transparent</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="FormatCodeBlock_DisplayLineNumbers" lastModified="2011-12-19T10:27:46">
+    <value>Zeilennummern anzeigen</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="FormatCodeBlock_LanguageCS" lastModified="2011-12-19T10:27:46">
+    <value>C#</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="FormatCodeBlock_LanguageCss" lastModified="2011-12-19T10:27:46">
+    <value>CSS</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="FormatCodeBlock_LanguageDelphi" lastModified="2011-12-19T10:27:46">
+    <value>Delphi</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="FormatCodeBlock_LanguageJavascript" lastModified="2011-12-19T10:27:46">
+    <value>Java Script</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="FormatCodeBlock_LanguagePhp" lastModified="2011-12-19T10:27:46">
+    <value>Php</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="FormatCodeBlock_LanguagePython" lastModified="2011-12-19T10:27:46">
+    <value>Python</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="FormatCodeBlock_LanguageSQL" lastModified="2011-12-19T10:27:46">
+    <value>SQL</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="FormatCodeBlock_LanguageVB" lastModified="2011-12-19T10:27:46">
+    <value>VB</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="FormatCodeBlock_LanguageXml" lastModified="2011-12-19T10:27:46">
+    <value>Auszeichnung - (x)HTML, XML, ASPX, ...</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="FormatCodeBlock_MaxSnippetHeight" lastModified="2011-12-19T10:27:46">
+    <value>Max. Snippet-Höhe</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="FormatCodeBlock_MaxSnippetWidth" lastModified="2011-12-19T10:27:46">
+    <value>Max. Snippet-Breite</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="FormatCodeBlock_PasteSourceCode" lastModified="2011-12-19T10:27:46">
+    <value>Quellcode unten einfügen</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="FormatCodeBlock_SelectLanguage" lastModified="2011-12-19T10:27:46">
+    <value>Sprache auswählen</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageEditor_AddText" lastModified="2011-12-19T10:27:46">
+    <value>Text hinzufügen</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageEditor_AddText_Color" lastModified="2011-12-19T10:27:46">
+    <value>Farbe</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageEditor_AddText_ColorToolTip" lastModified="2011-12-19T10:27:46">
+    <value>Farbe des hinzuzufügenden Texts</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageEditor_AddText_CurrentColorText" lastModified="2011-12-19T10:27:46">
+    <value>(Derzeitige Farbe ist {0})</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageEditor_AddText_FontFamily" lastModified="2011-12-19T10:27:46">
+    <value>Schriftfamilie</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageEditor_AddText_FontFamilyToolTip" lastModified="2011-12-19T10:27:46">
+    <value>Schriftfamilie des hinzuzufügenden Texts</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageEditor_AddText_FontSize" lastModified="2011-12-19T10:27:46">
+    <value>Schriftgröße</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageEditor_AddText_FontSizeToolTip" lastModified="2011-12-19T10:27:46">
+    <value>Größe des hinzuzufügenden Texts</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageEditor_AddText_PickColorToolTip" lastModified="2011-12-19T10:27:46">
+    <value>Farbe auswählen</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageEditor_AddText_SampleText" lastModified="2011-12-19T10:27:46">
+    <value>Ihr Text...</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageEditor_AddText_Title" lastModified="2011-12-19T10:27:46">
+    <value>Text einfügen</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageEditor_Common_Position" lastModified="2011-12-19T10:27:46">
+    <value>Position</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageEditor_Common_SliderDrag" lastModified="2011-12-19T10:27:46">
+    <value>Zum Ändern des Werts ziehen</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageEditor_Common_SwapWidthHeight" lastModified="2011-12-19T10:27:46">
+    <value>Breite und Höhe wechseln</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageEditor_Common_X" lastModified="2011-12-19T10:27:46">
+    <value>X</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageEditor_Common_Y" lastModified="2011-12-19T10:27:46">
+    <value>J</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageEditor_Crop" lastModified="2011-12-19T10:27:46">
+    <value>Zuschneiden</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageEditor_Crop_AspectRatio" lastModified="2011-12-19T10:27:46">
+    <value>Seitenverhältnis</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageEditor_Crop_AspectRatioToolTip" lastModified="2011-12-19T10:27:46">
+    <value>Seitenverhältnis auswählen</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageEditor_Crop_Button" lastModified="2011-12-19T10:27:46">
+    <value>Zuschneiden</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageEditor_Crop_Title" lastModified="2011-12-19T10:27:46">
+    <value>Bild zuschneiden</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageEditor_Flip" lastModified="2011-12-19T10:27:46">
+    <value>Drehen</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageEditor_Flip_None" lastModified="2011-12-19T10:27:46">
+    <value>Nichts spiegeln</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageEditor_Flip_Title" lastModified="2011-12-19T10:27:46">
+    <value>Drehen</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageEditor_FlipBoth" lastModified="2011-12-19T10:27:46">
+    <value>Beide drehen</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageEditor_FlipHorizontal" lastModified="2011-12-19T10:27:46">
+    <value>Horizontal drehen</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageEditor_FlipVertical" lastModified="2011-12-19T10:27:46">
+    <value>Vertikal drehen</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageEditor_Opacity" lastModified="2011-12-19T10:27:46">
+    <value>Deckkraft</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageEditor_Opacity_TextboxToolTip" lastModified="2011-12-19T10:27:46">
+    <value>Geben Sie einen Wert zwischen 0 und 100% ein</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageEditor_Opacity_Title" lastModified="2011-12-19T10:27:46">
+    <value>Deckkraft</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageEditor_Print" lastModified="2011-12-19T10:27:46">
+    <value>Bild drucken</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageEditor_Print_Button" lastModified="2011-12-19T10:27:46">
+    <value>Drucken</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageEditor_Print_Title" lastModified="2011-12-19T10:27:46">
+    <value>Bild drucken</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageEditor_Redo" lastModified="2011-12-19T10:27:46">
+    <value>Wiederholen</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageEditor_Reset" lastModified="2011-12-19T10:27:46">
+    <value>Bild wiederherstellen</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageEditor_Resize" lastModified="2011-12-19T10:27:46">
+    <value>Größe anpassen</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageEditor_Resize_Button" lastModified="2011-12-19T10:27:46">
+    <value>Größe anpassen</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageEditor_Resize_Percentage" lastModified="2011-12-19T10:27:46">
+    <value>Prozentsatz</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageEditor_Resize_PercentageToolTip" lastModified="2011-12-19T10:27:46">
+    <value>Prozentsatz der ursprünglichen Breite x Höhe [0,100%]</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageEditor_Resize_PresetSizes" lastModified="2011-12-19T10:27:46">
+    <value>Voreingestellte Größen</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageEditor_Resize_PresetSizesToolTip" lastModified="2011-12-19T10:27:46">
+    <value>Wählen Sie eine voreingestellte Breite x Höhe aus</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageEditor_Resize_Title" lastModified="2011-12-19T10:27:46">
+    <value>Größe anpassen</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageEditor_Rotate" lastModified="2011-12-19T10:27:46">
+    <value>Rotieren</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageEditor_Rotate_DropDownToolTip" lastModified="2011-12-19T10:27:46">
+    <value>Wählen Sie einen Drehwinkel aus</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageEditor_Rotate_Title" lastModified="2011-12-19T10:27:46">
+    <value>Rotieren</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageEditor_RotateLeft" lastModified="2011-12-19T10:27:46">
+    <value>90 Grad nach links drehen</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageEditor_RotateRight" lastModified="2011-12-19T10:27:46">
+    <value>90 Grad nach rechts drehen</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageEditor_Save" lastModified="2011-12-19T10:27:46">
+    <value>Speichern</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageEditor_Save_ClientRadioText" lastModified="2011-12-19T10:27:46">
+    <value>Bild herunterladen</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageEditor_Save_FileNameLabel" lastModified="2011-12-19T10:27:46">
+    <value>Dateiname</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageEditor_Save_FileNameToolTip" lastModified="2011-12-19T10:27:46">
+    <value>Dateinamen eingeben</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageEditor_Save_ServerRadioText" lastModified="2011-12-19T10:27:46">
+    <value>Bild auf Server speichern</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageEditor_Save_Title" lastModified="2011-12-19T10:27:46">
+    <value>Bild speichern</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageEditor_SaveAs" lastModified="2011-12-19T10:27:46">
+    <value>Speichern unter...</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageEditor_StatusBar_LastAction" lastModified="2011-12-19T10:27:46">
+    <value>Letzte Aktion</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageEditor_StatusBar_Position" lastModified="2011-12-19T10:27:46">
+    <value>Pos.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageEditor_StatusBar_Size" lastModified="2011-12-19T10:27:46">
+    <value>Größe</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageEditor_StatusBar_Zoom" lastModified="2011-12-19T10:27:46">
+    <value>Zoom</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageEditor_Undo" lastModified="2011-12-19T10:27:46">
+    <value>Zurück</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageEditor_Zoom" lastModified="2011-12-19T10:27:46">
+    <value>Zoom</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageEditor_Zoom_ActualSizeToolTip" lastModified="2011-12-19T10:27:46">
+    <value>Auf 100% zoomen</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageEditor_Zoom_BestFitToolTip" lastModified="2011-12-19T10:27:46">
+    <value>Bild an editierbaren Bereich anpassen</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageEditor_Zoom_TextboxToolTip" lastModified="2011-12-19T10:27:46">
+    <value>Geben Sie einen Wert zwischen 0 und 100% ein</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageEditor_Zoom_Title" lastModified="2011-12-19T10:27:46">
+    <value>Zoom</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageManager_AlertDimensions" lastModified="2011-12-19T10:27:46">
+    <value>Bitte geben Sie entweder die Breite oder Höhe des Vorschaubilds an.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageManager_AlertHeight" lastModified="2011-12-19T10:27:46">
+    <value>Bitte gültige Bildhöhe angeben.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageManager_AlertWidth" lastModified="2011-12-19T10:27:46">
+    <value>Bitte gültige Bildbreite angeben.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageManager_Title" lastModified="2011-12-19T10:27:46">
+    <value>Bild-Manager</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageMap_AlertDeleteAllAreas" lastModified="2011-12-19T10:27:46">
+    <value>Sind Sie sicher, dass Sie ALLE Bereiche löschen wollen.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageMap_AlertDeleteArea" lastModified="2011-12-19T10:27:46">
+    <value>Soll dieser Bereich wirklich gelöscht werden.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageMap_AlertInvalidAreaProperties" lastModified="2011-12-19T10:27:46">
+    <value>Ungültige Bereichseigenschaften. Bitte URL eingeben.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageMap_AlertInvalidProperties" lastModified="2011-12-19T10:27:46">
+    <value>Ungültige Eigenschaften!</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageMap_AlertWrongAreaDimensions" lastModified="2011-12-19T10:27:46">
+    <value>Falsche Bereichsabmessungen festgestellt. Bereich wird ausgelassen.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageMap_AreaFieldSet" lastModified="2011-12-19T10:27:46">
+    <value>Eigenschaften des ausgewählten Bereichs</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageMap_ChooseImage" lastModified="2011-12-19T10:27:46">
+    <value>Bild auswählen</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageMap_Circle" lastModified="2011-12-19T10:27:46">
+    <value>Kreis</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageMap_Comment" lastModified="2011-12-19T10:27:46">
+    <value>Alt. Text</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageMap_DefineAreaPropertiesLegend" lastModified="2011-12-19T10:27:46">
+    <value>Bereichseigenschaften festlegen</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageMap_HowToAdd" lastModified="2011-12-19T10:27:46">
+    <value>Sie können das Bild hinüber ziehen, um einen neuen Bereich zu erstellen.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageMap_NewArea" lastModified="2011-12-19T10:27:46">
+    <value>Neuer Bereich</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageMap_Polygon" lastModified="2011-12-19T10:27:46">
+    <value>Vieleck</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageMap_Rectangle" lastModified="2011-12-19T10:27:46">
+    <value>Rechteck</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageMap_RemoveAllAreas" lastModified="2011-12-19T10:27:46">
+    <value>Alle entfernen</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageMap_RemoveArea" lastModified="2011-12-19T10:27:46">
+    <value>Bereich entfernen</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageMap_SelectAreaShape" lastModified="2011-12-19T10:27:46">
+    <value>Form für Bereich auswählen</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageMap_SelectImage" lastModified="2011-12-19T10:27:46">
+    <value>Bitte wählen Sie ein Bild aus, um eine verweissensitive Grafik zu erstellen.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageMap_ShapeAlt" lastModified="2011-12-19T10:27:46">
+    <value>Ziehen sie an der unteren rechten Ecke, um die Größe des Bereichs anzupassen.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="ImageMap_UpdateArea" lastModified="2011-12-19T10:27:46">
+    <value>Bereich aktualiseren</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="LinkManager_AnchorTab" lastModified="2011-12-19T10:27:46">
+    <value>Verankerung</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="LinkManager_EmailTab" lastModified="2011-12-19T10:27:46">
+    <value>E-Mail</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="LinkManager_ExistingAnchor" lastModified="2011-12-19T10:27:46">
+    <value>Vorhandene Verankerung</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="LinkManager_HyperlinkTab" lastModified="2011-12-19T10:27:46">
+    <value>Hyperlink</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="LinkManager_LinkAddress" lastModified="2011-12-19T10:27:46">
+    <value>Adresse</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="LinkManager_LinkName" lastModified="2011-12-19T10:27:46">
+    <value>Name</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="LinkManager_LinkSubject" lastModified="2011-12-19T10:27:46">
+    <value>Betreff</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="LinkManager_LinkTarget" lastModified="2011-12-19T10:27:46">
+    <value>Ziel</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="LinkManager_LinkText" lastModified="2011-12-19T10:27:46">
+    <value>Linktext</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="LinkManager_LinkTooltip" lastModified="2011-12-19T10:27:46">
+    <value>Tooltip</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="LinkManager_LinkType" lastModified="2011-12-19T10:27:46">
+    <value>Typ</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="LinkManager_LinkUrl" lastModified="2011-12-19T10:27:46">
+    <value>URL</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="LinkManager_Other" lastModified="2011-12-19T10:27:46">
+    <value>Sonstige</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="LinkManager_Title" lastModified="2011-12-19T10:27:46">
+    <value>Hyperlink-Manager</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_AlertValue" lastModified="2011-12-19T10:27:46">
+    <value>Bitte geben Sie einen gültigen Eigenschaftswert ein!</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_AlertWidthHeight" lastModified="2011-12-19T10:27:46">
+    <value>Bitte geben Sie Breite und Höhe der Mediendatei ein!</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_Align" lastModified="2011-12-19T10:27:46">
+    <value>Ausrichten</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_AllowChangeDisplaySize" lastModified="2011-12-19T10:27:46">
+    <value>Diese Eigenschaft gibt an oder ruft ab, ob die Anzeigegröße geändert werden kann.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_AllowScan" lastModified="2011-12-19T10:27:46">
+    <value>Diese Eigenschaft gibt an oder ruft ab, ob Scannen für Dateien die dies unterstützen aktiviert ist geändert werden kann (vor- oder zurückspulen).</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_AnimationAtStart" lastModified="2011-12-19T10:27:46">
+    <value>Diese Eigenschaft gibt an oder ruft ab, ob die Animation vor dem ersten angezeigten Bild abläuft.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_Arrowhourglass" lastModified="2011-12-19T10:27:46">
+    <value>Standardpfeil und kleine Sanduhr</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_AudioStream" lastModified="2011-12-19T10:27:46">
+    <value>Diese Eigenschaft gibt die Nummer des aktuellen Audiostreams an oder ruft sie ab. </value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_AutoRewind" lastModified="2011-12-19T10:27:46">
+    <value>Diese Eigenschaft gibt an oder ruft ab, ob die Windows Media Player-Steuerung automatisch zum Anfang des Clips zurückkehrt, nachdem der Clip zu Ende ist oder aus anderen Gründen endete.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_AutoSize" lastModified="2011-12-19T10:27:46">
+    <value>Diese Eigenschaft gibt an oder ruft ab, ob die Windows Media Player-Steuerung seine Größe automatisch an den aktuellen Medienstream gemäß der Eigenschaft &lt;b&gt;DisplaySize&lt;/b&gt; anpasst.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_AutoStart" lastModified="2011-12-19T10:27:46">
+    <value>Diese Eigenschaft gibt an oder ruft ab, ob das Abspielen des Clips automatisch gestartet werden soll.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_Balance" lastModified="2011-12-19T10:27:46">
+    <value>Diese Eigenschaft gibt die Stereo-Balance an oder ruft sie ab.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_Baseline" lastModified="2011-12-19T10:27:46">
+    <value>Grundlinie</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_Bottom" lastModified="2011-12-19T10:27:46">
+    <value>Unten</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_Caption2" lastModified="2011-12-19T10:27:46">
+    <value>Beschriftung2</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_CCActive" lastModified="2011-12-19T10:27:46">
+    <value>Diese Eigenschaft gibt an oder ruft ab, ob Untertitelung an oder aus ist.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_ClickToPlay" lastModified="2011-12-19T10:27:46">
+    <value>Diese Eigenschaft gibt an oder ruft ab, ob der Benutzer das Abspielen durch Klicken auf das Videobild an- und ausschalten kann.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_ColorKey" lastModified="2011-12-19T10:27:46">
+    <value>Diese Eigenschaft gibt den Farbschlüssel, der von der DVD-Wiedergabe verwendet wird, an oder ruft ihn ab.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_Crosshair" lastModified="2011-12-19T10:27:46">
+    <value>Fadenkreuz</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_CurrentAngle" lastModified="2011-12-19T10:27:46">
+    <value>Diese Eigenschaft gibt eine Zahl, die den aktuellen Kamerawinkel bezeichnet, an oder ruft sie ab.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_CurrentAudioStream" lastModified="2011-12-19T10:27:46">
+    <value>Diese Eigenschaft gibt eine Zahl, die den aktuellen Audiostream bezeichnet, an oder ruft sie ab.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_CurrentCCService" lastModified="2011-12-19T10:27:46">
+    <value>Diese Eigenschaft gibt einen Wert, der den aktuellen Dienst für Untertitel bezeichnet, an oder ruft ihn ab.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_CurrentMarker" lastModified="2011-12-19T10:27:46">
+    <value>Diese Eigenschaft gibt die aktuelle Marker-Nummer an oder ruft sie ab.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_CurrentPosition" lastModified="2011-12-19T10:27:46">
+    <value>Diese Eigenschaft gibt die aktuelle Position des Clips in Sekunden an oder ruft sie ab.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_CurrentSubpictureStream" lastModified="2011-12-19T10:27:46">
+    <value>Diese Eigenschaft gibt einen Wert, der den aktuellen Stream unterhalb des Bildes bezeichnet, an oder ruft ihn ab.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_CursorType" lastModified="2011-12-19T10:27:46">
+    <value>Diese Eigenschaft gibt den Cursor-Typ an oder ruft ihn ab.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_Custom" lastModified="2011-12-19T10:27:46">
+    <value>benutzerdefiniert</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_Customh" lastModified="2011-12-19T10:27:46">
+    <value>Benutzerdefiniert -</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_DefaultCaption1" lastModified="2011-12-19T10:27:46">
+    <value>Standardbeschriftung1</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_DefaultFrame" lastModified="2011-12-19T10:27:46">
+    <value>Diese Eigenschaft gibt einen Wert, der für den standardmäßigen HTTP-Ziel-Frame steht, an oder ruft ihn ab.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_Description" lastModified="2011-12-19T10:27:46">
+    <value>&lt;br /&gt;&lt;b&gt;Beschreibung: &lt;/b&gt;</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_DesignTime" lastModified="2011-12-19T10:27:46">
+    <value>Größe, die bei der Gestaltung definiert wurde</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_DisplayBackColor" lastModified="2011-12-19T10:27:46">
+    <value>Diese Eigenschaft gibt die Hintergrundfarbe des Anzeigefelds an oder ruft sie ab.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_DisplayForeColor" lastModified="2011-12-19T10:27:46">
+    <value>Diese Eigenschaft gibt die Vordergrundfarbe des Anzeigefelds an oder ruft sie ab.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_DisplayMode" lastModified="2011-12-19T10:27:46">
+    <value>Diese Eigenschaft gibt einen Wert, der festlegt, ob die Statuszeile die aktuelle Position in Sekunden (Ja) oder in Frames (Nein) anzeigt, an oder ruft ihn ab.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_DisplaySize" lastModified="2011-12-19T10:27:46">
+    <value>Diese Eigenschaft gibt die Größe des Bildanzeigefensters an oder ruft sie ab.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_DoublepointedNESW" lastModified="2011-12-19T10:27:46">
+    <value>Pfeil mit Doppelspitze NO-SW</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_DoublepointedNS" lastModified="2011-12-19T10:27:46">
+    <value>Pfeil mit Doppelspitze N-S</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_DoublepointedNWSE" lastModified="2011-12-19T10:27:46">
+    <value>Pfeil mit Doppelspitze NW-SO</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_DoublepointedWE" lastModified="2011-12-19T10:27:46">
+    <value>Pfeil mit Doppelspitze nach W-O zeigend</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_DoubleSourceImage" lastModified="2011-12-19T10:27:46">
+    <value>Abmessungen des Ursprungsbildes verdoppeln</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_EnableContextMenu" lastModified="2011-12-19T10:27:46">
+    <value>Diese Eigenschaft gibt an oder ruft ab, ob das Kontextmenü erscheint, wenn der Benutzer die rechte Maustaste drückt.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_Enabled" lastModified="2011-12-19T10:27:46">
+    <value>Diese Eigenschaft gibt an oder ruft ab, ob die Steuerung des Windows Media Players aktiviert ist.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_EnableFullScreenControls" lastModified="2011-12-19T10:27:46">
+    <value>Diese Eigenschaft gibt an oder ruft ab, ob der Windows Media Player im Vollbildmodus eine Steuerung anzeigt.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_EnablePositionControls" lastModified="2011-12-19T10:27:46">
+    <value>Diese Eigenschaft gibt an oder ruft ab, ob die Positionierungssteuerung in der Steuerungsleiste aktiviert ist.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_EnableTracker" lastModified="2011-12-19T10:27:46">
+    <value>Diese Eigenschaft gibt an oder ruft ab, ob das Schieberegler-Control aktiviert ist.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_EntireScreen" lastModified="2011-12-19T10:27:46">
+    <value>Größe der gesamten Anzeige</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_ExtendedDataServices" lastModified="2011-12-19T10:27:46">
+    <value>Erweiterte Datendienste (XDS)</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_Fourpointedarrow" lastModified="2011-12-19T10:27:46">
+    <value>Pfeil mit vier Spitzen</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_HalfScreen" lastModified="2011-12-19T10:27:46">
+    <value>Hälfte der Anzeigengröße</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_HalfSourceImage" lastModified="2011-12-19T10:27:46">
+    <value>B und H betragen die Hälfte des Ursprungsbilds</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_Handpointing" lastModified="2011-12-19T10:27:46">
+    <value>Hand mit Zeigefinger</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_Hidden" lastModified="2011-12-19T10:27:46">
+    <value>Diese Eigenschaft gibt an oder ruft ab, ob der Player im Browser zu sehen ist.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_Hourglass" lastModified="2011-12-19T10:27:46">
+    <value>Sanduhr</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_InvokeURLs" lastModified="2011-12-19T10:27:46">
+    <value>Diese Eigenschaft gibt an oder ruft ab, ob die Windows Media Player-Steuerung automatisch URLs im Browser aufruft (URL-Spiegelung).</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_Language" lastModified="2011-12-19T10:27:46">
+    <value>Diese Eigenschaft gibt die aktuelle Landeseinstellung, die für die nationale Sprachunterstützung verwendet wird, an oder ruft sie ab.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_MediaPropertiesLegend" lastModified="2011-12-19T10:27:46">
+    <value>Medieneigenschaften</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_Middle" lastModified="2011-12-19T10:27:46">
+    <value>Mitte</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_Mute" lastModified="2011-12-19T10:27:46">
+    <value>Diese Eigenschaft gibt an oder ruft ab, ob der Windows Media Player momentan stumm geschaltet ist oder nicht.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_NA" lastModified="2011-12-19T10:27:46">
+    <value>N/A</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_None" lastModified="2011-12-19T10:27:46">
+    <value>Keine</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_Nosubpicturestream" lastModified="2011-12-19T10:27:46">
+    <value>Es gibt keinen Unterbild-Stream</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_PlayCount" lastModified="2011-12-19T10:27:46">
+    <value>Diese Eigenschaft gibt an oder ruft ab, wie oft ein Clip gespielt wird.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_PreviewMode" lastModified="2011-12-19T10:27:46">
+    <value>Diese Eigenschaft gibt an oder ruft ab, ob sich der Windows Media Player im Vorschaumodus befindet.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_QuarterScreen" lastModified="2011-12-19T10:27:46">
+    <value>Ein Viertel der Anzeigengröße</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_Rate" lastModified="2011-12-19T10:27:46">
+    <value>Diese Eigenschaft gibt die Wiedergabegeschwindigkeit eines Clips an oder ruft sie ab.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_Right" lastModified="2011-12-19T10:27:46">
+    <value>Rechts</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_Samesize" lastModified="2011-12-19T10:27:46">
+    <value>Gleiche Größe wie Ursprungsbild</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_SelectionEnd" lastModified="2011-12-19T10:27:46">
+    <value>Diese Eigenschaft gibt den Zeitpunkt, zu dem die Wiedergabe im aktuellen Clip stoppt, an oder ruft ihn ab. Diese Eigenschaft kann nicht gesetzt oder abgerufen werden bevor die Eigenschaft &lt;b&gt;ReadyState&lt;/b&gt;  (read-only) den Wert 4 erreicht hat.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_SelectionStart" lastModified="2011-12-19T10:27:46">
+    <value>Diese Eigenschaft gibt an oder ruft ab, wann die Wiedergabe im aktuellen Clip beginnt.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_SelectProperty" lastModified="2011-12-19T10:27:46">
+    <value>Eigenschaft auswählen</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_SendErrorEvents" lastModified="2011-12-19T10:27:46">
+    <value>Diese Eigenschaft gibt an oder ruft ab, ob die Windows Media Player-Steuerung Fehlerereignisse weiterleitet.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_SendKeyboardEvents" lastModified="2011-12-19T10:27:46">
+    <value>Diese Eigenschaft gibt an oder ruft ab, ob die Windows Media Player-Steuerung Tastatureingaben weiterleitet.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_SendMouseClickEvents" lastModified="2011-12-19T10:27:46">
+    <value>Diese Eigenschaft gibt an oder ruft ab, ob die Windows Media Player-Steuerung das Drücken der Maustasten weiterleitet.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_SendMouseMoveEvents" lastModified="2011-12-19T10:27:46">
+    <value>Diese Eigenschaft gibt an oder ruft ab, ob die Windows Media Player-Steuerung Mausbewegungen weiterleitet.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_SendOpenStateChangeEvents" lastModified="2011-12-19T10:27:46">
+    <value>Diese Eigenschaft gibt an oder ruft ab, ob die Windows Media Player-Steuerung offenene Statusänderungsereignisse weiterleitet.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_SendPlayStateChangeEvents" lastModified="2011-12-19T10:27:46">
+    <value>Diese Eigenschaft gibt an oder ruft ab, ob die Windows Media Player-Steuerung Änderungen des Wiedergabestatus' weiterleitet.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_SendWarningEvents" lastModified="2011-12-19T10:27:46">
+    <value>Diese Eigenschaft gibt an oder ruft ab, ob die Windows Media Player-Steuerung Warnungen weiterleitet.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_ShowAudioControls" lastModified="2011-12-19T10:27:46">
+    <value>Diese Eigenschaft gibt an oder ruft ab, ob die Audio-Controls in der Steuerleiste erscheinen.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_ShowCaptioning" lastModified="2011-12-19T10:27:46">
+    <value>Diese Eigenschaft gibt an oder ruft ab, ob der Bereich für Untertitel sichtbar ist und ob Untertitelung aktiviert ist.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_ShowControls" lastModified="2011-12-19T10:27:46">
+    <value>Diese Eigenschaft gibt an oder ruft ab, ob die Steuerleiste sichtbar ist.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_ShowDisplay" lastModified="2011-12-19T10:27:46">
+    <value>Diese Eigenschaft gibt an oder ruft ab, ob das Anzeigefeld sichtbar ist.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_ShowGotoBar" lastModified="2011-12-19T10:27:46">
+    <value>Diese Eigenschaft gibt an oder ruft ab, ob die 'Gehe zu'-Leiste sichtbar ist.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_ShowPositionControls" lastModified="2011-12-19T10:27:46">
+    <value>Diese Eigenschaft gibt an oder ruft ab, ob diese Positionierungssteuerung in der Steuerleiste erscheint.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_ShowStatusBar" lastModified="2011-12-19T10:27:46">
+    <value>Diese Eigenschaft gibt an oder ruft ab, ob die Statusleiste sichtbar ist.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_ShowTracker" lastModified="2011-12-19T10:27:46">
+    <value>Diese Eigenschaft gibt an oder ruft ab, ob der Schieberegler sichtbar ist.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_SixteenthScreen" lastModified="2011-12-19T10:27:46">
+    <value>Ein Sechzehntel der Anzeigengröße</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_SlashedCircle" lastModified="2011-12-19T10:27:46">
+    <value>Durchgestrichener Kreis</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_Standardarrow" lastModified="2011-12-19T10:27:46">
+    <value>Standardpfeil</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_Streamisvalid" lastModified="2011-12-19T10:27:46">
+    <value>Der Stream ist gültig</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_SubpictureOn" lastModified="2011-12-19T10:27:46">
+    <value>Diese Eigenschaft gibt an oder ruft ab, ob das Unterbild angezeigt wird.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_Text1" lastModified="2011-12-19T10:27:46">
+    <value>Text1</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_Text2" lastModified="2011-12-19T10:27:46">
+    <value>Text2</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_TextIbeam" lastModified="2011-12-19T10:27:46">
+    <value>Texteinfügemarke</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_TextTop" lastModified="2011-12-19T10:27:46">
+    <value>Textkopf</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_Title" lastModified="2011-12-19T10:27:46">
+    <value>Media-Manager</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_TransparentAtStart" lastModified="2011-12-19T10:27:46">
+    <value>Diese Eigenschaft gibt an oder ruft ab, ob die Windows Media Player-Steuerung vor und nach der Wiedergabe transparent ist.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_ValidateAudio" lastModified="2011-12-19T10:27:46">
+    <value>Bitte geben Sie einen Wert zwischen Null und Sieben ein, der den aktuellen Audiostream angibt, oder geben Sie 0xFFFFFFFF ein, wenn kein Stream ausgewählt ist.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_ValidateLCID" lastModified="2011-12-19T10:27:46">
+    <value>Bitte geben Sie einen numerischen Wert ein, der einem LCID entspricht, der eine Landeseinstellung für die nationale Sprachunterstützung angibt.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_ValidateNumber" lastModified="2011-12-19T10:27:46">
+    <value>Bitte geben Sie nur numerische Werte ein.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_ValidateNumber10" lastModified="2011-12-19T10:27:46">
+    <value>Bitte geben Sie einen Wert zwischen  -10,00 und 10,00 an.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_ValidateNumber10000" lastModified="2011-12-19T10:27:46">
+    <value>Bitte geben Sie einen Wert zwischen  -10000 und 10000 an.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_ValidateNumberHex" lastModified="2011-12-19T10:27:46">
+    <value>Bitte geben Sie einen hexadezimalen Wert an.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_Value" lastModified="2011-12-19T10:27:46">
+    <value>Wert</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_Verticalarrow" lastModified="2011-12-19T10:27:46">
+    <value>Vertikaler Pfeil</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_VideoBorder3D" lastModified="2011-12-19T10:27:46">
+    <value>Diese Eigenschaft gibt an oder ruft ab, ob der Effekt 'dreidimensionaler Rahmen' aktiviert ist.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_VideoBorderColor" lastModified="2011-12-19T10:27:46">
+    <value>Diese Eigenschaft gibt die Farbe des Videorahmens an oder ruft sie ab.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_VideoBorderWidth" lastModified="2011-12-19T10:27:46">
+    <value>Diese Eigenschaft gibt die Breite des Videorahmens in Pixeln an oder ruft sie ab.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="MediaManager_Volume" lastModified="2011-12-19T10:27:46">
+    <value>Diese Eigenschaft gibt die Lautstärke in Hunderdstel Dezibel an oder ruft sie ab.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="PageProperties_BackColor" lastModified="2011-12-19T10:27:46">
+    <value>Hintergrundfarbe</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="PageProperties_BaseLocation" lastModified="2011-12-19T10:27:46">
+    <value>Basisort</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="PageProperties_BodyAttributes" lastModified="2011-12-19T10:27:46">
+    <value>Body-Attribute</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="PageProperties_BottomMargin" lastModified="2011-12-19T10:27:46">
+    <value>Unterer Seitenrand</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="PageProperties_ClassName" lastModified="2011-12-19T10:27:46">
+    <value>Klassenname</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="PageProperties_Description" lastModified="2011-12-19T10:27:46">
+    <value>Beschreibung</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="PageProperties_Keywords" lastModified="2011-12-19T10:27:46">
+    <value>Schlüsselwörter</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="PageProperties_LeftMargin" lastModified="2011-12-19T10:27:46">
+    <value>Linker Seitenrand</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="PageProperties_PageAttributes" lastModified="2011-12-19T10:27:46">
+    <value>Seitenattribute</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="PageProperties_PageTitle" lastModified="2011-12-19T10:27:46">
+    <value>Seitentitel</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="PageProperties_RightMargin" lastModified="2011-12-19T10:27:46">
+    <value>Rechter Seitenrand</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="PageProperties_TopMargin" lastModified="2011-12-19T10:27:46">
+    <value>Oberer Seitenrand</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="RadEditorDialogsDescription" lastModified="2011-12-19T10:27:46">
+    <value>Resource-Strings für RadEditor-Dialoge</value>
+    <comment>The description of this class.</comment>
+  </data>
+  <data name="RadEditorDialogsTitle" lastModified="2011-12-19T10:27:46">
+    <value>RadEditor-Dialoge</value>
+    <comment>The title of this class.</comment>
+  </data>
+  <data name="RadEditorDialogsTitlePlural" lastModified="2011-12-19T10:27:46">
+    <value>RadEditor-Dialoge</value>
+    <comment>The title plural of this class.</comment>
+  </data>
+  <data name="ReservedResource" lastModified="2011-12-19T10:27:46">
+    <value>Bitte löschen Sie diesen String nicht. Der RadEditor benötigt ihn, um festzustellen, ob es eine externe Ressroucen-Datei in App_GlobalResources gibt.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="SetImageProperties_Constrain" lastModified="2011-12-19T10:27:46">
+    <value>Beschränken</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="SetImageProperties_HorizontalSpacing" lastModified="2011-12-19T10:27:46">
+    <value>Horizontaler Abstand</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="SetImageProperties_ImageAlignment" lastModified="2011-12-19T10:27:46">
+    <value>Bildausrichtung</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="SetImageProperties_ImageSrc" lastModified="2011-12-19T10:27:46">
+    <value>Image Src</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="SetImageProperties_LinkToOriginal" lastModified="2011-12-19T10:27:46">
+    <value>Link zum Original</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="SetImageProperties_LongDescription" lastModified="2011-12-19T10:27:46">
+    <value>Lange Beschreibung</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="SetImageProperties_OpenInNewWindow" lastModified="2011-12-19T10:27:46">
+    <value>In einem neuen Fenster öffnen</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="SetImageProperties_Title" lastModified="2011-12-19T10:27:46">
+    <value>Bildeigenschaften</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="SetImageProperties_VerticalSpacing" lastModified="2011-12-19T10:27:46">
+    <value>Vertikaler Abstand</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="SilverlightManager_AutoUpgrade" lastModified="2011-12-19T10:27:46">
+    <value>Auto-Hochrüsten</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="SilverlightManager_EnableHtmlAccess" lastModified="2011-12-19T10:27:46">
+    <value>HTML-Zugriff aktivieren</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="SilverlightManager_MinVersion" lastModified="2011-12-19T10:27:46">
+    <value>Min. Runtime-Version</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="SilverlightManager_Windowless" lastModified="2011-12-19T10:27:46">
+    <value>Fensterlos</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_Absolute" lastModified="2011-12-19T10:27:46">
+    <value>Absolut</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_Alignment" lastModified="2011-12-19T10:27:46">
+    <value>Ausrichtung</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_AllowFloatingObjects" lastModified="2011-12-19T10:27:46">
+    <value>Fließende Objekte erlauben</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_AllowTextToFlow" lastModified="2011-12-19T10:27:46">
+    <value>Fließenden Text erlauben</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_AlwaysUseScrollbars" lastModified="2011-12-19T10:27:46">
+    <value>Immer Bildlaufleisten verwenden</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_BackgroundTab" lastModified="2011-12-19T10:27:46">
+    <value>Hintergrund</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_Baseline" lastModified="2011-12-19T10:27:46">
+    <value>Grundlinie</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_Block" lastModified="2011-12-19T10:27:46">
+    <value>Als Blockelement</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_Bold" lastModified="2011-12-19T10:27:46">
+    <value>Fett</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_Bolder" lastModified="2011-12-19T10:27:46">
+    <value>Fetter</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_BorderTab" lastModified="2011-12-19T10:27:46">
+    <value>Rand</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_Both" lastModified="2011-12-19T10:27:46">
+    <value>Beide</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_Bulleted" lastModified="2011-12-19T10:27:46">
+    <value>Aufzählung</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_Bullets" lastModified="2011-12-19T10:27:46">
+    <value>Aufzählungszeichen</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_Capitalization" lastModified="2011-12-19T10:27:46">
+    <value>Großbuchstaben</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_Capitalize" lastModified="2011-12-19T10:27:46">
+    <value>Großschreiben</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_Center" lastModified="2011-12-19T10:27:46">
+    <value>Mitte</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_Circle" lastModified="2011-12-19T10:27:46">
+    <value>Kreis</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_Clipping" lastModified="2011-12-19T10:27:46">
+    <value>Ausschnitt</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_Collapse" lastModified="2011-12-19T10:27:46">
+    <value>Verbergen</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_CollapseBorder" lastModified="2011-12-19T10:27:46">
+    <value>Rand verbergen</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_Collapsed" lastModified="2011-12-19T10:27:46">
+    <value>Verborgen</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_Color" lastModified="2011-12-19T10:27:46">
+    <value>Farbe</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_Content" lastModified="2011-12-19T10:27:46">
+    <value>Content</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_ContentIsClipped" lastModified="2011-12-19T10:27:46">
+    <value>Inhalt ist ausgeschnitten</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_ContentIsNotClipped" lastModified="2011-12-19T10:27:46">
+    <value>Inhalt ist nicht ausgeschnitten</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_Custom" lastModified="2011-12-19T10:27:46">
+    <value>benutzerdefiniert</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_CustomBullet" lastModified="2011-12-19T10:27:46">
+    <value>Benutzerdefiniertes Zeichen</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_Dashed" lastModified="2011-12-19T10:27:46">
+    <value>gestrichelt</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_Disk" lastModified="2011-12-19T10:27:46">
+    <value>Disk</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_Display" lastModified="2011-12-19T10:27:46">
+    <value>Anzeige</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_DoNotAllow" lastModified="2011-12-19T10:27:46">
+    <value>Nicht erlauben</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_DoNotUseBgrImage" lastModified="2011-12-19T10:27:46">
+    <value>Hintergrundbild nicht verwenden</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_DontAllowTextOnSides" lastModified="2011-12-19T10:27:46">
+    <value>Keinen Randtext erlauben</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_Dotted" lastModified="2011-12-19T10:27:46">
+    <value>Gepunktet</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_DoubleLine" lastModified="2011-12-19T10:27:46">
+    <value>Doppelte Linie</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_EdgesTab" lastModified="2011-12-19T10:27:46">
+    <value>Ecken</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_Effects" lastModified="2011-12-19T10:27:46">
+    <value>Effekte</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_FixedBackground" lastModified="2011-12-19T10:27:46">
+    <value>Fester Hintergrund</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_FlowControl" lastModified="2011-12-19T10:27:46">
+    <value>Flow-Control</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_FontAttributes" lastModified="2011-12-19T10:27:46">
+    <value>Schriftartattribute</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_FontFamily" lastModified="2011-12-19T10:27:46">
+    <value>Familie</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_FontName" lastModified="2011-12-19T10:27:46">
+    <value>Schriftartname</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_FontSize" lastModified="2011-12-19T10:27:46">
+    <value>Größe</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_FontTab" lastModified="2011-12-19T10:27:46">
+    <value>Schriftart</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_Groove" lastModified="2011-12-19T10:27:46">
+    <value>Rille</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_Hidden" lastModified="2011-12-19T10:27:46">
+    <value>Verborgen</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_Horizontal" lastModified="2011-12-19T10:27:46">
+    <value>Horizontal</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_Image" lastModified="2011-12-19T10:27:46">
+    <value>Bild</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_Indentation" lastModified="2011-12-19T10:27:46">
+    <value>Einrückung</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_Inline" lastModified="2011-12-19T10:27:46">
+    <value>Als ein Flusselement</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_Inset" lastModified="2011-12-19T10:27:46">
+    <value>Einsetzen</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_Inside" lastModified="2011-12-19T10:27:46">
+    <value>Innen (keine Texteinrückung)</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_Italics" lastModified="2011-12-19T10:27:46">
+    <value>Kursive</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_Justification" lastModified="2011-12-19T10:27:46">
+    <value>Blocksatz</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_Justify" lastModified="2011-12-19T10:27:46">
+    <value>Blocksatz</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_Larger" lastModified="2011-12-19T10:27:46">
+    <value>Größer</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_LayoutTab" lastModified="2011-12-19T10:27:46">
+    <value>Layout</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_LeftToRight" lastModified="2011-12-19T10:27:46">
+    <value>Links-nach-Rechts</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_Letters" lastModified="2011-12-19T10:27:46">
+    <value>Buchstaben</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_Lighter" lastModified="2011-12-19T10:27:46">
+    <value>Schwächer</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_Lines" lastModified="2011-12-19T10:27:46">
+    <value>Linien</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_ListsTab" lastModified="2011-12-19T10:27:46">
+    <value>Listen</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_Lowercase" lastModified="2011-12-19T10:27:46">
+    <value>Kleinbuchstaben</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_Medium" lastModified="2011-12-19T10:27:46">
+    <value>Mittel</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_Middle" lastModified="2011-12-19T10:27:46">
+    <value>Mitte</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_Normal" lastModified="2011-12-19T10:27:46">
+    <value>Normal</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_NotSet" lastModified="2011-12-19T10:27:46">
+    <value>&amp;lt;Nicht gesetzt&amp;gt;</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_OnEitherSide" lastModified="2011-12-19T10:27:46">
+    <value>Auf jeder Seite</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_OnlyOnLeft" lastModified="2011-12-19T10:27:46">
+    <value>Nur links</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_OnlyOnRight" lastModified="2011-12-19T10:27:46">
+    <value>Nur rechts</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_Outset" lastModified="2011-12-19T10:27:46">
+    <value>Beginnen</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_Outside" lastModified="2011-12-19T10:27:46">
+    <value>Außen (Text ist eingerückt)</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_Overflow" lastModified="2011-12-19T10:27:46">
+    <value>Überlauf</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_Overline" lastModified="2011-12-19T10:27:46">
+    <value>Überstrich</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_Padding" lastModified="2011-12-19T10:27:46">
+    <value>Abstände</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_Position" lastModified="2011-12-19T10:27:46">
+    <value>Position</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_Relative" lastModified="2011-12-19T10:27:46">
+    <value>Relativ</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_Ridge" lastModified="2011-12-19T10:27:46">
+    <value>Erhöhung</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_RightToLeft" lastModified="2011-12-19T10:27:46">
+    <value>Rechts-nach-Links</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_SameForAll" lastModified="2011-12-19T10:27:46">
+    <value>Für alle gleich</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_Scrolling" lastModified="2011-12-19T10:27:46">
+    <value>Scrollen</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_ScrollingBackground" lastModified="2011-12-19T10:27:46">
+    <value>Scroll-Hintergrund</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_SmallCaps" lastModified="2011-12-19T10:27:46">
+    <value>Kapitälchen</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_Smaller" lastModified="2011-12-19T10:27:46">
+    <value>Kleiner</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_SolidLine" lastModified="2011-12-19T10:27:46">
+    <value>Durchgezogene Linie</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_SpacingBetween" lastModified="2011-12-19T10:27:46">
+    <value>Abstand zwischen</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_Specific" lastModified="2011-12-19T10:27:46">
+    <value>Speziell</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_Square" lastModified="2011-12-19T10:27:46">
+    <value>Quadrat</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_Strikethrough" lastModified="2011-12-19T10:27:46">
+    <value>Durchstreichen</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_Style" lastModified="2011-12-19T10:27:46">
+    <value>Stil</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_Sub" lastModified="2011-12-19T10:27:46">
+    <value>Hoch</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_Super" lastModified="2011-12-19T10:27:46">
+    <value>Tief</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_TextBottom" lastModified="2011-12-19T10:27:46">
+    <value>Textfuß</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_TextDirection" lastModified="2011-12-19T10:27:46">
+    <value>Textrichtung</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_TextFlow" lastModified="2011-12-19T10:27:46">
+    <value>Textfluss</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_TextTab" lastModified="2011-12-19T10:27:46">
+    <value>Text</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_TextTop" lastModified="2011-12-19T10:27:46">
+    <value>Textkopf</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_Thick" lastModified="2011-12-19T10:27:46">
+    <value>Dick</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_Thin" lastModified="2011-12-19T10:27:46">
+    <value>Dünn</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_Tiling" lastModified="2011-12-19T10:27:46">
+    <value>Kacheln</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_ToTheLeft" lastModified="2011-12-19T10:27:46">
+    <value>Nach links</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_ToTheRight" lastModified="2011-12-19T10:27:46">
+    <value>Nach rechts</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_UnBulleted" lastModified="2011-12-19T10:27:46">
+    <value>Keine Zeichen</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_Underline" lastModified="2011-12-19T10:27:46">
+    <value>Unterstreichen</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_Uppercase" lastModified="2011-12-19T10:27:46">
+    <value>Großbuchstaben</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_UseScrollbarsIfNeeded" lastModified="2011-12-19T10:27:46">
+    <value>Bildlaufleiste wenn notwendig</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_Vertical" lastModified="2011-12-19T10:27:46">
+    <value>Vertical</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_Visibility" lastModified="2011-12-19T10:27:46">
+    <value>Sichtbarkeit</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_Visible" lastModified="2011-12-19T10:27:46">
+    <value>Sichtbar</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="StyleBuilder_Words" lastModified="2011-12-19T10:27:46">
+    <value>Worte</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="TableWizard_AccessibilityOptions" lastModified="2011-12-19T10:27:46">
+    <value>Zugangsoptionen</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="TableWizard_AddHexColor" lastModified="2011-12-19T10:27:46">
+    <value>Hex-Farbe hinzufügen...</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="TableWizard_Additional" lastModified="2011-12-19T10:27:46">
+    <value>Zusätzlich</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="TableWizard_Alignment" lastModified="2011-12-19T10:27:46">
+    <value>Ausrichtung</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="TableWizard_AllFourSides" lastModified="2011-12-19T10:27:46">
+    <value>Alle vier Seiten</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="TableWizard_AllRowsAndColomns" lastModified="2011-12-19T10:27:46">
+    <value>Alle Zeilen und Spalten</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="TableWizard_ApplySpecialFormatsTo" lastModified="2011-12-19T10:27:46">
+    <value>Spezielle Formatierung anwenden auf</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="TableWizard_AssociateCellsWithHeaders" lastModified="2011-12-19T10:27:46">
+    <value>Zellen mit Überschriften verknüpfen</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="TableWizard_Baseline" lastModified="2011-12-19T10:27:46">
+    <value>Grundlinie</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="TableWizard_Betweenall" lastModified="2011-12-19T10:27:46">
+    <value>Zwischen allen Zeilen und Spalten</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="TableWizard_BetweenColumns" lastModified="2011-12-19T10:27:46">
+    <value>Zwischen Spalten</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="TableWizard_Betweengroup" lastModified="2011-12-19T10:27:46">
+    <value>Zwischen Zeilen- und Spaltengruppe</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="TableWizard_BetweenRows" lastModified="2011-12-19T10:27:46">
+    <value>Zwischen Zeilen</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="TableWizard_Border" lastModified="2011-12-19T10:27:46">
+    <value>Rand</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="TableWizard_Bottom" lastModified="2011-12-19T10:27:46">
+    <value>Unten</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="TableWizard_BottomSide" lastModified="2011-12-19T10:27:46">
+    <value>Nur Fußbereich</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="TableWizard_Caption" lastModified="2011-12-19T10:27:46">
+    <value>Beschriftung</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="TableWizard_CaptionAlign" lastModified="2011-12-19T10:27:46">
+    <value>Beschriftungsausrichtung</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="TableWizard_CellPadding" lastModified="2011-12-19T10:27:46">
+    <value>Textabstand</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="TableWizard_CellSpacing" lastModified="2011-12-19T10:27:46">
+    <value>Zellenabstand</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="TableWizard_Center" lastModified="2011-12-19T10:27:46">
+    <value>Mitte</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="TableWizard_Columns" lastModified="2011-12-19T10:27:46">
+    <value>Spalten</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="TableWizard_ColumnSettings" lastModified="2011-12-19T10:27:46">
+    <value>Spaltenzahl und -weite</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="TableWizard_ColumnSpan" lastModified="2011-12-19T10:27:46">
+    <value>Spaltenweite</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="TableWizard_Content" lastModified="2011-12-19T10:27:46">
+    <value>Content</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="TableWizard_ContentAlignment" lastModified="2011-12-19T10:27:46">
+    <value>Inhaltsausrichtung</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="TableWizard_Custom" lastModified="2011-12-19T10:27:46">
+    <value>benutzerdefiniert</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="TableWizard_Customh" lastModified="2011-12-19T10:27:46">
+    <value>Benutzerdefiniert -</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="TableWizard_Dimensions" lastModified="2011-12-19T10:27:46">
+    <value>Abmessungen</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="TableWizard_FirstColumn" lastModified="2011-12-19T10:27:46">
+    <value>Erste Spalte</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="TableWizard_Frame" lastModified="2011-12-19T10:27:46">
+    <value>Frame</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="TableWizard_HeadingColumns" lastModified="2011-12-19T10:27:46">
+    <value>Spaltenüberschrift</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="TableWizard_HeadingRow" lastModified="2011-12-19T10:27:46">
+    <value>Überschriftszeile</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="TableWizard_HeadingRows" lastModified="2011-12-19T10:27:46">
+    <value>Zeilenüberschrift</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="TableWizard_HeadingsLabel" lastModified="2011-12-19T10:27:46">
+    <value>Überschriften</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="TableWizard_Horizontal" lastModified="2011-12-19T10:27:46">
+    <value>Horizontal</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="TableWizard_InvalidCellHeight" lastModified="2011-12-19T10:27:46">
+    <value>Ungültige Zellenhöhe.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="TableWizard_InvalidCellWidth" lastModified="2011-12-19T10:27:46">
+    <value>Ungültige Zellenbreite.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="TableWizard_InvalidTableHeight" lastModified="2011-12-19T10:27:46">
+    <value>Ungültige Tabellenhöhe</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="TableWizard_InvalidTableWidth" lastModified="2011-12-19T10:27:46">
+    <value>Ungültige Tabellenbreite</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="TableWizard_LastColumn" lastModified="2011-12-19T10:27:46">
+    <value>Letzte Spalte</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="TableWizard_LastRow" lastModified="2011-12-19T10:27:46">
+    <value>Letzte Zeile</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="TableWizard_Layout" lastModified="2011-12-19T10:27:46">
+    <value>Layout</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="TableWizard_LeftAndRightSide" lastModified="2011-12-19T10:27:46">
+    <value>Nur linke und rechte Seiten</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="TableWizard_LeftSide" lastModified="2011-12-19T10:27:46">
+    <value>Linke Seite</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="TableWizard_Middle" lastModified="2011-12-19T10:27:46">
+    <value>Mitte</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="TableWizard_NoBorders" lastModified="2011-12-19T10:27:46">
+    <value>Keine Ränder</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="TableWizard_NoCSSClassLayout" lastModified="2011-12-19T10:27:46">
+    <value>Keine CSS-Klassenlayout</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="TableWizard_NoInteriorBorders" lastModified="2011-12-19T10:27:46">
+    <value>Keine Ränder innen</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="TableWizard_NoTextWrapping" lastModified="2011-12-19T10:27:46">
+    <value>Kein Textumbruch</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="TableWizard_NoWrapping" lastModified="2011-12-19T10:27:46">
+    <value>Kein Umrbruch</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="TableWizard_OtherOptionsLabel" lastModified="2011-12-19T10:27:46">
+    <value>Sonstige Optionen</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="TableWizard_PixelsOrPercents" lastModified="2011-12-19T10:27:46">
+    <value>Pixel, %</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="TableWizard_PromptColor" lastModified="2011-12-19T10:27:46">
+    <value>Bitte geben Sie die benutzerdefinierte Farbe als Hex-Wert an</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="TableWizard_Right" lastModified="2011-12-19T10:27:46">
+    <value>Rechts</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="TableWizard_RightSide" lastModified="2011-12-19T10:27:46">
+    <value>Nur rechte Seite</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="TableWizard_Rows" lastModified="2011-12-19T10:27:46">
+    <value>Zeilen</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="TableWizard_RowSettings" lastModified="2011-12-19T10:27:46">
+    <value>Zeilenanzahl und -breite</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="TableWizard_RowSpan" lastModified="2011-12-19T10:27:46">
+    <value>Zeilenbreite</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="TableWizard_SelectAll" lastModified="2011-12-19T10:27:46">
+    <value>Alle auswählen</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="TableWizard_Size" lastModified="2011-12-19T10:27:46">
+    <value>Größe</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="TableWizard_Summary" lastModified="2011-12-19T10:27:46">
+    <value>Zusammenfassung</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="TableWizard_Tab1HeaderText" lastModified="2011-12-19T10:27:46">
+    <value>Tabellendesign</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="TableWizard_Tab2HeaderText" lastModified="2011-12-19T10:27:46">
+    <value>Tabelleneigenschaften</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="TableWizard_Tab3HeaderText" lastModified="2011-12-19T10:27:46">
+    <value>Zelleneigenschaften</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="TableWizard_Tab4HeaderText" lastModified="2011-12-19T10:27:46">
+    <value>Zugänglichkeit</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="TableWizard_TableBorderControlSizeOverflow" lastModified="2011-12-19T10:27:46">
+    <value>Sie versuchen die Randgröße auf einen Wert über dem Maximum (1000) zu setzen. Es wird auf 1000 gesetzt.</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="TableWizard_TableControls" lastModified="2011-12-19T10:27:46">
+    <value>Tabellensteuerungelemente</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="TableWizard_TableDesignPreviewLabel" lastModified="2011-12-19T10:27:46">
+    <value>Vorschau des Tabellendesigns</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="TableWizard_Title" lastModified="2011-12-19T10:27:46">
+    <value>Tabellenassistent</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="TableWizard_TopAndBottomSide" lastModified="2011-12-19T10:27:46">
+    <value>Nur obere und untere Seiten</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="TableWizard_TopSide" lastModified="2011-12-19T10:27:46">
+    <value>Nur obere Seite</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="TableWizard_UseColor" lastModified="2011-12-19T10:27:46">
+    <value>Farbe verwenden</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="TableWizard_Vertical" lastModified="2011-12-19T10:27:46">
+    <value>Vertical</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="TrackChangesDialog_InitialContent" lastModified="2011-12-19T10:27:46">
+    <value>Anfänglicher Inhalt</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+  <data name="TrackChangesDialog_TrackChanges" lastModified="2011-12-19T10:27:46">
+    <value>Änderungen nachverfolgen</value>
+    <comment>RadEditorDialogs resource strings.</comment>
+  </data>
+</root>

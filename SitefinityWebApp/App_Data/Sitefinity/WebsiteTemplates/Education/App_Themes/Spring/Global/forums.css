@@ -1,0 +1,34 @@
+.ctf_forumsList tr th {
+	background-color: #333;
+	color: white;
+	border-right: 1px solid #111;
+	border-bottom: 1px solid #111;
+	border-left: 1px solid #454545;
+}
+
+.ctf_forumsList tr td {
+	background-color: #f5f5f5;
+	border-top: 1px solid #fff;
+	border-left: 1px solid #fff;
+	
+	border-right: 1px solid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.ctf_forumsList tr:hover td {
+	background-color: #e3e3e3;
+	border-right: 1px solid #d3d3d3;
+	border-bottom: 1px solid #d3d3d3;
+}
+
+#content .ctf_forumsList  a,
+#content .ctf_forumsList a.ctf_openForum, 
+#content .ctf_forumsList a.ctf_openThread{
+	color: #e95c1e;
+	text-decoration: none;
+}
+
+h1.ctf_Title {
+	font-family: GillSans, Georgia;
+	font-size: 25px;
+}

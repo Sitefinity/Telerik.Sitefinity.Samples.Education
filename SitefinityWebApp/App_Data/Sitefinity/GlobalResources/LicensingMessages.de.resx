@@ -1,0 +1,424 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ActivateLicense" lastModified="2011-12-19T10:27:46">
+    <value>Lizenz aktivieren</value>
+    <comment>Activate License</comment>
+  </data>
+  <data name="ActivateNewValidLicense" lastModified="2011-12-19T10:27:46">
+    <value>Eine neue gültige Lizenz aktivieren</value>
+    <comment>Activate a new valid license</comment>
+  </data>
+  <data name="ActivateRenewedHostedLicense" lastModified="2011-12-19T10:27:46">
+    <value>Verlängerte Lizenz aktivieren</value>
+    <comment>Activate renewed license</comment>
+  </data>
+  <data name="AddLicense" lastModified="2011-12-19T10:27:46">
+    <value>Lizenzschlüssel eingeben</value>
+    <comment>Message shown in license info page, reminding to add a license , when such is missing</comment>
+  </data>
+  <data name="Allowed" lastModified="2011-12-19T10:27:46">
+    <value>Zugelassen</value>
+    <comment>Label shown in license info page.</comment>
+  </data>
+  <data name="ContentLimit" lastModified="2011-12-19T10:27:46">
+    <value>Veröffentlichte Inhaltselemente</value>
+    <comment>Label shown in license info page.</comment>
+  </data>
+  <data name="CurrentDomainNotInLicense" lastModified="2011-12-19T10:27:46">
+    <value>Im Moment verwenden Sie Sitefinity von einer Domain, die nicht in der neuen Lizenz enthalten ist.</value>
+    <comment>Warning shown in confirmation screen</comment>
+  </data>
+  <data name="CustomerID" lastModified="2011-12-19T10:27:46">
+    <value>Kunden-ID</value>
+    <comment>Label shown in license info page.</comment>
+  </data>
+  <data name="CustomerName" lastModified="2011-12-19T10:27:46">
+    <value>Kundenname</value>
+    <comment>Label shown in license info page.</comment>
+  </data>
+  <data name="Domains" lastModified="2011-12-19T10:27:46">
+    <value>Domains</value>
+    <comment>Label shown in license info page.</comment>
+  </data>
+  <data name="Edition" lastModified="2011-12-19T10:27:46">
+    <value>Edition</value>
+    <comment>Edition</comment>
+  </data>
+  <data name="Email" lastModified="2011-12-19T10:27:46">
+    <value>E-Mail</value>
+    <comment>Label shown in license info page.</comment>
+  </data>
+  <data name="EmailCampaignsSubscribersCountFormat" lastModified="2011-12-19T10:27:46">
+    <value>{0} - {1} Abonnenten</value>
+    <comment>Label displaying 'Email Campaigns' and subscribers count.</comment>
+  </data>
+  <data name="EmptyLicenseFieldMsg" lastModified="2011-12-19T10:27:46">
+    <value>Bitte Lizenzschlüssel eingeben!</value>
+    <comment>Please, enter license key!</comment>
+  </data>
+  <data name="EnterEmailAndThePassword" lastModified="2011-12-19T10:27:46">
+    <value>Geben Sie die E-Mailadresse und das Passwort Ihres Sitefinity-Kontos ein</value>
+    <comment>Enter the the email and the password from your Sitefinity.com account</comment>
+  </data>
+  <data name="EnterLicenseContentMessage" lastModified="2011-12-19T10:27:46">
+    <value>Lizenzierungsdaten eingeben</value>
+    <comment>Message shown in license info page.</comment>
+  </data>
+  <data name="EnterLicenseIDMessage" lastModified="2011-12-19T10:27:46">
+    <value>Lizenzschlüssel (xx-Ziffern) eingeben</value>
+    <comment>Message shown in license info page.</comment>
+  </data>
+  <data name="ForgotPassword" lastModified="2011-12-19T10:27:46">
+    <value>E-Mail oder Passwort vergessen</value>
+    <comment>Forgotten email or password</comment>
+  </data>
+  <data name="GetYourExtendedTrialLicense" lastModified="2011-12-19T10:27:46">
+    <value>Hier können Sie Ihre Demolizenz verlängern</value>
+    <comment>Get your extended trial license</comment>
+  </data>
+  <data name="IfPurchasedHostedRenewal" lastModified="2011-12-19T10:27:46">
+    <value>Wenn Sie bereits eine Verlängerung gekauft haben</value>
+    <comment>If you have already purchased a renewal</comment>
+  </data>
+  <data name="IfTheTrialPeriodHasBeenExtended" lastModified="2011-12-19T10:27:46">
+    <value>Wenn die Demolizenz verlängert wurde</value>
+    <comment>If the trial period has been extended</comment>
+  </data>
+  <data name="IfYouHaveLicense" lastModified="2011-12-19T10:27:46">
+    <value>Wenn Sie bereits eine Lizenzdatei besitzen, laden Sie sie hier hoch, um sie zu aktivieren.</value>
+    <comment>If you have already a license file upload it here to activate it.</comment>
+  </data>
+  <data name="IfYouNeedToExtend" lastModified="2011-12-19T10:27:46">
+    <value>Wenn Sie Ihre Demolizenz &lt;b&gt;verlängern&lt;/b&gt; wollen, kontaktieren Sie bitte &lt;a href="mailto:sales@sitefinity.com"&gt;sales@sitefinity.com&lt;/a&gt;</value>
+    <comment>If you need your trial period to be extended please, contact sales@sitefinity.com</comment>
+  </data>
+  <data name="IfYouNeedToExtendHosted" lastModified="2011-12-19T10:27:46">
+    <value>Wenn Sie Ihre gehostete Demoperiode verlängern wollen, &lt;a href="http://www.sitefinity.com/purchase.aspx" target="_blank"&gt;können Sie eine Verlängerung&lt;/a&gt; auf unserer Website oder via &lt;a href="mailto:sales@sitefinity.com"&gt;sales@sitefinity.com&lt;/a&gt; kaufen.</value>
+    <comment>If you want to extend the hosted trial period Purchase a renewal on our website or contact sales@sitefinity.com</comment>
+  </data>
+  <data name="InTrialMode" lastModified="2011-12-19T10:27:46">
+    <value>Sitefinity läuft im Testmodus, da keine gültige Lizenz vorliegt. Geben Sie einen Lizenzschlüssel ein, um den lizenzierten Modus zu verwenden.</value>
+    <comment>Message shown in license info page.</comment>
+  </data>
+  <data name="InvalidDomain" lastModified="2011-12-19T10:27:46">
+    <value>Ungültige Domain</value>
+    <comment>Message shown in license info page.</comment>
+  </data>
+  <data name="InvalidLicenseInfo" lastModified="2011-12-19T10:27:46">
+    <value>Ungültige Lizenzinformation</value>
+    <comment>Invalid License Info</comment>
+  </data>
+  <data name="InvalidLicenseSignature" lastModified="2011-12-19T10:27:46">
+    <value>Ungültige Lizenzsignatur</value>
+    <comment>Message shown in license info page.</comment>
+  </data>
+  <data name="IssuedOn" lastModified="2011-12-19T10:27:46">
+    <value>Datum der Aktivierung</value>
+    <comment>Label shown in license info page.</comment>
+  </data>
+  <data name="IsTrailLicense" lastModified="2011-12-19T10:27:46">
+    <value>Testlizenz</value>
+    <comment>Label shown in license info page.</comment>
+  </data>
+  <data name="LicenseContentMessage" lastModified="2011-12-19T10:27:46">
+    <value>Linzenzdaten</value>
+    <comment>Message shown in license info page.</comment>
+  </data>
+  <data name="LicenseDataConfirmationHeader" lastModified="2011-12-19T10:27:46">
+    <value>Ihre Sitefinity-Lizenz wird aktualisiert. Die neuen Lizenzdaten lauten wie folgt:</value>
+    <comment>Message shown in license info page.</comment>
+  </data>
+  <data name="LicenseDetailsHeader" lastModified="2011-12-19T10:27:46">
+    <value>Lizenzdetails</value>
+    <comment>Label shown in license info page.</comment>
+  </data>
+  <data name="LicenseFileSaveProblem" lastModified="2011-12-19T10:27:46">
+    <value>Das System konnte die Lizenz nicht speichern</value>
+    <comment>Message shown in license info page.</comment>
+  </data>
+  <data name="LicenseId" lastModified="2011-12-19T10:27:46">
+    <value>Lizenzschlüssel</value>
+    <comment>Label shown in license info page.</comment>
+  </data>
+  <data name="LicenseIdNumberMessage" lastModified="2011-12-19T10:27:46">
+    <value>Lizenzschlüssel (xx-Ziffern)</value>
+    <comment>LicenseIdNumberMessage</comment>
+  </data>
+  <data name="LicenseIsCorrupted" lastModified="2011-12-19T10:27:46">
+    <value>Lizenz ist korrupt</value>
+    <comment>Message shown in license info page.</comment>
+  </data>
+  <data name="LicenseIsUpToDate" lastModified="2011-12-19T10:27:46">
+    <value>Ihre Lizenz ist aktuell, kein Grund zur Aktualisierung</value>
+    <comment>Message shown in license info page when the license is current</comment>
+  </data>
+  <data name="LicenseKeyIsChanging" lastModified="2011-12-19T10:27:46">
+    <value>Ihr Lizenzschlüssel wird mit der neuen unterhalb ersetzt.</value>
+    <comment>Warning shown in confirmation screen</comment>
+  </data>
+  <data name="LicenseNotSavedSuccessfully" lastModified="2011-12-19T10:27:46">
+    <value>Die Lizenz wird nicht aktualisiert. Die eingegebenen Lizenzdaten sind ungültig.</value>
+    <comment>Message shown in license info page.</comment>
+  </data>
+  <data name="LicenseProblems" lastModified="2011-12-19T10:27:46">
+    <value>Lizenzstatus</value>
+    <comment>Header shown in license info page.</comment>
+  </data>
+  <data name="LicenseSavedSuccessfull" lastModified="2011-12-19T10:27:46">
+    <value>Die Lizenz wurde aktualisiert. Sie verwenden Sitefinity nun im lizenzierten Modus für die registrierten Domains</value>
+    <comment>Message shown in license info page.</comment>
+  </data>
+  <data name="LicensingMessagesDescription" lastModified="2011-12-19T10:27:46">
+    <value>Enthält lokalisierbare Ressourcen für Sitefinity-Meldungen, die sich auf die Lizenzierung beziehen.</value>
+    <comment>The description of this class.</comment>
+  </data>
+  <data name="LicensingMessagesTitle" lastModified="2011-12-19T10:27:46">
+    <value>Lizenzmeldungen</value>
+    <comment>The title of this class.</comment>
+  </data>
+  <data name="LicensingMessagesTitlePlural" lastModified="2011-12-19T10:27:46">
+    <value>Pluralbezeichnung der Lizenzmeldungen</value>
+    <comment>The title plural of this class.</comment>
+  </data>
+  <data name="MaxUsers" lastModified="2011-12-19T10:27:46">
+    <value>Gleichzeitige Benutzer</value>
+    <comment>Message shown in license info page.</comment>
+  </data>
+  <data name="MissingLicense" lastModified="2011-12-19T10:27:46">
+    <value>Fehlende Lizenz</value>
+    <comment>Message shown in license info page.</comment>
+  </data>
+  <data name="MissingLicenseKey" lastModified="2011-12-19T10:27:46">
+    <value>Fehlender Lizenzschlüssel</value>
+    <comment>Message shown in license info page for the license key when the license is not ok</comment>
+  </data>
+  <data name="Modules" lastModified="2011-12-19T10:27:46">
+    <value>Erweiterungen</value>
+    <comment>Label shown in license info page.</comment>
+  </data>
+  <data name="NotAllowed" lastModified="2011-12-19T10:27:46">
+    <value>Nicht erlaubt</value>
+    <comment>Label shown in license info page.</comment>
+  </data>
+  <data name="PagesLimit" lastModified="2011-12-19T10:27:46">
+    <value>Veröffentlichte Seiten</value>
+    <comment>Label shown in license info page.</comment>
+  </data>
+  <data name="Product" lastModified="2011-12-19T10:27:46">
+    <value>Produkt</value>
+    <comment>Message shown in license info page.</comment>
+  </data>
+  <data name="ProductVersion" lastModified="2011-12-19T10:27:46">
+    <value>Produktversion</value>
+    <comment>Label shown in license info page.</comment>
+  </data>
+  <data name="PurchaseInformation" lastModified="2011-12-19T10:27:46">
+    <value>Kaufinformationen</value>
+    <comment>Message shown in license info page.</comment>
+  </data>
+  <data name="Refresh" lastModified="2011-12-19T10:27:46">
+    <value>Ansicht aktualisieren</value>
+    <comment>Refresh</comment>
+  </data>
+  <data name="ReloadLicense" lastModified="2011-12-19T10:27:46">
+    <value>Lizenz erneut laden</value>
+    <comment>Reload license</comment>
+  </data>
+  <data name="ServerConnectionProblem" lastModified="2011-12-19T10:27:46">
+    <value>&lt;h1 class="sfSepTitle"&gt;Es gab einen Fehler beim Versuch die Lizenz vom Lizenzserver abzurufen. &lt;/h1&gt;&lt;p class="sfErrorDetail"&gt;Bitte wenden Sie sich an &lt;a href="mailto:sales@sitefinity.com"&gt;sales@sitefinity.com&lt;/a&gt; for further assistance&lt;/p&gt;</value>
+    <comment>Connection problem</comment>
+  </data>
+  <data name="ServerMoreThanOneLicense" lastModified="2011-12-19T10:27:46">
+    <value>&lt;h1 class="sfSepTitle"&gt;Für diese Ausgabe ist mehr als eine Lizenz verfügbar&lt;/h1&gt;&lt;p class="sfErrorDetail"&gt;&lt;a href="http://www.sitefinity.com/login.aspx?returnurl=%2f" target="_blank"&gt;Loggen&lt;/a&gt; Sie sich in Ihr &lt;em&gt;Sitefinity.com&lt;/em&gt;-Konto ein, laden Sie die gewünschte Lizenzdatei herunter und aktivieren Sie sie manuell.&lt;/p&gt;&lt;p class="sfNote sfErrorDetail"&gt;Bei Fragen zur Lizenzierung wenden Sie sich bitte an &lt;a href="mailto:sales@sitefinity.com"&gt;sales@sitefinity.com&lt;/a&gt;&lt;/p&gt;</value>
+    <comment>More than one license available.</comment>
+  </data>
+  <data name="ServerWrongCredentials" lastModified="2011-12-19T10:27:46">
+    <value>&lt;h1 class="sfSepTitle"&gt;Falsche E-Mailadresse und/oder Passwort&lt;/h1&gt;&lt;p class="sfNote sfErrorDetail"&gt;Wenn Sie Unterstützung bei der Lizenzierung benötigen, wenden Sie sich bitte an &lt;a href="mailto:sales@sitefinity.com"&gt;sales@sitefinity.com&lt;/a&gt;&lt;/p&gt;</value>
+    <comment>Incorrect email and/or password</comment>
+  </data>
+  <data name="ServerWrongNoAvailableLicense" lastModified="2011-12-19T10:27:46">
+    <value>&lt;h1 class="sfSepTitle"&gt;Für diese Ausgabe ist keine Lizenz verfügbar&lt;/h1&gt;&lt;p class="sfErrorDetail"&gt;Zum Aktivieren einer Lizenz müssen Sie zuerst eine solche kaufen.&lt;br /&gt;&lt;a href="http://www.sitefinity.com/login.aspx?returnurl=%2f" target="_blank"&gt;Loggen&lt;/a&gt; Sie sich in Ihr &lt;em&gt;Sitefinity.com&lt;/em&gt;-Konto zum Kauf ein.&lt;/p&gt;&lt;p class="sfNote sfErrorDetail"&gt;Bei Fragen zur Lizenzierung wenden Sie sich bitte an &lt;a href="mailto:sales@sitefinity.com"&gt;sales@sitefinity.com&lt;/a&gt;&lt;/p&gt;</value>
+    <comment>No license available</comment>
+  </data>
+  <data name="Subdomains" lastModified="2011-12-19T10:27:46">
+    <value>Subdomains</value>
+    <comment>Label shown in license info page.</comment>
+  </data>
+  <data name="ToRunSitefinityYouNeedToActivete" lastModified="2011-12-19T10:27:46">
+    <value>Zum Ausführen von Sitefinity CMS müssen Sie eine gültige Lizenz aktivieren</value>
+    <comment>To run Sitefinity CMS you need to activate a valid license.</comment>
+  </data>
+  <data name="Unlimited" lastModified="2011-12-19T10:27:46">
+    <value>Unbegrenzt</value>
+    <comment>Unlimited</comment>
+  </data>
+  <data name="Update" lastModified="2011-12-19T10:27:46">
+    <value>Aktualisieren</value>
+    <comment>Update license button label</comment>
+  </data>
+  <data name="UpdateConnectionProblem" lastModified="2011-12-19T10:27:46">
+    <value>Die Verbindung mit dem Lizenzserver konnte nicht hergestellt werden. Versuchen Sie die Lizenz manuell zu aktualisieren.</value>
+    <comment>Message for license updateing connection problems.</comment>
+  </data>
+  <data name="UpdateLicense" lastModified="2011-12-19T10:27:46">
+    <value>Fortfahren</value>
+    <comment>Message shown in license info page.</comment>
+  </data>
+  <data name="UpdateLicensingProblem" lastModified="2011-12-19T10:27:46">
+    <value>Die Lizenz wird nicht aktualisiert, da</value>
+    <comment>Message shown in license info page when a licensing problem occurs during the lciense update</comment>
+  </data>
+  <data name="UpdateNoLicenseForProductVersion" lastModified="2011-12-19T10:27:46">
+    <value>Der Lizenzschlüssel passt nicht zu Ihrer Produktversion.</value>
+    <comment>Message shown in license info page.</comment>
+  </data>
+  <data name="UpdateNoSuchLicenseKey" lastModified="2011-12-19T10:27:46">
+    <value>der Lizenzschlüssel wurde falsch eingegeben oder existiert nicht</value>
+    <comment>Message shown in license info page.</comment>
+  </data>
+  <data name="UseDownloadedLicense" lastModified="2011-12-19T10:27:46">
+    <value>Verwenden Sie eine  &lt;strong&gt;Lizenzdatei,&lt;/strong&gt; die Sie heruntergeladen haben</value>
+    <comment>Use a &lt;strong&gt;license file&lt;/strong&gt; you have downloaded</comment>
+  </data>
+  <data name="UseSitefinityAccount" lastModified="2011-12-19T10:27:46">
+    <value>Verwenden Sie die &lt;strong&gt;E-Mailadresse und das Passwor&lt;/strong&gt; Ihres Sitefinity.com-Kontos</value>
+    <comment>Use the &lt;strong&gt;email and password&lt;/strong&gt; from your Sitefinity.com account</comment>
+  </data>
+  <data name="VersionAndLicensing" lastModified="2011-12-19T10:27:46">
+    <value>Version und Lizenzierung</value>
+    <comment>Title of the license information screen.</comment>
+  </data>
+  <data name="ViewAndCompareAllEditions" lastModified="2011-12-19T10:27:46">
+    <value>Alle Editionen vergleichen</value>
+    <comment>Compare all editions</comment>
+  </data>
+  <data name="WhatTypeOfInstallation" lastModified="2011-12-19T10:27:46">
+    <value>Welche Installationsart möchten Sie verwenden</value>
+    <comment>What type of installation you want to use?</comment>
+  </data>
+  <data name="WidgetNotLicensed" lastModified="2011-12-19T10:27:46">
+    <value>Das Widget ist nicht lizenziert. Bearbeiten ist deaktiviert</value>
+    <comment>Message shown in page editor.</comment>
+  </data>
+  <data name="WrongProductVersion" lastModified="2011-12-19T10:27:46">
+    <value>Falsche Produktversion</value>
+    <comment>Message shown in license info page.</comment>
+  </data>
+</root>

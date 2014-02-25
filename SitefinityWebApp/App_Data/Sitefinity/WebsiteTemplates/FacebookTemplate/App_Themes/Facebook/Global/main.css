@@ -1,0 +1,171 @@
+﻿
+body {
+	font-family: Arial;
+	font-size: 12px;
+}
+
+.header h1 {
+	font-size: 28px;
+	letter-spacing: -1px;
+	color: #1d77ad;
+	text-align:center;
+}
+
+.promo {
+	width: 100%;
+	position:relative;
+	float:left;
+}
+.promo img{
+	position:relative;
+	margin: 0 auto;
+	display:block;
+}
+
+.content {
+	background-color: #e2e2e2;
+	background-image: url(../Images/content.jpg);
+	background-repeat:no-repeat;
+}
+
+.content h1 {
+	position:relative;
+	float:left;
+	width: 94%;
+	margin-left: 3px;
+	font-size: 40px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	color: black;
+	letter-spacing: -1px;
+	text-align:center;
+	text-transform:uppercase;
+}
+
+.content h2 {
+	position:relative;
+	float:left;
+	width: 100%;
+	font-size: 22px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	color: #1d77ad;
+	font-weight: normal;
+	letter-spacing: -1px;
+	text-align:center;
+}
+
+.content ul{
+	position: relative;
+	float:left;
+	margin-left: 70px;
+	line-height: 22px;
+}
+
+.price {
+	margin-top: -100px;
+	width: 165px;
+	left: 200px;
+	height: 67px;
+	position: relative;
+	float: left;
+	color: white;
+	padding-top: 20px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	background-image: url(../Images/price.png);
+}
+
+.price h1,
+.price h2 {
+	color: white;
+	margin: 0px;
+	padding: 0px;
+}
+
+.price h1 {
+	font-size: 22px;
+}
+
+.price h2 {
+	color: #9ccfec;
+	font-size: 18px;
+}
+
+.footer {
+	background-image: url(../Images/footer.jpg);
+	background-repeat:no-repeat;
+	padding-top: 40px;
+}
+
+
+a.buynow{
+	position: relative;
+	float:right;
+	width: 160px;
+	height: 61px;
+	line-height: 55px;
+	text-decoration:none;
+	background-image: url(../Images/buy.jpg);
+	background-repeat: no-repeat;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 24px;
+	font-weight: bold;
+	color: white;
+	text-align:center;
+}
+
+a.buynow:hover {
+	background-position: 0 -61px;
+}
+
+.content .sfContentBlock p{
+	line-height: 18px;
+	font-size: 11px;
+	color: #666;
+}
+
+.prices .sfContentBlock {
+	position: relative;
+	float:left;
+	background-image: url(../Images/prices.jpg);
+	width: 150px;
+	height: 62px;
+	font-weight: bold;
+	font-size: 18px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	text-align:center;
+	line-height: 55px;
+	color: white;
+}
+
+.prices .sf_3cols_2_34 .sfContentBlock {
+	background-image: url(../Images/prices2.jpg);
+
+}
+
+
+.prices .sf_3cols_3_33 .sfContentBlock {
+	background-image: url(../Images/prices3.jpg);
+
+}
+
+.buy a{
+	display:block;
+	position:relative;
+	float: left;
+	padding: 5px 10px;
+	font-size: 11px;
+	font-weight: bold;
+	margin: 5px;
+	text-decoration: none;
+	background-color: #333;
+	color: white;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-k-border-radius: 5px;
+
+}
+.buy a:hover{
+	background-color: #555;
+}

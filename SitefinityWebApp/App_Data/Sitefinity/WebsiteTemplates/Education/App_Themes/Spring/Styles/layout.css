@@ -1,0 +1,606 @@
+body {
+	padding: 0px;
+	margin: 0px;
+	font-family: Arial;
+	font-size: 12px;
+	color: #777;
+	background-color: #ffffff;
+}
+
+#wrapper {
+	position: relative;
+	float: left;
+	width: 100%;
+}
+
+#header-holder, 
+#header, 
+#footer, 
+#footer-navigation {
+	position: relative;
+	width: 100%;
+	background-color: #383838;
+	color: #ffffff;
+}
+
+#headerinfo, #content {
+	position: relative;
+	margin: 0 auto;
+	width: 920px;
+	padding: 20px;
+
+}
+
+#headerinfo a{ 
+	color: #fff;
+	text-decoration: none;
+}
+
+#headerinfo a:hover {
+	color: #ccc;
+}
+
+#content {
+	padding-bottom: 0px;
+}
+#headerinfo {
+	font-family: Georgia;
+	padding: 15px 0 15px 0px;
+	background-image: url(../Images/header_background.jpg);
+	background-position: left center;
+	background-repeat: no-repeat;
+}
+
+#headerinfo h1 {
+	font-size: 25px;
+	font-weight: normal;
+	letter-spacing: -1px;
+	margin-bottom: 5px;
+	margin-top: 0px;
+}
+
+#headerinfo h3 {
+	font-size: 12px;
+	font-weight: normal;
+	font-family: Arial;
+	color: #777;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+
+
+/* The language selector */
+
+ul.sflanguagesVerticalList {
+	position: relative;
+	float: left;
+	display: block;
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+	background-image: url(../Images/language_selector_background.jpg);
+	background-position: right top;
+	line-height: 29px;
+}
+
+ul.sflanguagesVerticalList li.sflanguageItem a.sflanguageLnk {
+	color: white;
+	text-decoration: none;
+	font-family: Arial;
+	padding-left: 20px;
+	display:block;
+	height: 29px;
+	
+}
+
+ul.sflanguagesVerticalList li.sflanguageItem.sflang_de a.sflanguageLnk {
+	background-image: url(../Images/de.gif);
+	background-repeat: no-repeat;
+	padding-right: 50px;
+	background-position: 0 8px;
+}
+
+
+ul.sflanguagesVerticalList li.sflanguageItem {
+	background-image: url(../Images/language_selector_background_left.jpg);
+	padding-left: 9px;
+	background-repeat: no-repeat;
+	height: 29px;
+}
+
+ul.sflanguagesVerticalList li.sflangSelected {
+	display: none;
+} 
+
+
+#headers-rotator {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.header-text {
+	position: absolute;
+	left: 50%;
+	width: 250px;
+	background-color: #e95c1e;
+	bottom: 70px;
+	margin-left: 80px;
+	border-radius: 10px;
+}
+
+	
+.header-text p{
+	padding: 20px;
+	padding-top: 0px;
+}
+
+.header-text h4{
+	padding: 0px;
+	padding-top: 20px;
+	padding-left:20px;
+	padding-bottom: 0px;
+	margin: 0;
+	font-weight: normal;
+	font-size: 16px;
+	font-family: Georgia;
+}
+
+.header-text p {
+	color: #f7e1c9;
+}
+
+.RadTabStrip_education {
+	position: relative;
+	width: 960px;
+	line-height: 40px;
+	display:block;
+	margin: 0 auto;
+	padding-top: 10px;
+}
+
+.RadTabStrip_education .rtsLink{
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: bold;
+	color: #c0c0c0;
+	letter-spacing: -1px;
+	border-right: 1px solid #626262;
+	line-height: 25px;
+	margin-bottom: 15px;
+	padding-top: 10px;
+}
+
+.RadTabStrip_education .rtsLink.rtsSelected{
+	border-right: 0px;
+	background-color: white;
+	color: #000;
+	padding-bottom: 15px;
+	margin-bottom: 0px;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+}
+
+#content .sfContentBlock h1 {
+	font-family: Georgia;
+	font-weight: normal;
+	font-style: italic;
+	font-size: 24px;
+	border-bottom: 1px solid #eee;
+	padding-bottom: 10px;
+}
+
+#open-navigation {
+	display:none;
+}
+
+
+#content h3 {
+	font-size: 16px;
+	font-weight: normal;
+	font-family:Georgia
+}
+
+#content .sfContentBlock a,
+#content h3 a
+{
+	text-decoration: none;
+	color: #e95c1e;
+}
+
+.sfnewsList  {
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+}
+
+.sfnewsList .sfnewsListItem {
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #eee;
+	position: relative;
+	float: left;
+}
+
+.sfnewsList .sfnewsListItem h3{
+	margin-bottom:4px;
+	margin-top: 0px;
+	padding: 0px;
+}
+
+.sfnewsList .sfnewsListItem .sfnewsMetaInfo {
+	font-size: 11px;
+	color: #555;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.educationnewsSummary {
+	line-height: 18px;
+}
+.sfimageWrp img{
+	border-radius: 15px;
+}
+
+.sfeventContent {
+	line-height: 20px;
+	font-size: 13px;
+}
+
+.sfContentBlock p img {
+	float: left;
+	margin-right: 10px;
+	border-radius: 15px;
+}
+
+.sfContentBlock p {
+	line-height: 20px;
+}
+
+.educationAnnouncements {
+	background-color: #515151;
+	padding: 15px;
+	position: relative;
+	float: left;
+	border-radius: 10px;
+	margin-top: 20px;
+	background-image: url(../Images/announcements.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom left;
+}
+
+#content .educationAnnouncements h2{
+	color: white;
+	font-weight: normal;
+	font-family: Georgia;
+	font-style: italic;
+	padding: 0px 0px 10px 0px;
+	font-size: 18px;
+	border-bottom: 1px solid #777;
+	margin: 0px;
+}
+
+.educationAnnouncements .sflistList {
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+}
+
+.educationAnnouncements .sflistList  .sflistItemContent{
+	font-size: 11px;
+	color: #888;
+	line-height: 14px;
+}
+
+#content .educationAnnouncements .sflistList  .sflistListItem h3.sflistItemTitle {
+	color: #ccc;
+	font-size: 12px;
+	font-family: Arial;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.footer-wrapper {
+	width: 960px;
+	margin: 0 auto;
+	position: relative;
+	display: block;
+}
+
+#footer-navigation{
+	position: relative;
+	float: left;
+	width: 100%;
+}
+
+.RadSiteMap_footer .rsmLink{
+	color: white;
+}
+
+.RadSiteMap_footer ul.rsmLevel {
+	position: relative;
+	float: left;
+	width: 100%;
+}
+
+.RadSiteMap_footer ul.rsmLevel li.rsmItem{
+	position: relative;
+	float: left;
+	clear: none;
+	line-height: 40px;
+}
+
+#content h1.sfnewsTitle {
+	font-size: 34px;
+	font-family: GillSans, Georgia;
+	color: black;
+	font-weight: normal;
+	border-bottom: 1px solid #ccc;
+	padding: 0 0 10px 0;
+	margin-top: 0;
+}
+
+.sfcommentsList {
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+}
+
+li.sfcommentDetails {
+	width: 100%;
+	position: relative;
+	float: left;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #eee;
+}
+
+div.sfcommentText {
+	margin-left: 250px;
+	top: 0px;
+	float: left;
+	font-size: 13px;
+	line-height: 22px;
+	color: #666;
+}
+.sfcommentDate {
+	display: block;
+	font-size: 12px;
+	font-weight: normal;
+	color: #777;
+	position: absolute;
+	left: 40px;
+	top: 20px;
+}
+
+
+.sfcommentText a,
+.sfcommentAuthor a {
+	color: #E95C1E;
+	text-decoration: none;
+}
+
+.sfcommentText a:hover,
+.sfcommentAuthor a:hover {
+	color: #512200;
+}
+
+.sfcommentAuthor {
+	display: block;
+	font-size: 18px;
+	font-weight: normal;
+	font-family: GillSans, Georgia;
+	color: black;
+	position: absolute;
+	left: 40px;
+	top: 0px;
+}
+
+span.sfcommentNumber {
+	display:block;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	padding: 5px 10px;
+	background-color: #333;
+	color: #fff;
+	font-weight: bold;
+	border-radius: 5px;
+}
+
+h1.sfnewsTitle span{
+	font-size: 12px;
+	font-family: Arial;
+	color: #aaa;
+}
+
+div.sfnewsSummary {
+	background-color: #444;
+	color: #aaa;
+	border-radius: 15px;
+	-webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+
+	float: left;
+	width: 300px;
+	margin-right: 25px;
+	font-size: 12px;
+	line-height: 21px;
+	padding: 15px;
+	margin-bottom: 10px;
+
+}
+
+.image {
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	-webkit-border-radius: 10px;
+	-webkit-perspective: 600;
+}
+.image .front{
+	float: none;
+	position: relative;
+	top: 0;
+	left: 0;
+	z-index: 900;
+	width: inherit;
+	height: inherit;
+	
+	
+	-webkit-box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+	
+	-webkit-transform: rotateY(0);
+	-webkit-transform-style: preserve-3d;
+	-webkit-backface-visibility: hidden;
+
+	-webkit-transition: all .4s ease-in-out;
+}
+
+.image-caption {
+	background-color: #333;
+	padding: 10px 5% 10px 5%;
+	line-height: 30px;
+	font-size: 13px;
+	color: #fff;
+}
+
+.image .front.flip {
+	z-index: 900;
+	-webkit-transform: rotateY(180deg);
+}
+
+.image .image-description {
+	width: 90%;
+	height: 90%;
+	background-color: #333;
+	position: absolute;
+	padding: 5%;
+	font-size: 13px;
+	left: 0px;
+	top: 0px;
+	
+	
+	-webkit-transform: rotateY(-180deg);
+	-webkit-transform-style: preserve-3d;
+	-webkit-backface-visibility: hidden;		
+	-webkit-transition: all .4s ease-in-out;
+}
+
+.image .image-description.flip {
+	z-index: 1000;			
+	-webkit-transform: rotateY(0deg);
+	-webkit-box-shadow: 0px 0px 40px #333;
+	color: #aaaaaa;
+}
+
+.image-caption span {
+	font-size: 12px;
+	color: #999;
+	font-style: italic;
+}
+
+
+#content .image-description h3.image-description-title {
+	font-size: 22px;
+	font-family: GillSans, Georgia;
+	color: white;
+}
+
+
+#content h2{
+	font-size: 24px;
+	font-family: GillSans, Georgia;
+	color: #333;
+	font-weight: normal;
+	border-bottom: 1px solid #ccc;
+	padding: 0 0 10px 0;
+	width: 100%;
+	
+	line-height: 30px;
+}
+
+.sfnewsContent p {
+
+
+}
+
+div.sfnewsDate {
+	color: #666;
+	font-size: 14px;
+	text-align: right;
+	font-weight: bold;
+}
+
+div.sfnewsContent {
+	line-height: 22px;
+	font-size: 14px;
+	position: relative;
+	float: left;
+	width: 100%;
+}
+
+.sfcommentsFormWrp {
+	width: 100%;
+	position: relative;
+	float: left;
+}
+
+
+div.sfnewsContent p{
+	padding-top: 0px;
+	margin-top: 0px;
+}
+
+.sfcommentsForm {
+	border: 0px;
+		width: 100%;
+	position: relative;
+	float: left;
+}
+
+ol.sfcommentsFieldsList {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+		width: 100%;
+	position: relative;
+	float: left;
+}
+
+li.sfcommentsField {
+	width: 100%;
+	position: relative;
+	float: left;
+}
+
+li.sfcommentsField .sfTxtLbl {
+	margin-bottom: 30px;
+	width: 200px;
+	font-size: 16px;
+	line-height: 30px;
+	position: relative;
+	float: left;
+}
+
+li.sfcommentsField .sfFieldWrp input {
+	padding: 5px 10px;
+	border-radius: 5px;
+	width: 300px;
+	line-height: 30px;
+	font-size: 20px;
+	font-family: GillSans, Georgia;
+	border: 1px solid #ccc;
+}
+
+li.sfcommentsField .sfFieldWrp input:focus {
+	background-color: #333;
+	color: #fff;
+}
+
+.sfcommentsSubmitBtnWrp {
+	position: relative;
+	float: left;
+}
+
