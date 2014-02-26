@@ -1,0 +1,59 @@
+﻿<%@ Master Language="C#" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <title></title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />     
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+
+        <div id="wrapper">
+            
+			<div id="header-holder">
+				
+				<div id="headerinfo">
+					<asp:contentplaceholder id="headerInfo" runat="server" />
+				</div>
+				<div id="header">
+					
+					<div id="headers-rotator">
+						
+						<asp:contentplaceholder id="image" runat="server" />
+						<div class="header-text">
+							<asp:contentplaceholder id="tagline" runat="server" />
+						</div>
+					</div>
+					
+					<div id="open-navigation">
+						Browse the website
+					</div>
+					<asp:contentplaceholder id="header" runat="server" />
+					
+				</div>
+			</div>
+            
+			<div id="content"><asp:contentplaceholder id="content" runat="server" /></div>
+			
+            <div id="footer-navigation"><asp:contentplaceholder id="footernavigation" runat="server" /></div>
+			
+			
+			
+        </div>
+		
+		<script>
+		    $(document).ready(function () {
+		        $("#open-navigation").click(function () {
+		            $(".RadTabStrip_education").slideToggle();
+		        });
+
+		        $('.sfAddToCartWrp .sfMessage.sfTopMsg.sfMsgPositive').live('click', function () {
+		            $(this).fadeOut();
+		        })
+		    })
+		</script>
+   </form>
+</body>
+</html>

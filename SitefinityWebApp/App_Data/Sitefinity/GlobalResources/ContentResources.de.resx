@@ -1,0 +1,980 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Actions" lastModified="2011-12-19T10:27:46">
+    <value>Aktionen</value>
+    <comment>word: Actions</comment>
+  </data>
+  <data name="AdditionalUrlsOnePerLine" lastModified="2011-12-19T10:27:46">
+    <value>Zusätzliche URLs (eine pro Zeile)</value>
+    <comment>Phrase: Additional URLs (one per line)</comment>
+  </data>
+  <data name="AllAditionalUrlsRedirectoToTheDefaultOne" lastModified="2011-12-19T10:27:46">
+    <value>Alle zusätzlichen URLs werden zur Standard-URL umgeleitet:</value>
+    <comment>Phrase: All additional URLs redirect to the default one:</comment>
+  </data>
+  <data name="AllComments" lastModified="2011-12-19T10:27:46">
+    <value>Alle Kommentare</value>
+    <comment>Phrase: All comments</comment>
+  </data>
+  <data name="AllItems" lastModified="2011-12-19T10:27:46">
+    <value>Alle Elemente</value>
+    <comment>Phrase: All content blocks</comment>
+  </data>
+  <data name="AllowComments" lastModified="2011-12-19T10:27:46">
+    <value>Kommentare erlauben</value>
+    <comment>Phrase: Allow comments</comment>
+  </data>
+  <data name="AllowMultipleURLsForThisItem" lastModified="2011-12-19T10:27:46">
+    <value>Mehrere URLs für dieses Element erlauben...</value>
+    <comment>Phrase: Allow multiple URLs for this item...</comment>
+  </data>
+  <data name="AreYouSureYouWantToUnshareThisContent" lastModified="2011-12-19T10:27:46">
+    <value>&lt;p&gt;Dieser Inhalt ist nicht mehr freigegeben. Etwaige Änderungen werden&lt;br/&gt; andere Seiten nicht betreffen.&lt;/p&gt;&lt;p&gt;Sind Sie sicher, dass Sie die Freigabe aufheben wollen?&lt;/p&gt;</value>
+    <comment>phrase:This content will not be shared anymore. The chages you make will not affect other pages. Are you sure you want to Unshare this content?</comment>
+  </data>
+  <data name="Author" lastModified="2011-12-19T10:27:46">
+    <value>Verfasser</value>
+    <comment>word: Author</comment>
+  </data>
+  <data name="AuthorEmail" lastModified="2011-12-19T10:27:46">
+    <value>E-Mail</value>
+    <comment>The author email label</comment>
+  </data>
+  <data name="AuthorName" lastModified="2011-12-19T10:27:46">
+    <value>Name</value>
+    <comment>The author name label</comment>
+  </data>
+  <data name="AuthorWebsite" lastModified="2011-12-19T10:27:46">
+    <value>Webseite</value>
+    <comment>The author website label.</comment>
+  </data>
+  <data name="AZ" lastModified="2011-12-19T10:27:46">
+    <value>(A-Z)</value>
+    <comment>phrase: (A-Z) alphabetical sorting</comment>
+  </data>
+  <data name="BackToAllItems" lastModified="2011-12-19T10:27:46">
+    <value>Zurück zu allen Inhaltselementen</value>
+    <comment>phrase: Back to all content items</comment>
+  </data>
+  <data name="BackToContentBlocks" lastModified="2011-12-19T10:27:46">
+    <value>Zurück zu Generischem Content</value>
+    <comment>phrase: Back to content blocks</comment>
+  </data>
+  <data name="BackToItem" lastModified="2011-12-19T10:27:46">
+    <value>Zurück zum Textblock</value>
+    <comment>The text of the back to the content block</comment>
+  </data>
+  <data name="BackToItems" lastModified="2011-12-19T10:27:46">
+    <value>Zurück zu Generischem Content</value>
+    <comment>The text of the back to Content blocks</comment>
+  </data>
+  <data name="BatchDeleteErrorHeading" lastModified="2011-12-19T10:27:46">
+    <value>{0} Objekt(e) wurde(n) erfolgreich gelöscht. {1} Objekt(e) konnte(n) nicht gelöscht werden (siehe unten).</value>
+    <comment>Batch exception message for deleting</comment>
+  </data>
+  <data name="BatchPublishErrorHeading" lastModified="2011-12-19T10:27:46">
+    <value>{0} Objekt(e) wurde(n) erfolgreich veröffentlicht. {1} Objekt(e) konnte(n) nicht veröffentlicht werden (siehe unten).</value>
+    <comment>Batch exception message for publishing</comment>
+  </data>
+  <data name="BatchUnpublishErrorHeading" lastModified="2011-12-19T10:27:46">
+    <value>Die Veröffentlichung von {0} Objekten wurde erfolgreich aufgehoben. Die Veröffentlichung von {1} Objekten konnte nicht aufgehoben werden (siehe unten).</value>
+    <comment>Batch exception message for unpublishing</comment>
+  </data>
+  <data name="Blocked" lastModified="2011-12-19T10:27:46">
+    <value>Blockiert</value>
+    <comment>The label for marking the ip as blocked.</comment>
+  </data>
+  <data name="BlockEmail" lastModified="2011-12-19T10:27:46">
+    <value>E-Mail blockieren...</value>
+    <comment>Phrase: Block email...</comment>
+  </data>
+  <data name="BlockIp" lastModified="2011-12-19T10:27:46">
+    <value>IP blockieren...</value>
+    <comment>Phrase: BlockIp</comment>
+  </data>
+  <data name="BlockThisEmail" lastModified="2011-12-19T10:27:46">
+    <value>Diese E-Mail blockieren</value>
+    <comment>The link for block the email.</comment>
+  </data>
+  <data name="BlockThisIp" lastModified="2011-12-19T10:27:46">
+    <value>Diese IP blockieren</value>
+    <comment>The link for block the ip.</comment>
+  </data>
+  <data name="ByDateModified" lastModified="2011-12-19T10:27:46">
+    <value>nach Änderungsdatum</value>
+    <comment>The text of the date filter sidebar button.</comment>
+  </data>
+  <data name="ByFirstNameAZ" lastModified="2011-12-19T10:27:46">
+    <value>Nach Vornamen (A-Z)</value>
+    <comment>Label text.</comment>
+  </data>
+  <data name="ByLastNameAZ" lastModified="2011-12-19T10:27:46">
+    <value>Nach Nachnamen (A-Z)</value>
+    <comment>Label text.</comment>
+  </data>
+  <data name="ByStartDateNewestOnTop" lastModified="2011-12-19T10:27:46">
+    <value>Nach Startdatum (neuestes oben)</value>
+    <comment>ByStartDateNewestOnTop</comment>
+  </data>
+  <data name="ByStartDateOldestOnTop" lastModified="2011-12-19T10:27:46">
+    <value>Nach Startdatum (ältestes oben)</value>
+    <comment>ByStartDateOldestOnTop</comment>
+  </data>
+  <data name="ByTitleAsc" lastModified="2011-12-19T10:27:46">
+    <value>Nach Titel (A-Z)</value>
+    <comment>Label text.</comment>
+  </data>
+  <data name="ByTitleDesc" lastModified="2011-12-19T10:27:46">
+    <value>Nach Titel (A-Z)</value>
+    <comment>Label text.</comment>
+  </data>
+  <data name="Cancel" lastModified="2011-12-19T10:27:46">
+    <value>Abbrechen</value>
+    <comment>Label for the buttons that cancel the editing/inserting operation.</comment>
+  </data>
+  <data name="Categories" lastModified="2011-12-19T10:27:46">
+    <value>Kategorien</value>
+    <comment>word: Categories</comment>
+  </data>
+  <data name="CategoriesAndTags" lastModified="2011-12-19T10:27:46">
+    <value>Kategorien und Tags</value>
+    <comment>phrase</comment>
+  </data>
+  <data name="Category" lastModified="2011-12-19T10:27:46">
+    <value>Kategorie</value>
+    <comment>word</comment>
+  </data>
+  <data name="CloseDateFilter" lastModified="2011-12-19T10:27:46">
+    <value>Datumsfilter schließen</value>
+    <comment>The link for closing the date filter widget in the sidebar.</comment>
+  </data>
+  <data name="CommenstContentColumnHeaderText" lastModified="2011-12-19T10:27:46">
+    <value>Status / Datum / Kommentar</value>
+    <comment>Status / Date / Comment</comment>
+  </data>
+  <data name="Comment" lastModified="2011-12-19T10:27:46">
+    <value>Kommentar</value>
+    <comment>The 'Comment' label in the create comment form.</comment>
+  </data>
+  <data name="CommentCannotBeEmpty" lastModified="2011-12-19T10:27:46">
+    <value>Kommentar darf nicht leer sein</value>
+    <comment>Comment cannot be empty</comment>
+  </data>
+  <data name="CommentedItemLinkClientTemplateText" lastModified="2011-12-19T10:27:46">
+    <value>Link zu kommentiertem Element</value>
+    <comment>Link to commented item</comment>
+  </data>
+  <data name="CommentedItemLinkHeaderText" lastModified="2011-12-19T10:27:46">
+    <value>Beitrag</value>
+    <comment>Post</comment>
+  </data>
+  <data name="CommentMessageModeration" lastModified="2011-12-19T10:27:46">
+    <value>Vielen Dank für Ihren Kommentar! Ihr Kommentar muss zuerst freigegeben werden.</value>
+    <comment>Phrase: Thank you for the comment! Your comment must be approved first</comment>
+  </data>
+  <data name="Comments" lastModified="2011-12-19T10:27:46">
+    <value>Kommentare</value>
+    <comment>Name of the comments view of generic content-based modules.</comment>
+  </data>
+  <data name="CommentsAuthorInfoColumnHeaderText" lastModified="2011-12-19T10:27:46">
+    <value>Name / E-Mail / Webseite / IP</value>
+    <comment>Phrase: Name / Email / Website / IP</comment>
+  </data>
+  <data name="CommentsDescription" lastModified="2011-12-19T10:27:46">
+    <value>Kommentare verwalten</value>
+    <comment>Provides description for the comments view of generic content-based modules.</comment>
+  </data>
+  <data name="CommentsForContentItems" lastModified="2011-12-19T10:27:46">
+    <value>Kommentare für Inhaltselemente</value>
+    <comment>phrase: Comments for content items</comment>
+  </data>
+  <data name="CommentsTitle" lastModified="2011-12-19T10:27:46">
+    <value>Kommentare</value>
+    <comment>Title of the comments view of generic content-based modules.</comment>
+  </data>
+  <data name="CommentsUrlName" lastModified="2011-12-19T10:27:46">
+    <value>Kommentare</value>
+    <comment>Comments URL</comment>
+  </data>
+  <data name="Content" lastModified="2011-12-19T10:27:46">
+    <value>Content</value>
+    <comment>word: Content</comment>
+  </data>
+  <data name="ContentBlocksPerPages" lastModified="2011-12-19T10:27:46">
+    <value>Textblöcke pro Seite</value>
+    <comment>Title for the filtering section of content blocks per pages</comment>
+  </data>
+  <data name="ContentBlocksShared" lastModified="2011-12-19T10:27:46">
+    <value>Über mehrere Seiten freigegebene Textblöcke</value>
+    <comment>Phrase: Content blocks shared across pages</comment>
+  </data>
+  <data name="ContentBlocksUsedInPagesColumnHeaderText" lastModified="2011-12-19T10:27:46">
+    <value>AUF SEITEN VERWENDET</value>
+    <comment>Title of the column showing whether a content block is used on any page or not (shown in content blocks grid)</comment>
+  </data>
+  <data name="ContentCannotBeEmpty" lastModified="2011-12-19T10:27:46">
+    <value>Content darf nicht leer sein</value>
+    <comment>Content cannot be empty</comment>
+  </data>
+  <data name="ContentItemsByCategory" lastModified="2011-12-19T10:27:46">
+    <value>Inhaltselemente nach Kategorie</value>
+    <comment>Phrase: Content items by category</comment>
+  </data>
+  <data name="ContentItemsByTag" lastModified="2011-12-19T10:27:46">
+    <value>Inhaltselemente nach Tag</value>
+    <comment>Phrase: Content items by tag</comment>
+  </data>
+  <data name="ContentItemsPluralTypeName" lastModified="2011-12-19T10:27:46">
+    <value>Inhaltselement</value>
+    <comment>Content item type name</comment>
+  </data>
+  <data name="ContentItemsSingleTypeName" lastModified="2011-12-19T10:27:46">
+    <value>Inhaltselement</value>
+    <comment>Content item type name</comment>
+  </data>
+  <data name="ContentPluralItemName" lastModified="2011-12-19T10:27:46">
+    <value>Inhaltselement</value>
+    <comment>Phrase: content items</comment>
+  </data>
+  <data name="ContentResourcesDescription" lastModified="2011-12-19T10:27:46">
+    <value>Enthält die lokalisierbaren Ressourcen für die Benutzerschnittstelle 'Generischer Inhalt'</value>
+    <comment>The description of this class.</comment>
+  </data>
+  <data name="ContentResourcesTitle" lastModified="2011-12-19T10:27:46">
+    <value>Generischer Inhalt</value>
+    <comment>The title of this class.</comment>
+  </data>
+  <data name="ContentResourcesTitlePlural" lastModified="2011-12-19T10:27:46">
+    <value>Generischer Inhalt</value>
+    <comment>The title plural of this class.</comment>
+  </data>
+  <data name="ContentSingularItemName" lastModified="2011-12-19T10:27:46">
+    <value>Inhaltselement</value>
+    <comment>Phrase: content item</comment>
+  </data>
+  <data name="CreateContent" lastModified="2011-12-19T10:27:46">
+    <value>Inhalt einfügen</value>
+    <comment>Label: Create content</comment>
+  </data>
+  <data name="CreateNewItem" lastModified="2011-12-19T10:27:46">
+    <value>Inhaltselement erstellen</value>
+    <comment>Phrase: Create a content block</comment>
+  </data>
+  <data name="CreateNewTemplate" lastModified="2011-12-19T10:27:46">
+    <value>Neue Vorlage erstellen</value>
+    <comment>Phrase: Create new template</comment>
+  </data>
+  <data name="CreateThisItem" lastModified="2011-12-19T10:27:46">
+    <value>Dieses Inhaltselement erstellen</value>
+    <comment>phrase: Create this content block</comment>
+  </data>
+  <data name="CustomFields" lastModified="2011-12-19T10:27:46">
+    <value>Benutzerdefinierte Felder für generischen Content</value>
+    <comment>phrase: Custom Fields for generic content</comment>
+  </data>
+  <data name="Date" lastModified="2011-12-19T10:27:46">
+    <value>Datum</value>
+    <comment>word: Date</comment>
+  </data>
+  <data name="DateOwner" lastModified="2011-12-19T10:27:46">
+    <value>Datum / Besitzer</value>
+    <comment>Phrase: Date / Owner</comment>
+  </data>
+  <data name="DefaultPage" lastModified="2011-12-19T10:27:46">
+    <value>Standardseite</value>
+    <comment>Phrase: Default page</comment>
+  </data>
+  <data name="Delete" lastModified="2011-12-19T10:27:46">
+    <value>Löschen</value>
+    <comment>word: Delete</comment>
+  </data>
+  <data name="DeleteMultipleConfirmationMessage" lastModified="2011-12-19T10:27:46">
+    <value>Löschen dieser Textblöcke &lt;b&gt;entfernt ihn aus allen Seiten&lt;/b&gt;, auf denen sie verwendet werden. Sind Sie sicher, dass Sie diese Textblöcke löschen wollen?</value>
+    <comment>Confirmation message: Deleting these content blocks will remove them from all pages where they are used. Are you sure you want to delete these content blocks?</comment>
+  </data>
+  <data name="DeleteSingleConfirmationMessage" lastModified="2011-12-19T10:27:46">
+    <value>Löschen dieses Texts &lt;b&gt;entfernt ihn aus allen Seiten&lt;/b&gt;, auf denen er verwendet wird. Sind Sie sicher, dass Sie diesen Textblock löschen wollen?</value>
+    <comment>Confirmation message: Deleting this content block will remove it from all pages where it is used. Are you sure you want to delete this content block?</comment>
+  </data>
+  <data name="DeleteThisItem" lastModified="2011-12-19T10:27:46">
+    <value>Löschen</value>
+    <comment>Used in the actions menu in the Backend Detail View form</comment>
+  </data>
+  <data name="Department" lastModified="2011-12-19T10:27:46">
+    <value>Abteilung</value>
+    <comment>word</comment>
+  </data>
+  <data name="DisplayLastUpdatedItems" lastModified="2011-12-19T10:27:46">
+    <value>Einträge anzeigen, die aktualisiert wurden am...</value>
+    <comment>The text of last updated items sidebar button</comment>
+  </data>
+  <data name="DivideListPagesUpTo" lastModified="2011-12-19T10:27:46">
+    <value>Liste auf Seiten trennen bis zu</value>
+    <comment>Phrase: Divide the list on pages up to</comment>
+  </data>
+  <data name="Duplicate" lastModified="2011-12-19T10:27:46">
+    <value>Duplizieren</value>
+    <comment>word: Duplicate</comment>
+  </data>
+  <data name="DuplicateNameException" lastModified="2011-12-19T10:27:46">
+    <value>Ein Objekt mit dem Namen '{0}' existiert bereits. Bitte ändern Sie den Namen oder löschen Sie das bereits existierende Objekt.</value>
+    <comment>Error message.</comment>
+  </data>
+  <data name="DuplicateUrlException" lastModified="2011-12-19T10:27:46">
+    <value>Ein Element mit der URL '{0}' ist bereits vorhanden.</value>
+    <comment>Error message.</comment>
+  </data>
+  <data name="Edit" lastModified="2011-12-19T10:27:46">
+    <value>&lt;strong&gt;Bearbeiten...&lt;/strong&gt;</value>
+    <comment>word</comment>
+  </data>
+  <data name="EditAlso" lastModified="2011-12-19T10:27:46">
+    <value>Auch bearbeiten...</value>
+    <comment>Phrase: Edit also...</comment>
+  </data>
+  <data name="EditComment" lastModified="2011-12-19T10:27:46">
+    <value>Einen Kommentar bearbeiten</value>
+    <comment>The title of the edit comment dialog.</comment>
+  </data>
+  <data name="EditGenericContentListSettings" lastModified="2011-12-19T10:27:46">
+    <value>Einstellungen für Liste generischen Contents bearbeiten</value>
+    <comment>Phrase: Edit Generic content list settings</comment>
+  </data>
+  <data name="EditItem" lastModified="2011-12-19T10:27:46">
+    <value>Inhaltselement bearbeiten</value>
+    <comment>The title of the edit item dialog</comment>
+  </data>
+  <data name="EditSelectedTemplateDots" lastModified="2011-12-19T10:27:46">
+    <value>Ausgewählte Vorlage bearbeiten...</value>
+    <comment>Word: Edit selected template...</comment>
+  </data>
+  <data name="EditTemplate" lastModified="2011-12-19T10:27:46">
+    <value>Bearbeiten</value>
+    <comment>Word: Edit</comment>
+  </data>
+  <data name="EditTemplateDots" lastModified="2011-12-19T10:27:46">
+    <value>Vorlage bearbeiten...</value>
+    <comment>Word: Edit</comment>
+  </data>
+  <data name="EditThisContent" lastModified="2011-12-19T10:27:46">
+    <value>Diesen Inhalt bearbeiten</value>
+    <comment>phrase:Edit this content</comment>
+  </data>
+  <data name="Email" lastModified="2011-12-19T10:27:46">
+    <value>E-Mail</value>
+    <comment>The 'Email' label in the create comment form.</comment>
+  </data>
+  <data name="EmailCannotBeEmpty" lastModified="2011-12-19T10:27:46">
+    <value>E-Mail darf nicht leer sein</value>
+    <comment>Email cannot be empty</comment>
+  </data>
+  <data name="EmailOptional" lastModified="2011-12-19T10:27:46">
+    <value>E-Mail &lt;em class='sfNote'&gt;(optional)&lt;/em&gt;</value>
+    <comment>The 'Email' label in the create comment form.</comment>
+  </data>
+  <data name="ExpirationDate" lastModified="2011-12-19T10:27:46">
+    <value>Ablaufdatum</value>
+    <comment>phrase: Expiration Date</comment>
+  </data>
+  <data name="ExpiresOn" lastModified="2011-12-19T10:27:46">
+    <value>Läuft ab am:</value>
+    <comment>Phrase: Expires on:</comment>
+  </data>
+  <data name="Fields" lastModified="2011-12-19T10:27:46">
+    <value>Felder</value>
+    <comment>Name of the fields view of generic content-based modules.</comment>
+  </data>
+  <data name="FieldsDescription" lastModified="2011-12-19T10:27:46">
+    <value>Benutzerdefinierte Felder verwalten</value>
+    <comment>Provides description for the fields view of generic content-based modules.</comment>
+  </data>
+  <data name="FieldsTitle" lastModified="2011-12-19T10:27:46">
+    <value>Benutzerdefinierte Felder</value>
+    <comment>Title of the fields view of generic content-based modules.</comment>
+  </data>
+  <data name="FilterAndEdit" lastModified="2011-12-19T10:27:46">
+    <value>Filtern und bearbeiten...</value>
+    <comment>phrase: Filter and edit...</comment>
+  </data>
+  <data name="FilterContentItems" lastModified="2011-12-19T10:27:46">
+    <value>Inhaltselemente filtern</value>
+    <comment>phrase: Filter shared content</comment>
+  </data>
+  <data name="GenericContentDataFields" lastModified="2011-12-19T10:27:46">
+    <value>Datenfelder für allgemeinen Inhalt</value>
+    <comment>phrase: Generic Content data fields</comment>
+  </data>
+  <data name="GenericContentToolboxSectionDescription" lastModified="2011-12-19T10:27:46">
+    <value>Titel des Werzeugboxabschnitts für generischen Content</value>
+    <comment>Describes the title of the generic content toolbox section.</comment>
+  </data>
+  <data name="GenericContentViewDescription" lastModified="2011-12-19T10:27:46">
+    <value>Bezeichnung des Controls für die GenericContentView in der Werkzeugbox</value>
+    <comment>Describes the generic content view title in the toolbox.</comment>
+  </data>
+  <data name="GenericContentViewTitle" lastModified="2011-12-19T10:27:46">
+    <value>Liste generischen Contents</value>
+    <comment>Name of the GenericContentView control in the toolbox</comment>
+  </data>
+  <data name="GeneriContentToolboxSectionTitle" lastModified="2011-12-19T10:27:46">
+    <value>Generischer Inhalt</value>
+    <comment>Title of the generic content toolbox section</comment>
+  </data>
+  <data name="Hidden" lastModified="2011-12-19T10:27:46">
+    <value>Verborgen</value>
+    <comment>Word: Hidden</comment>
+  </data>
+  <data name="Hide" lastModified="2011-12-19T10:27:46">
+    <value>Verbergen</value>
+    <comment>word: Hide</comment>
+  </data>
+  <data name="HideAndMarkAsSpam" lastModified="2011-12-19T10:27:46">
+    <value>Verbergen und als Spam markieren</value>
+    <comment>Phrase: HideAndMarkAsSpam</comment>
+  </data>
+  <data name="History" lastModified="2011-12-19T10:27:46">
+    <value>Verlauf</value>
+    <comment>word: History</comment>
+  </data>
+  <data name="InvalidGenericType" lastModified="2011-12-19T10:27:46">
+    <value>Generischer Typ ist ungültig.</value>
+    <comment>Error message.</comment>
+  </data>
+  <data name="InvalidObjectType" lastModified="2011-12-19T10:27:46">
+    <value>Objekttyp ist ungültig.</value>
+    <comment>Error message.</comment>
+  </data>
+  <data name="IpAddress" lastModified="2011-12-19T10:27:46">
+    <value>IP</value>
+    <comment>The ip label.</comment>
+  </data>
+  <data name="ItemPermissions" lastModified="2011-12-19T10:27:46">
+    <value>Berechtigungen für dieses Element</value>
+    <comment>Phrase: Permissions for this item</comment>
+  </data>
+  <data name="ItemProperties" lastModified="2011-12-19T10:27:46">
+    <value>Eigenschaften für dieses Element</value>
+    <comment>Phrase: Properties for this item</comment>
+  </data>
+  <data name="ItemsInTotalLowercase" lastModified="2011-12-19T10:27:46">
+    <value>Einträge insgesamt</value>
+    <comment>Phrase: items in total</comment>
+  </data>
+  <data name="ItemsPerPageLowercase" lastModified="2011-12-19T10:27:46">
+    <value>Elemente pro Seite</value>
+    <comment>Phrase: items per page</comment>
+  </data>
+  <data name="Language" lastModified="2011-12-19T10:27:46">
+    <value>Sprache</value>
+    <comment>word: Language</comment>
+  </data>
+  <data name="LastModifiedOnTop" lastModified="2011-12-19T10:27:46">
+    <value>Zuletzt geänderte oben</value>
+    <comment>LastModifiedOnTop</comment>
+  </data>
+  <data name="LastPublishedOnTop" lastModified="2011-12-19T10:27:46">
+    <value>Neueste Veröffentlichung oben</value>
+    <comment>LastPublishedOnTop</comment>
+  </data>
+  <data name="Less" lastModified="2011-12-19T10:27:46">
+    <value>Weniger</value>
+    <comment>word: Less</comment>
+  </data>
+  <data name="LockedByFormat" lastModified="2011-12-19T10:27:46">
+    <value>Gesperrt durch {0}</value>
+    <comment>phrase: Locked by {0}</comment>
+  </data>
+  <data name="ManageAlso" lastModified="2011-12-19T10:27:46">
+    <value>Zusätzlich verwalten</value>
+    <comment>phrase: Manage also</comment>
+  </data>
+  <data name="ManageContentBlocks" lastModified="2011-12-19T10:27:46">
+    <value>Textblöcke verwalten</value>
+    <comment>Phrase: Manage Content Blocks</comment>
+  </data>
+  <data name="ManyPagesSuccessfullyUpdated" lastModified="2011-12-19T10:27:46">
+    <value>&lt;p&gt;&lt;strong&gt;{0} Seiten wurden erfolgreich aktualisiert&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Die Seiten unten &lt;strong&gt;konnten nicht mit dem neuesten Inhalt aktualisiert werden&lt;/strong&gt;, da sie zuerst genehmigt werden müssen&lt;/p&gt;</value>
+    <comment>label</comment>
+  </data>
+  <data name="ManyPagesSuccessfullyUpdatedWithFailedPages" lastModified="2011-12-19T10:27:46">
+    <value>&lt;p&gt;&lt;strong&gt;{0} Seiten wurden erfolgreich aktualisiert&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Die Seiten unten &lt;strong&gt;konnten nicht mit dem neuesten Inhalt aktualisiert werden&lt;/strong&gt;, da sie zuerst genehmigt werden müssen&lt;/p&gt;</value>
+    <comment>label</comment>
+  </data>
+  <data name="ManyPagesUseContent" lastModified="2011-12-19T10:27:46">
+    <value>&lt;h1&gt;{0} Seiten verwenden diesen Inhalt&lt;/h1&gt;&lt;p class='sfNote'&gt;Änderungen an diesem Inhalt werden an alle Seiten weitergegeben, an die er freigegeben ist&lt;/p&gt;</value>
+    <comment>label</comment>
+  </data>
+  <data name="ManyPagesUseContentImportant" lastModified="2011-12-19T10:27:46">
+    <value>&lt;h1&gt;{0} Seiten verwenden diesen Inhalt&lt;/h1&gt;&lt;p class='sfNote'&gt;&lt;strong&gt;Hinweis:&lt;/strong&gt; Gelb markierte Seiten werden nicht mit der neuesten Version dieses Materials aktualisiert, da sie eine Bestätigung erfordern.&lt;/p&gt;</value>
+    <comment>label</comment>
+  </data>
+  <data name="MarkAsFavorite" lastModified="2011-12-19T10:27:46">
+    <value>Als Favoriten markieren</value>
+    <comment>Phrase: Mark as favorite</comment>
+  </data>
+  <data name="MarkAsSpam" lastModified="2011-12-19T10:27:46">
+    <value>Als Spam markieren</value>
+    <comment>Phrase: Mark as spam</comment>
+  </data>
+  <data name="ModuleTitle" lastModified="2011-12-19T10:27:46">
+    <value>Generischer Inhalt</value>
+    <comment>The title of the Content Blocks module.</comment>
+  </data>
+  <data name="More" lastModified="2011-12-19T10:27:46">
+    <value>Mehr</value>
+    <comment>word: More</comment>
+  </data>
+  <data name="MoreActions" lastModified="2011-12-19T10:27:46">
+    <value>Weitere Aktionen für Inhaltselemente</value>
+    <comment>phrase: More actions with content items</comment>
+  </data>
+  <data name="MoreOptions" lastModified="2011-12-19T10:27:46">
+    <value>Weitere Optionen</value>
+    <comment>phrase</comment>
+  </data>
+  <data name="MoreOptionsURL" lastModified="2011-12-19T10:27:46">
+    <value>Weitere Optionen &lt;em class='sfNote'&gt;(URL, Kommentare)&lt;/em&gt;</value>
+    <comment>phrase: More options &lt;em class='sfNote'&gt;(URL, Comments)&lt;/em&gt;</comment>
+  </data>
+  <data name="MyItems" lastModified="2011-12-19T10:27:46">
+    <value>Meine Elemente</value>
+    <comment>The text of 'My content blocks' sidebar button</comment>
+  </data>
+  <data name="Name" lastModified="2011-12-19T10:27:46">
+    <value>Name</value>
+    <comment>Phrase: Name</comment>
+  </data>
+  <data name="NameCannotBeEmpty" lastModified="2011-12-19T10:27:46">
+    <value>Name darf nicht leer sein</value>
+    <comment>Name cannot be empty</comment>
+  </data>
+  <data name="NewestFirst" lastModified="2011-12-19T10:27:46">
+    <value>Neueste zuerst</value>
+    <comment>Label text.</comment>
+  </data>
+  <data name="NewModifiedFirst" lastModified="2011-12-19T10:27:46">
+    <value>Zuletzt geänderte zuerst</value>
+    <comment>Label text.</comment>
+  </data>
+  <data name="NewRegisteredOnBottom" lastModified="2011-12-19T10:27:46">
+    <value>Neu registrierte unten</value>
+    <comment>Label text.</comment>
+  </data>
+  <data name="NewRegisteredOnTop" lastModified="2011-12-19T10:27:46">
+    <value>Neu registrierte oben</value>
+    <comment>Label text.</comment>
+  </data>
+  <data name="NoContentItems" lastModified="2011-12-19T10:27:46">
+    <value>Es wurden noch keine Inhaltselemente erstellt.</value>
+    <comment>phrase: No content blocks have been created yet</comment>
+  </data>
+  <data name="NoLimitAndPaging" lastModified="2011-12-19T10:27:46">
+    <value>Keine Begrenzung und Paging</value>
+    <comment>Phrase: No limit and paging</comment>
+  </data>
+  <data name="NotUsedItems" lastModified="2011-12-19T10:27:46">
+    <value>Textblöcke, die &lt;strong&gt; nicht &lt;/strong&gt; auf einer Seite &lt;strong&gt;verwendet werden&lt;/strong&gt;</value>
+    <comment>The text of 'Content blocks not used on any page' sidebar button.</comment>
+  </data>
+  <data name="OldestFirst" lastModified="2011-12-19T10:27:46">
+    <value>Älteste zuerst</value>
+    <comment>Label text.</comment>
+  </data>
+  <data name="OnePageSuccessfullyUpdated" lastModified="2011-12-19T10:27:46">
+    <value>&lt;p&gt;&lt;strong&gt;{0} Seite wurde erfolgreich aktualisiert&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Die Seiten unten &lt;strong&gt;konnten nicht mit dem neuesten Inhalt aktualisiert werden&lt;/strong&gt;, da sie zuerst genehmigt werden müssen&lt;/p&gt;</value>
+    <comment>label</comment>
+  </data>
+  <data name="OnePageSuccessfullyUpdatedWithFailedPages" lastModified="2011-12-19T10:27:46">
+    <value>&lt;p&gt;&lt;strong&gt;{0} Seite wurde erfolgreich aktualisiert&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Die Seiten unten &lt;strong&gt;konnten nicht mit dem neuesten Inhalt aktualisiert werden&lt;/strong&gt;, da sie zuerst genehmigt werden müssen&lt;/p&gt;</value>
+    <comment>label</comment>
+  </data>
+  <data name="OnePageUsesContent" lastModified="2011-12-19T10:27:46">
+    <value>&lt;h1&gt;{0} Seite verwendet diesen Inhalt&lt;/h1&gt;&lt;p class='sfNote'&gt;Änderungen an diesem Inhalt werden an alle Seiten weitergegeben, an die er freigegeben ist&lt;/p&gt;</value>
+    <comment>label</comment>
+  </data>
+  <data name="OnePageUsesContentImportant" lastModified="2011-12-19T10:27:46">
+    <value>&lt;h1&gt;{0} Seite verwendet diesen Inhalt&lt;/h1&gt;&lt;p class='sfNote'&gt;&lt;strong&gt;Hinweis:&lt;/strong&gt; Gelb markierte Seiten werden nicht mit der neuesten Version dieses Materials aktualisiert, da sie eine Bestätigung erfordern.&lt;/p&gt;</value>
+    <comment>label</comment>
+  </data>
+  <data name="Optional" lastModified="2011-12-19T10:27:46">
+    <value>optional</value>
+    <comment>Word: optional</comment>
+  </data>
+  <data name="Owner" lastModified="2011-12-19T10:27:46">
+    <value>Besitzer</value>
+    <comment>word: Owner</comment>
+  </data>
+  <data name="PageGroupNodeDescription" lastModified="2011-12-19T10:27:46">
+    <value>Generischer-Inhalt-Seitengruppe</value>
+    <comment>Description of the content blocks module's page group.</comment>
+  </data>
+  <data name="PageGroupNodeTitle" lastModified="2011-12-19T10:27:46">
+    <value>Generischer Inhalt</value>
+    <comment>Content blocks page title.</comment>
+  </data>
+  <data name="PageNotValid" lastModified="2011-12-19T10:27:46">
+    <value>Der eingegebene Code ist ungültig</value>
+    <comment>Phrase: Page not valid. The code you entered is not valid.</comment>
+  </data>
+  <data name="PagingInProcessOfImplementation" lastModified="2011-12-19T10:27:46">
+    <value>Paging benutzen&lt;span class='sfNote'&gt;(Implementierung steht aus)&lt;/span&gt;</value>
+    <comment>Phrase: Use paging</comment>
+  </data>
+  <data name="Permissions" lastModified="2011-12-19T10:27:46">
+    <value>Berechtigungen</value>
+    <comment>word: Permissions</comment>
+  </data>
+  <data name="PermissionsForContentBlocks" lastModified="2011-12-19T10:27:46">
+    <value>Berechtigungen</value>
+    <comment>phrase: Permissions for content blocks</comment>
+  </data>
+  <data name="PostedOn" lastModified="2011-12-19T10:27:46">
+    <value>Abgegeben am</value>
+    <comment>Phrase: Posted on</comment>
+  </data>
+  <data name="PostingCommentsIsNotAllowed" lastModified="2011-12-19T10:27:46">
+    <value>Sie dürfen keine Kommentare abgeben.</value>
+    <comment>Phrase: You are not allowed to post comments.</comment>
+  </data>
+  <data name="PostingCommentsRequiresLogin" lastModified="2011-12-19T10:27:46">
+    <value>Um einen Kommentar zu hinterlassen, müssen Sie sich einloggen.</value>
+    <comment>Phrase: To post comments, you need to login.</comment>
+  </data>
+  <data name="PublicationDate" lastModified="2011-12-19T10:27:46">
+    <value>Datum der Veröffentlichung</value>
+    <comment>phrase: Publication Date</comment>
+  </data>
+  <data name="PublicationDateCannotBeEmpty" lastModified="2011-12-19T10:27:46">
+    <value>Datum der Veröffentlichung darf nicht leer sein.</value>
+    <comment>PublicationDate cannot be empty.</comment>
+  </data>
+  <data name="Publish" lastModified="2011-12-19T10:27:46">
+    <value>Veröffentlichen</value>
+    <comment>word: Publish</comment>
+  </data>
+  <data name="Published" lastModified="2011-12-19T10:27:46">
+    <value>Veröffentlicht</value>
+    <comment>Word: Published</comment>
+  </data>
+  <data name="PublishOn" lastModified="2011-12-19T10:27:46">
+    <value>Veröffentlichen am:</value>
+    <comment>Phrase: Publish on:</comment>
+  </data>
+  <data name="Reply" lastModified="2011-12-19T10:27:46">
+    <value>Antworten</value>
+    <comment>Word: Reply</comment>
+  </data>
+  <data name="ReviewHistory" lastModified="2011-12-19T10:27:46">
+    <value>Änderungsprotokoll</value>
+    <comment>Used in the actions menu in the Backend Detail View form</comment>
+  </data>
+  <data name="SaveChanges" lastModified="2011-12-19T10:27:46">
+    <value>Änderungen speichern</value>
+    <comment>phrase: Save changes</comment>
+  </data>
+  <data name="Search" lastModified="2011-12-19T10:27:46">
+    <value>Inhaltselemente durchsuchen...</value>
+    <comment>phrase: Search content items...</comment>
+  </data>
+  <data name="SelectFromExistingSharedContent" lastModified="2011-12-19T10:27:46">
+    <value>Wählen Sie aus bestehendem freigegebenen Material aus</value>
+    <comment>phrase: Select from existing shared content</comment>
+  </data>
+  <data name="SelectSharedContentYouWantToUse" lastModified="2011-12-19T10:27:46">
+    <value>Wählen Sie das freigegebene Material aus, das Sie benutzen wollen &lt;span class='sfNote'&gt;Änderungen am Inhalt betreffen alle Seiten mit diesem Material&lt;/span&gt;</value>
+    <comment>phrase: Select shared content you want to use Changes in the content will affect all pages where the content is used</comment>
+  </data>
+  <data name="SetPermissions" lastModified="2011-12-19T10:27:46">
+    <value>Berechtigungen festlegen</value>
+    <comment>Used in the actions menu in the Backend Detail View form</comment>
+  </data>
+  <data name="Settings" lastModified="2011-12-19T10:27:46">
+    <value>Einstellungen</value>
+    <comment>word: Settings</comment>
+  </data>
+  <data name="SettingsForContentBlocks" lastModified="2011-12-19T10:27:46">
+    <value>Einstellungen für Textblöcke</value>
+    <comment>phrase: Settings for content blocks</comment>
+  </data>
+  <data name="Shared" lastModified="2011-12-19T10:27:46">
+    <value>&lt;span class='sfShared'&gt;Freigegeben&lt;/span&gt;</value>
+    <comment>word: Shared</comment>
+  </data>
+  <data name="SharedContent" lastModified="2011-12-19T10:27:46">
+    <value>Freigegebener Inhalt</value>
+    <comment>phrase:Shared content</comment>
+  </data>
+  <data name="ShareThisContent" lastModified="2011-12-19T10:27:46">
+    <value>Dieses Material freigeben</value>
+    <comment>phrase: Share this content</comment>
+  </data>
+  <data name="ShareThisContentAcrossPages" lastModified="2011-12-19T10:27:46">
+    <value>Diesen Inhalt für Seiten freigeben</value>
+    <comment>phrase: Share this content across pages</comment>
+  </data>
+  <data name="ShowAllPublisedItemsAtOnce" lastModified="2011-12-19T10:27:46">
+    <value>Alle veröffentlichten Einträge auf einmal anzeigen</value>
+    <comment>Phrase: Show all published items at once</comment>
+  </data>
+  <data name="ShowOnlyLimitedNumberOfItems" lastModified="2011-12-19T10:27:46">
+    <value>Nur begrenzte Anzahl von Einträgen anzeigen:</value>
+    <comment>Phrase: Show only limited number of items:</comment>
+  </data>
+  <data name="Spam" lastModified="2011-12-19T10:27:46">
+    <value>Spam</value>
+    <comment>Word: Spam</comment>
+  </data>
+  <data name="Status" lastModified="2011-12-19T10:27:46">
+    <value>Status</value>
+    <comment>Word: Status</comment>
+  </data>
+  <data name="Submit" lastModified="2011-12-19T10:27:46">
+    <value>Abschicken</value>
+    <comment>The text of the submit button in the create comment form.</comment>
+  </data>
+  <data name="Tag" lastModified="2011-12-19T10:27:46">
+    <value>Tag</value>
+    <comment>word</comment>
+  </data>
+  <data name="Tags" lastModified="2011-12-19T10:27:46">
+    <value>Tags</value>
+    <comment>word: Tags</comment>
+  </data>
+  <data name="ThereIsNewerVersionOfThisContent" lastModified="2011-12-19T10:27:46">
+    <value>Es gibt eine neuere Version dieses Inhalts</value>
+    <comment>phrase: There is a newer version of this content</comment>
+  </data>
+  <data name="ThisContentHasNewerVersion" lastModified="2011-12-19T10:27:46">
+    <value>&lt;span class='sfOutDatedContent'&gt;Veraltet&lt;/span&gt;</value>
+    <comment>phrase: Outdated content</comment>
+  </data>
+  <data name="ThisContentIsShared" lastModified="2011-12-19T10:27:46">
+    <value>&lt;strong&gt;Dieser Inhalt ist freigegeben.&lt;/strong&gt;&lt;br /&gt; Änderungen betreffen alle Seiten, wo dieser Inhalt verwendet wird.</value>
+    <comment>phrase:This content is shared. Any changes will affect all pages where the content is used.</comment>
+  </data>
+  <data name="ThisContentIsSharedAccross" lastModified="2011-12-19T10:27:46">
+    <value>Dieser Inhalt ist &lt;strong&gt;freigegeben&lt;/strong&gt; über</value>
+    <comment>phrase: This content is shared across</comment>
+  </data>
+  <data name="Title" lastModified="2011-12-19T10:27:46">
+    <value>Titel</value>
+    <comment>word: Title</comment>
+  </data>
+  <data name="TitleCannotBeEmpty" lastModified="2011-12-19T10:27:46">
+    <value>Titel darf nicht leer sein</value>
+    <comment>Title cannot be empty</comment>
+  </data>
+  <data name="TodayComments" lastModified="2011-12-19T10:27:46">
+    <value>Heute</value>
+    <comment>Word: Today</comment>
+  </data>
+  <data name="Unblock" lastModified="2011-12-19T10:27:46">
+    <value>Blockierung aufheben</value>
+    <comment>The link for unblocking the ip or email.</comment>
+  </data>
+  <data name="Unpublish" lastModified="2011-12-19T10:27:46">
+    <value>Veröffentlichung aufheben</value>
+    <comment>word: Unpublish</comment>
+  </data>
+  <data name="Unshare" lastModified="2011-12-19T10:27:46">
+    <value>Freigabe aufheben</value>
+    <comment>word:Unshare</comment>
+  </data>
+  <data name="UnshareThisContent" lastModified="2011-12-19T10:27:46">
+    <value>Ja, Freigabe für diesen Inhalt aufheben</value>
+    <comment>phrase: Yes, Unshare this content</comment>
+  </data>
+  <data name="UrlName" lastModified="2011-12-19T10:27:46">
+    <value>URL</value>
+    <comment>URL</comment>
+  </data>
+  <data name="UrlNameCannotBeEmpty" lastModified="2011-12-19T10:27:46">
+    <value>URL darf nicht leer sein</value>
+    <comment>URL cannot be empty</comment>
+  </data>
+  <data name="UrlNameInvalidSymbols" lastModified="2011-12-19T10:27:46">
+    <value>URL enthält unzulässige Zeichen.</value>
+    <comment>The message shown when the url contains invalid symbols.</comment>
+  </data>
+  <data name="UsedOn" lastModified="2011-12-19T10:27:46">
+    <value>Verwendet am</value>
+    <comment>Phrase: Used on</comment>
+  </data>
+  <data name="UseLimit" lastModified="2011-12-19T10:27:46">
+    <value>Begrenzung anwenden</value>
+    <comment>Phrase: Use limit</comment>
+  </data>
+  <data name="View" lastModified="2011-12-19T10:27:46">
+    <value>Vorschau</value>
+    <comment>word: View</comment>
+  </data>
+  <data name="ViewAffectedPages" lastModified="2011-12-19T10:27:46">
+    <value>Betroffene Seiten ansehen</value>
+    <comment>phrase:View affected pages</comment>
+  </data>
+  <data name="WaitingForApproval" lastModified="2011-12-19T10:27:46">
+    <value>Warten auf Freigabe</value>
+    <comment>The text of the 'Awaiting approval' button in the sidebar.</comment>
+  </data>
+  <data name="Website" lastModified="2011-12-19T10:27:46">
+    <value>Webseite</value>
+    <comment>The 'Website' label in the create comment form.</comment>
+  </data>
+  <data name="WebSiteCannotBeEmpty" lastModified="2011-12-19T10:27:46">
+    <value>Webseite darf nicht leer sein</value>
+    <comment>WebSite cannot be empty</comment>
+  </data>
+  <data name="WebsiteOptional" lastModified="2011-12-19T10:27:46">
+    <value>Website &lt;em class='sfNote'&gt;(optional)&lt;/em&gt;</value>
+    <comment>The 'Website' label in the create comment form.</comment>
+  </data>
+  <data name="WhatDoYouWantToDoNow" lastModified="2011-12-19T10:27:46">
+    <value>Was möchten Sie jetzt tun?</value>
+    <comment>phrase: What do you want to do now?</comment>
+  </data>
+  <data name="WithTheNewerVersion" lastModified="2011-12-19T10:27:46">
+    <value>mit der neueren Version</value>
+    <comment>phrase: with the newer version</comment>
+  </data>
+  <data name="WorkflowRulesDoNotAllowToDelete" lastModified="2011-12-19T10:27:46">
+    <value>Workflow-Regeln erlauben Löschen von {0} nicht</value>
+    <comment>Workflow exception message</comment>
+  </data>
+  <data name="WorkflowRulesDoNotAllowToPublish" lastModified="2011-12-19T10:27:46">
+    <value>Workflow-Regeln erlauben Veröffentlichung nicht: {0}</value>
+    <comment>Workflow exception message</comment>
+  </data>
+  <data name="WorkflowRulesDoNotAllowToUnpublish" lastModified="2011-12-19T10:27:46">
+    <value>Workflow-Regeln erlauben Aufhebung der Veröffentlichung nicht: {0}</value>
+    <comment>Workflow exception message</comment>
+  </data>
+  <data name="YourName" lastModified="2011-12-19T10:27:46">
+    <value>Ihr Name</value>
+    <comment>The 'Your Name' label in the create comment form.</comment>
+  </data>
+  <data name="ZA" lastModified="2011-12-19T10:27:46">
+    <value>(Z-A)</value>
+    <comment>phrase: (Z-A) alphabetical sorting</comment>
+  </data>
+  <data name="ZeroPageSuccessfullyUpdated" lastModified="2011-12-19T10:27:46">
+    <value>&lt;p&gt;Die Seiten unten &lt;strong&gt;konnten nicht mit dem neuesten Inhalt aktualisiert werden&lt;/strong&gt;, da sie zuerst genehmigt werden müssen&lt;/p&gt;</value>
+    <comment>label</comment>
+  </data>
+</root>

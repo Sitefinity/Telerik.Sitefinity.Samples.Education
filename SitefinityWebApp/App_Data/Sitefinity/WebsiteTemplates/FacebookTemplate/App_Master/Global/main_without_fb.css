@@ -1,0 +1,21 @@
+#content {
+	position: relative;
+	width: 520px;
+}
+
+body {
+	min-width: 520px !important;
+	background-attachment: scroll;
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-color: white !important;
+	margin: 0;
+}
+
+#wrapper-content {
+	background-color:#ffffff;
+}
+
+
+
+

@@ -1,0 +1,372 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BypassPaymentProcessing" lastModified="2011-12-19T10:27:46">
+    <value>Echtzeit-Zahlungsverarbeitung umgehen</value>
+    <comment>phrase: Bypass real-time payment processing</comment>
+  </data>
+  <data name="CountryIsoCodeConfig" lastModified="2011-12-19T10:27:46">
+    <value>Ruft den ISO-Code (z. B. US, DE) für den Staat ab, aus dem die Produkte geliefert werden, bzw. legt diesen Code fest.</value>
+    <comment>Describes the shipping from country configuration property.</comment>
+  </data>
+  <data name="CurrencyAndLocationMenuItem" lastModified="2011-12-19T10:27:46">
+    <value>Währung und Ort</value>
+    <comment>Title of the Currency and Location Menu Item</comment>
+  </data>
+  <data name="CurrencyNameConfig" lastModified="2011-12-19T10:27:46">
+    <value>Name der Währung nach ISO-4217 Standard.</value>
+    <comment>Describes the currency name configuration property.</comment>
+  </data>
+  <data name="CurrencyTitleConfig" lastModified="2011-12-19T10:27:46">
+    <value>Bezeichnung der Währung auf Englisch.</value>
+    <comment>Describes the currency title configuration property.</comment>
+  </data>
+  <data name="DefaultBoxHeightConfig" lastModified="2011-12-19T10:27:46">
+    <value>Standard-Höhe der Verpackung (nur numerischer Wert. Maßeinheit ist durch die Einstellung DefaultLengthUnitConfig definiert)</value>
+    <comment>Description Default box height (numeric value only. units defined in DefaultLengthUnitConfig setting)</comment>
+  </data>
+  <data name="DefaultBoxLengthConfig" lastModified="2011-12-19T10:27:46">
+    <value>Standard-Länge der Verpackung (nur numerischer Wert. Maßeinheit ist durch die Einstellung DefaultLengthUnitConfig definiert)</value>
+    <comment>Description Default box length (numeric value only. units defined in DefaultLengthUnitConfig setting)</comment>
+  </data>
+  <data name="DefaultBoxWidthConfig" lastModified="2011-12-19T10:27:46">
+    <value>Standard-Breite der Verpackung (nur numerischer Wert. Maßeinheit ist durch die Einstellung DefaultLengthUnitConfig definiert)</value>
+    <comment>Description Default box width (numeric value only. units defined in DefaultLengthUnitConfig setting)</comment>
+  </data>
+  <data name="DefaultCurrencyConfig" lastModified="2011-12-19T10:27:46">
+    <value>Der Name der Standardwährung (ISO-4217)</value>
+    <comment>Description of the default currency configuration property.</comment>
+  </data>
+  <data name="DefaultLengthUnitConfig" lastModified="2011-12-19T10:27:46">
+    <value>Die Standard-Längeneinheit, die vom E-Commerce-Modul verwendet wird.</value>
+    <comment>Describes the default length unit configuration property.</comment>
+  </data>
+  <data name="DefaultMassUnitConfig" lastModified="2011-12-19T10:27:46">
+    <value>Die Standard-Masseneinheit, die vom E-Commerce-Modul verwendet wird.</value>
+    <comment>Describes the default mass unit configuration property.</comment>
+  </data>
+  <data name="DefaultProductTypesInstalled" lastModified="2011-12-19T10:27:46">
+    <value>Sind die Standard-Produkttypen installiert?</value>
+    <comment>Description DefaultProductTypesInstalled configuration property.</comment>
+  </data>
+  <data name="DisplayTaxInPriceSettingsChanged" lastModified="2011-12-19T10:27:46">
+    <value>Die Einstellungen zur Anzeige der Steuern im Preis wurden geändert.</value>
+    <comment>phrase: The display tax in price settings have changed.</comment>
+  </data>
+  <data name="DisplayTaxInPriceSettingsChangesNotSaved" lastModified="2011-12-19T10:27:46">
+    <value>Die Einstellungen zur Anzeige der Steuern im Preis wurden nicht gespeichert.</value>
+    <comment>phrase: The display tax in price settings changes have not been saved.</comment>
+  </data>
+  <data name="EcommerceNodeTitle" lastModified="2011-12-19T10:27:46">
+    <value>E-Commerce</value>
+    <comment>Title of the ecommerce node.</comment>
+  </data>
+  <data name="EcommerceNodeUrlName" lastModified="2011-12-19T10:27:46">
+    <value>E-Commerce</value>
+    <comment>Url name of the ecommerce node.</comment>
+  </data>
+  <data name="EcommerceToolboxSectionDescription" lastModified="2011-12-19T10:27:46">
+    <value>Abschnitt mit E-Commerce-Widgets.</value>
+    <comment>Description of the toolbox section which holds the widgets of ecommerce modules.</comment>
+  </data>
+  <data name="EcommerceToolboxSectionTitle" lastModified="2011-12-19T10:27:46">
+    <value>E-Commerce</value>
+    <comment>Title of the toolbox section which holds the widgets of ecommerce modules.</comment>
+  </data>
+  <data name="ExcludingTax" lastModified="2011-12-19T10:27:46">
+    <value>Ausgenommen Steuer. Steuern werden beim Checkout mitgerechnet.</value>
+    <comment>phrase: Excluding tax</comment>
+  </data>
+  <data name="ExcludingTaxExample" lastModified="2011-12-19T10:27:46">
+    <value>&lt;b&gt;Beispiel:&lt;/b&gt;&lt;br /&gt;Ins CMS eingegebener Preis: 100 USD&lt;br /&gt;In der Produktliste angezeigter Preis: 100 USD&lt;br /&gt;Checkout: 120 USD (100 USD + 20 USD Steuer)</value>
+    <comment>Excluding tax example</comment>
+  </data>
+  <data name="Fields" lastModified="2011-12-19T10:27:46">
+    <value>Felder</value>
+    <comment>word: Fields</comment>
+  </data>
+  <data name="IncludingTaxAutomatically" lastModified="2011-12-19T10:27:46">
+    <value>Steuern automatisch mit einbeziehen.</value>
+    <comment>phrase: Including tax automatically</comment>
+  </data>
+  <data name="IncludingTaxAutomaticallyExample" lastModified="2011-12-19T10:27:46">
+    <value>&lt;b&gt;Beispiel:&lt;/b&gt;&lt;br /&gt;Ins CMS eingegebener Preis: 100 USD&lt;br /&gt;In der Produktliste angezeigter Preis: 120 USD (100 USD + 20 USD Steuer)&lt;br /&gt;Checkout: 120 USD (100 USD + 20 USD Steuer)</value>
+    <comment>Including tax automatically example</comment>
+  </data>
+  <data name="IncludingTaxManually" lastModified="2011-12-19T10:27:46">
+    <value>Steuer manuell mit eingeben (Preise werden inklusive Steuern eingegeben)</value>
+    <comment>phrase: Including tax manually</comment>
+  </data>
+  <data name="IncludingTaxManuallyExample" lastModified="2011-12-19T10:27:46">
+    <value>&lt;b&gt;Beispiel:&lt;/b&gt;&lt;br /&gt;Ins CMS eingegebener Preis: 120 USD&lt;br /&gt;In der Produktliste angezeigter Preis: $120&lt;br /&gt;Checkout: 120 USD (100 USD + 20 USD Steuer)</value>
+    <comment>Including tax automatically example</comment>
+  </data>
+  <data name="LengthUnit" lastModified="2011-12-19T10:27:46">
+    <value>Längeneinheit</value>
+    <comment>Describes the name of the length unit property</comment>
+  </data>
+  <data name="ManageProductTypes" lastModified="2011-12-19T10:27:46">
+    <value>Produkttypen verwalten</value>
+    <comment>phrase: Manage product types</comment>
+  </data>
+  <data name="MassUnit" lastModified="2011-12-19T10:27:46">
+    <value>Masseneinheit</value>
+    <comment>Describes the name of the mass unit property</comment>
+  </data>
+  <data name="MeasurementUnitsNodeTitle" lastModified="2011-12-19T10:27:46">
+    <value>Maßeinheiten</value>
+    <comment>Title of the Measurement Units Store Settings</comment>
+  </data>
+  <data name="MeasurementUnitsNodeUrlName" lastModified="2011-12-19T10:27:46">
+    <value>MeasurementUnits</value>
+    <comment>Url of the Measurement Units Store Settings</comment>
+  </data>
+  <data name="MeasurementUnitsViewTitle" lastModified="2011-12-19T10:27:46">
+    <value>Maßeinheiten</value>
+    <comment>Title of the Measurement Units Store Settings</comment>
+  </data>
+  <data name="MeasurementUnitTitleConfig" lastModified="2011-12-19T10:27:46">
+    <value>Bezeichnung der Maßeinheit auf Englisch.</value>
+    <comment>Describes the unit title configuration property.</comment>
+  </data>
+  <data name="MerchantEmail" lastModified="2011-12-19T10:27:46">
+    <value>Die E-Mail-Adresse des Händlers, durch die E-Mails vom Händler versandt werden.</value>
+    <comment>Describes the merchant email configuration property.</comment>
+  </data>
+  <data name="ModuleNotLicensed" lastModified="2011-12-19T10:27:46">
+    <value>Der E-Commerce ist deaktiviert, da Sie kein Lizenz für das E-Commerce-Modul haben.</value>
+    <comment>Module Not Licensed message</comment>
+  </data>
+  <data name="OrderManagementNodeTitle" lastModified="2011-12-19T10:27:46">
+    <value>Bestellungsabwicklung</value>
+    <comment>Title of the order management node.</comment>
+  </data>
+  <data name="OrderManagementNodeUrlName" lastModified="2011-12-19T10:27:46">
+    <value>Bestellungsabwicklung</value>
+    <comment>Url name of the order management node.</comment>
+  </data>
+  <data name="PriceDisplayComment" lastModified="2011-12-19T10:27:46">
+    <value>Wie Preise auf der Site angezeigt werden.</value>
+    <comment>phrase: How to display prices on the site.</comment>
+  </data>
+  <data name="ProductsByType" lastModified="2011-12-19T10:27:46">
+    <value>Produkte nach Typ</value>
+    <comment>phrase: Products by type</comment>
+  </data>
+  <data name="SaveCreditCardNumberInDatabase" lastModified="2011-12-19T10:27:46">
+    <value>Kreditkartennummer in der Datenbank (verschlüsselt) speichern</value>
+    <comment>phrase: Save credit card number in database (encrypted)</comment>
+  </data>
+  <data name="ShippingFromCountryConfig" lastModified="2011-12-19T10:27:46">
+    <value>Der ISO-Code (z. B. US, DE) für den Staat, aus dem die Produkte geliefert werden.</value>
+    <comment>Describes the shipping from country configuration property.</comment>
+  </data>
+  <data name="ShippingFromStateProvinceConfig" lastModified="2011-12-19T10:27:46">
+    <value>Das Bundesland / Provinz, von dem die Produkte geliefert werden.  Dieses Feld sollte leer sein, wenn das Lieferland nicht "US” oder “CA” ist.</value>
+    <comment>Describes the shipping from state / province configuration property.</comment>
+  </data>
+  <data name="ShippingFromZipConfig" lastModified="2011-12-19T10:27:46">
+    <value>Die Postleitzahl des Ortes, von dem die Produkte geliefert werden.</value>
+    <comment>Describes the shipping from zip configuration property.</comment>
+  </data>
+  <data name="StoreNameConfig" lastModified="2011-12-19T10:27:46">
+    <value>Der Name des Geschäfts.</value>
+    <comment>Describes the store name configuration property.</comment>
+  </data>
+  <data name="StoreSettingsNodeTitle" lastModified="2011-12-19T10:27:46">
+    <value>Geschäfts-Einstellungen</value>
+    <comment>Title of the Store Settings</comment>
+  </data>
+  <data name="StoreSettingsNodeUrlName" lastModified="2011-12-19T10:27:46">
+    <value>Geschäfts-Einstellungen</value>
+    <comment>Url of the Store Settings</comment>
+  </data>
+  <data name="SupportedCountriesConfig" lastModified="2011-12-19T10:27:46">
+    <value>Vom E-Commerce-Modul unterstützte Staaten.</value>
+    <comment>Describes the supported countries configuration property.</comment>
+  </data>
+  <data name="SupportedCurrenciesConfig" lastModified="2011-12-19T10:27:46">
+    <value>Vom E-Commerce-Modul unterstützte Währungen.</value>
+    <comment>Describes the supported currencies configuration property.</comment>
+  </data>
+  <data name="SupportedLengthUnitsConfig" lastModified="2011-12-19T10:27:46">
+    <value>Vom E-Commerce-Modul unterstützte Längeneinheiten.</value>
+    <comment>Describes the supported length units configuration property.</comment>
+  </data>
+  <data name="SupportedMassUnitsConfig" lastModified="2011-12-19T10:27:46">
+    <value>Vom E-Commerce-Modul unterstützte Maßeinheiten.</value>
+    <comment>Describes the supported mass units configuration property.</comment>
+  </data>
+  <data name="SystemNotReady_InvalidFormatMerchantEmail" lastModified="2011-12-19T10:27:46">
+    <value>Die 'MerchantEmail' ist in einem ungültigen Format. Bitte überprüfen Sie die Eigenschaft 'MerchantEmail' in den E-Commerce-Einstellungen. Diese Eigenschaft kann im Menü E-Commerce -&gt; Geschäfts-Einstellungen -&gt; Versandeinstellungen links unter E-Commerce gesetzt werden. &lt;br /&gt;</value>
+    <comment>The message shown to user when the ecommerce system property 'MerchantEmail' has an invalid email format.</comment>
+  </data>
+  <data name="SystemNotReady_MissingMerchantEmail" lastModified="2011-12-19T10:27:46">
+    <value>Das E-Commerce-System ist nicht vollständig eingerichtet. Bitte setzen Sie die Eigenschaft 'MerchantEmail' in den E-Commerce-Einstellungen. Diese Eigenschaft kann im Menü Verwaltung -&gt; Einstellungen -&gt; Erweitert -&gt; E-Commerce gesetzt werden. &lt;br /&gt;</value>
+    <comment>The message shown to user when the ecommerce system is missing 'MerchantEmail' information.</comment>
+  </data>
+  <data name="SystemNotReady_MissingShippingFromCountry" lastModified="2011-12-19T10:27:46">
+    <value>Das E-Commerce-System ist nicht vollständig eingerichtet. Bitte setzen Sie die Eigenschaft 'ShippingFromCountry' in den E-Commerce-Einstellungen. Diese Eigenschaft kann im Menü E-Commerce -&gt; Geschäfts-Einstellungen -&gt; Versandeinstellungen links unter E-Commerce gesetzt werden. &lt;br /&gt;</value>
+    <comment>The message shown to user when ecommerce system is missing 'ShippingFromCountry' information.</comment>
+  </data>
+  <data name="SystemNotReady_MissingShippingFromZip" lastModified="2011-12-19T10:27:46">
+    <value>Das E-Commerce-System ist nicht vollständig eingerichtet. Bitte setzen Sie die Eigenschaft 'ShippingFromZip' in den E-Commerce-Einstellungen. Diese Eigenschaft kann im Menü E-Commerce -&gt; Geschäfts-Einstellungen -&gt; Versandeinstellungen links unter E-Commerce gesetzt werden. &lt;br /&gt;</value>
+    <comment>The message shown to user when ecommerce system is missing 'ShippingFromZip' information.</comment>
+  </data>
+  <data name="SystemNotReady_MissingSMTPHost" lastModified="2011-12-19T10:27:46">
+    <value>Das E-Commerce-System ist nicht vollständig eingerichtet. Bitte setzen Sie die Eigenschaft 'Host' in den SMTP (E-Mail)-Einstellungen. Diese Eigenschaft kann im Menü Verwaltung -&gt; Einstellungen -&gt; Erweitert -&gt; System -&gt; SMTP (E-Mail-Einstellungen) durch Eingeben des Werts für den Host gesetzt werden. &lt;br /&gt;</value>
+    <comment>The message shown to user when ecommerce system is missing 'SMTP Host' information.</comment>
+  </data>
+  <data name="SystemNotReady_MissingSMTPPassword" lastModified="2011-12-19T10:27:46">
+    <value>Das E-Commerce-System ist nicht vollständig eingerichtet. Bitte setzen Sie die Eigenschaft 'Passwort' in den SMTP (E-Mail)-Einstellungen. Diese Eigenschaft kann im Menü Verwaltung -&gt; Einstellungen -&gt; Erweitert -&gt; System -&gt; SMTP (E-Mail-Einstellungen) durch Eingeben des Werts für das Passwort gesetzt werden. &lt;br /&gt;</value>
+    <comment>The message shown to user when the ecommerce system is missing 'SMTP Password' information.</comment>
+  </data>
+  <data name="SystemNotReady_MissingSMTPUserName" lastModified="2011-12-19T10:27:46">
+    <value>Das E-Commerce-System ist nicht vollständig eingerichtet. Bitte setzen Sie die Eigenschaft 'UserName' in den SMTP (E-Mail)-Einstellungen. Diese Eigenschaft kann im Menü Verwaltung -&gt; Einstellungen -&gt; Erweitert -&gt; System -&gt; SMTP (E-Mail-Einstellungen) durch Eingeben des Werts für den UserName gesetzt werden. &lt;br /&gt;</value>
+    <comment>The message shown to user when the ecommerce system is missing 'SMTP UserName' information.</comment>
+  </data>
+  <data name="SystemNotReady_NoPaymentMethodsDefined" lastModified="2011-12-19T10:27:46">
+    <value>Das E-Commerce-System ist nicht vollständig eingerichtet. Bitte legen Sie mindestens eine Zahlungsmethode für den E-Commerce fest.</value>
+    <comment>The message shown to user when ecommerce system has no payment methods defined.</comment>
+  </data>
+  <data name="TaxDisplayModeConfig" lastModified="2011-12-19T10:27:46">
+    <value>Die Art der Steuer-Anzeige, die vom E-Commerce-Modul verwendet wird.</value>
+    <comment>Describes the tax display mode configuration property.</comment>
+  </data>
+  <data name="TaxMenuItem" lastModified="2011-12-19T10:27:46">
+    <value>Steuer-Einstellungen</value>
+    <comment>Title of the Tax Menu Item</comment>
+  </data>
+  <data name="TaxToDisplayInPriceConfig" lastModified="2011-12-19T10:27:46">
+    <value>Die ID der Steuer, die bei der Berücksichtigung von Steuern im Preis verwendet wird.</value>
+    <comment>Describes the tax to display in price configuration property.</comment>
+  </data>
+  <data name="TypeSlashSKU" lastModified="2011-12-19T10:27:46">
+    <value>Typ / Artikelposition</value>
+    <comment>phrase: Type / SKU</comment>
+  </data>
+  <data name="UnitAbbreviationConfig" lastModified="2011-12-19T10:27:46">
+    <value>Internationale Abkürzung für die Maßeinheit.</value>
+    <comment>Describes the unit abbreviation configuration property.</comment>
+  </data>
+  <data name="WhichTaxToInclude" lastModified="2011-12-19T10:27:46">
+    <value>Welche Steuern sind im Preis inbegriffen?</value>
+    <comment>phrase: Which tax is included in prices?</comment>
+  </data>
+</root>
