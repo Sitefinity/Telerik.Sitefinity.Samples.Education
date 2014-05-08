@@ -64,6 +64,8 @@ using Telerik.Sitefinity.Data.OA;
 using Telerik.Sitefinity.Services.Comments.Proxies;
 using Telerik.Sitefinity.Modules.News;
 using Telerik.Sitefinity.Modules.Blogs;
+using Telerik.Sitefinity.Modules.Ecommerce.Common;
+using Telerik.Sitefinity.Modules.Ecommerce.Catalog.Workflows;
 
 namespace SitefinityWebApp
 {
@@ -213,6 +215,9 @@ namespace SitefinityWebApp
             this.CreateRegistrationPage();
             this.CreateProfilePage();
             this.CreateLoginPage();
+
+            //resources cleanup
+            this.CleanUpResources();
         }
 
         #region Login
@@ -1726,7 +1731,7 @@ Transform, wie Sie mit Ihren Mitarbeitern, Studenten, Besucher, Kunden und mehr 
 
         private void CreateHomePage()
         {
-            var result = SampleUtilities.CreateLocalizedPage(new Guid(SampleConstants.HomePageId), "Home", false, false, "en");
+            var result = SampleUtilities.CreateLocalizedPage(new Guid(SampleConstants.HomePageId), "Home", true, false, "en");
 
             if (result)
             {
@@ -4413,41 +4418,58 @@ Transform, wie Sie mit Ihren Mitarbeitern, Studenten, Besucher, Kunden und mehr 
         public Guid CreateProduct(string productTypeName, string title, string description, string sku, double? weight, DateTime expirationDate,
             bool isShippable, decimal price, bool isActive)
         {
-            if (CatalogMan.GetProducts().Where(r => r.Title == title).SingleOrDefault() != null)
+            CatalogManager manager = CatalogManager.GetManager();
+            var ecommerceManager = EcommerceManager.GetManager();
+
+            if (manager.GetProducts().Where(t => t.Title == title).SingleOrDefault() != null)
             {
                 return Guid.Empty;     // Product already exists
             }
 
-            ProductType productType = CatalogMan.GetProductTypes().Where(t => t.Title == productTypeName).SingleOrDefault();
-
+            ProductType productType = ecommerceManager.GetProductTypes().Where(t => t.Title == productTypeName).SingleOrDefault();
             if (productType == null)
             {
                 return Guid.Empty;     // Product Type does not exist
             }
 
-            var p = CatalogMan.CreateProduct(productType.ClrType);
+            Product product = manager.CreateProduct(productType.ClrType);
+            product.ClrType = productType.ClrType;
 
-            p.Title = title;
-            p.DateCreated = DateTime.Now;
-            p.Description = description;
-            p.ExpirationDate = expirationDate;
-            p.IsShippable = isShippable;
-            p.Price = price;
-            p.IsActive = isActive;
-            p.Sku = sku;
-            p.UrlName = Regex.Replace(title.ToLower(), @"[^\w\-\!\$\'\(\)\=\@\d_]+", "-");
-            p.Visible = true;
-            p.Weight = weight;
+            product.Title = title;
+            product.AssociateBuyerWithRole = Guid.Empty;
+            product.DateCreated = DateTime.Now;
+            product.Description = description;
+            product.IsShippable = isShippable;
+            product.Price = price;
+            product.Sku = sku;
+            product.UrlName = Regex.Replace(title.ToLower(), @"[^\w\-\!\$\'\(\)\=\@\d_]+", "-");
+            product.Visible = true;
+            product.Weight = weight;
 
-            CatalogMan.Provider.RecompileItemUrls(p);
-            CatalogMan.SaveChanges();
+            product.Status = ContentLifecycleStatus.Master;
 
-            return p.Id;
+            manager.Provider.RecompileItemUrls(product);
+            manager.SaveChanges();
+
+            var contextBag = new Dictionary<string, string>();
+            contextBag.Add("ContentType", product.GetType().FullName);
+
+            string workflowOperation = "Publish";
+
+            WorkflowManager.MessageWorkflow(
+                                            product.Id,
+                                            product.GetType(),
+                                            "OpenAccessDataProvider",
+                                            workflowOperation,
+                                            false,
+                                            contextBag);
+            return product.Id;
         }
 
         private void LinkProductToImage(Guid productId, Guid imageId)
         {
-            Product p = CatalogMan.GetProducts().Where(x => x.Id == productId).SingleOrDefault();
+            CatalogManager catManager = CatalogManager.GetManager();
+            Product p = catManager.GetProducts().Where(x => x.Id == productId).SingleOrDefault();
             if (p == null)
             {
                 return; // Product does not exist
@@ -4478,7 +4500,7 @@ Transform, wie Sie mit Ihren Mitarbeitern, Studenten, Besucher, Kunden und mehr 
             p.Images.Add(pi);
 
             // Save the product
-            CatalogMan.SaveChanges();
+            catManager.SaveChanges();
 
             // Create a content link between the product and the image
 
@@ -4512,44 +4534,48 @@ Transform, wie Sie mit Ihren Mitarbeitern, Studenten, Besucher, Kunden und mehr 
             SystemManager.ClearCurrentTransactions();
         }
 
-        public bool CreateProductTypeIfDoesntExist(string titleSingular, string titlePlural, ProductDeliveryType deliveryType)
+        public void CreateProductTypeIfDoesntExist(string titleSingular, string titlePlural, ProductDeliveryType deliveryType)
         {
-            bool hasCreatedType = false;
-            var type = GetProductTypeByTitle(titleSingular);
-            if (type == null)
+            MetadataManager metadataManager = MetadataManager.GetManager();
+            CatalogDefinitionManager catalogDefinitionManager = new CatalogDefinitionManager();
+
+            using (EcommerceManager ecommerceManager = EcommerceManager.GetManager())
             {
-                CatalogDefinitionManager catalogDefinitionManager = new CatalogDefinitionManager();
-                int productTypesCount = CatalogMan.GetProductTypes().Count();
-
-                ProductType productType = CatalogMan.CreateProductType();
-                productType.Title = titleSingular;
-                productType.TitlePlural = titlePlural;
-                productType.ProductDeliveryType = deliveryType;
-
-                string productClrType;
-                CatalogMan.CreateProductTypePersistance(productType, MetadataMan, out productClrType);
-                productType.ClrType = productClrType;
-
-                catalogDefinitionManager.AddProductTypeDefinition(productType, CatalogMan.Provider.Name);
-
-                if (productTypesCount == 1)
+                int productTypesCount = ecommerceManager.GetProductTypes().Count();
+                if (!ecommerceManager.GetProductTypes().Any(p => p.Title == titleSingular))
                 {
-                    var singleType = CatalogMan.GetProductTypes().Single();
-                    catalogDefinitionManager.AdjustForMultipleProductTypes(singleType);
+                    ProductType productType = ecommerceManager.CreateProductType();
+                    productType.Title = titleSingular;
+                    productType.TitlePlural = titlePlural;
+                    productType.ProductDeliveryType = deliveryType;
+
+                    string productClrType;
+                    ecommerceManager.CreateProductTypePersistance(productType, metadataManager, out productClrType);
+                    productType.ClrType = productClrType;
+
+                    catalogDefinitionManager.AddProductTypeDefinition(productType, ecommerceManager.Provider.Name);
+
+                    if (productTypesCount == 1)
+                    {
+                        var singleType = ecommerceManager.GetProductTypes().Single();
+                        catalogDefinitionManager.AdjustForMultipleProductTypes(singleType);
+                    }
+
+                    ecommerceManager.SaveChanges();
+                    metadataManager.SaveChanges(true);
+
+                    //Starting 6.0 we have workflows for products so whenever you are creating a product you have to create a associated workflow
+                    var productTypeWorkFlowInstaller = new ProductTypeWorkflowInstaller();
+                    productTypeWorkFlowInstaller.InstallWorkflowForProductType(productType);
+
+                    ProductTypeResolver.RestartProductServiceHost();
                 }
-
-                CatalogMan.SaveChanges();
-                MetadataMan.SaveChanges(true);
-
-                hasCreatedType = true;
-                ProductTypeResolver.RestartProductServiceHost();
             }
-            return hasCreatedType;
         }
 
         public ProductType GetProductTypeByTitle(string title)
         {
-            ProductType productType = CatalogMan.GetProductTypes().Where(x => x.Title == title).SingleOrDefault();
+            ProductType productType = EcommerceMan.GetProductTypes().Where(x => x.Title == title).SingleOrDefault();
 
             return productType;
         }
@@ -4679,15 +4705,26 @@ Transform, wie Sie mit Ihren Mitarbeitern, Studenten, Besucher, Kunden und mehr 
 
         #region Managers
 
-        public CatalogManager CatalogMan
+        public EcommerceManager EcommerceMan
         {
             get
             {
-                if (this.catalogManager == null)
-                    this.catalogManager = CatalogManager.GetManager();
-                return this.catalogManager;
+                if (this.ecommerceManager == null)
+                    this.ecommerceManager = EcommerceManager.GetManager();
+                return this.ecommerceManager;
             }
         }
+
+        //public CatalogManager CatalogMan
+        //{
+        //    get
+        //    {
+        //        if (this.catalogManager == null)
+        //            this.catalogManager = CatalogManager.GetManager();
+        //        return this.catalogManager;
+        //    }
+        //}
+
         public MetadataManager MetadataMan
         {
             get
@@ -4734,6 +4771,7 @@ Transform, wie Sie mit Ihren Mitarbeitern, Studenten, Besucher, Kunden und mehr 
             }
         }
 
+        private EcommerceManager ecommerceManager;
         private CatalogManager catalogManager;
         private MetadataManager metadataManager;
         private PageManager pageManager;
@@ -5322,6 +5360,33 @@ Transform, wie Sie mit Ihren Mitarbeitern, Studenten, Besucher, Kunden und mehr 
             foreach (KeyValuePair<string, string> tag in this.TagIds)
             {
                 SampleUtilities.CreateTag(tag.Key, new Guid(tag.Value));
+            }
+        }
+
+        private void CleanUpResources()
+        {
+            var manager = PageManager.GetManager();
+
+            var allBackend = manager.GetPageNodes().Where(pn => pn.RootNodeId == SiteInitializer.BackendRootNodeId);
+            foreach (var page in allBackend)
+            {
+                var currentTitle = page.Title;
+                var currentUrlName = page.UrlName;
+                var a = "$Resources: ";
+                if (currentTitle.Contains(a))
+                {
+
+                    var trimResources = currentTitle.ToString().Replace(a, "");
+                    var resClass = trimResources.Split(',')[0];
+                    var resKey = trimResources.Split(',')[1];
+                    var resManager = ResourceManager.GetManager();
+                    var resource = resManager.GetResourceOrEmpty(CultureInfo.InvariantCulture, resClass, resKey);
+                    if (resource != null)
+                    {
+                        page.Title = resource.Value;
+                        manager.SaveChanges();
+                    }
+                }
             }
         }
 
