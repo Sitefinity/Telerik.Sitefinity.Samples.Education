@@ -21,7 +21,7 @@ Using the Education sample, you can:
 
 ### Requirements
 
-* Sitefinity 6.3 license
+* Sitefinity license
 
 * .NET Framework 4
 
@@ -53,7 +53,7 @@ The project refers to the following NuGet packages:
 
 * Telerik.Sitefinity.Core.nupkg
 
-* OpenAccess.Core.nupkg
+* Telerik.DataAccess.Core.nupkg
 
 * Telerik.Sitefinity.Content.nupkg
 
