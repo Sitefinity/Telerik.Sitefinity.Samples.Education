@@ -17,7 +17,7 @@ Using the Education sample, you can:
 * Manage images and videos - upload campus tours, online lectures, interviews with professors and students 
 * Support localization and multiple languages - have different language versions of the public website and administrative area 
 * Manage the publication system - define where, when, and how it gets published on your website to best engage with your visitors 
-* Manage RSS - publish updates to Twitter and other websites 
+* Manage RSS - publish updates to Twitter and other websites
 * Create a _Donation_ widget which supports your fund-raising efforts
 
 
