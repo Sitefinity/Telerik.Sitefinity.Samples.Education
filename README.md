@@ -1,6 +1,8 @@
 Telerik.Sitefinity.Samples.Education
 ====================================
 
+[![Build Status](http://sdk-jenkins-ci.cloudapp.net/buildStatus/icon?job=Telerik.Sitefinity.Samples.Education.CI)](http://sdk-jenkins-ci.cloudapp.net/job/Telerik.Sitefinity.Samples.Education.CI/)
+
 Telerik International University (TIU) is a sample university website, which demonstrates how you can build an interactive and engaging university website using Sitefinity's default functionality. You can develop the website entirely through Sitefinity's web-based UI. 
 
 This website can created by 1 designer and 1 developer for just 1 week - a demostration of the productivity gains offered by Sitefinity. 
@@ -57,7 +59,7 @@ The project refers to the following NuGet packages:
 
 * Telerik.Sitefinity.Content.nupkg
 
-You can find the packages in the official [Sitefinity Nuget Server](http://nuget.sitefinity.com).
+You can find the packages in the official [Sitefinity NuGet Server](http://nuget.sitefinity.com).
 
 
 ### Login
