@@ -45,22 +45,8 @@ Clear the NuGet cache files. To do this:
 2. Modify the **connectionString** value to match your server address.
 3. Build the solution.
 
-The project refers to the following NuGet packages:
-
-**SitefinityWebApp** library
-
-* Telerik.Sitefinity.All.nupkg
-
-**Telerik.Sitefinity.Samples.Common** library
-
-* Telerik.Sitefinity.Core.nupkg
-
-* Telerik.DataAccess.Core.nupkg
-
-* Telerik.Sitefinity.Content.nupkg
-
-You can find the packages in the official [Sitefinity NuGet Server](http://nuget.sitefinity.com).
-
+For version-specific details about the required Sitefinity NuGet packages for this sample application, click on [Releases]
+ (https://github.com/Sitefinity-SDK/Telerik.Sitefinity.Samples.Education/releases).
 
 ### Login
 
