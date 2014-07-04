@@ -1,71 +1,71 @@
-﻿using System.Threading;
+﻿using System;
+using System.Collections.Generic;
+using System.Globalization;
+using System.Linq;
+using System.Text.RegularExpressions;
+using System.Threading;
+using System.Web;
+using Telerik.Sitefinity;
+using Telerik.Sitefinity.Abstractions;
 using Telerik.Sitefinity.Blogs.Model;
+using Telerik.Sitefinity.Configuration;
+using Telerik.Sitefinity.Data.ContentLinks;
+using Telerik.Sitefinity.Data.Metadata;
+using Telerik.Sitefinity.Data.OA;
+using Telerik.Sitefinity.Ecommerce.Catalog.Model;
+using Telerik.Sitefinity.Ecommerce.Orders.Model;
+using Telerik.Sitefinity.Ecommerce.Shipping.Model;
+using Telerik.Sitefinity.GenericContent.Model;
+using Telerik.Sitefinity.Localization;
 using Telerik.Sitefinity.Localization.Web.UI;
+using Telerik.Sitefinity.Model.ContentLinks;
+using Telerik.Sitefinity.Modules.Blogs;
 using Telerik.Sitefinity.Modules.Blogs.Web.UI;
+using Telerik.Sitefinity.Modules.Ecommerce.Catalog;
+using Telerik.Sitefinity.Modules.Ecommerce.Catalog.Web.Services;
+using Telerik.Sitefinity.Modules.Ecommerce.Catalog.Web.UI;
+using Telerik.Sitefinity.Modules.Ecommerce.Catalog.Workflows;
+using Telerik.Sitefinity.Modules.Ecommerce.Common;
+using Telerik.Sitefinity.Modules.Ecommerce.Configuration;
+using Telerik.Sitefinity.Modules.Ecommerce.Orders;
+using Telerik.Sitefinity.Modules.Ecommerce.Orders.Interfaces;
+using Telerik.Sitefinity.Modules.Ecommerce.Orders.Web.UI;
+using Telerik.Sitefinity.Modules.Ecommerce.Orders.Web.UI.ShoppingCartSummaryViews;
+using Telerik.Sitefinity.Modules.Ecommerce.Shipping;
 using Telerik.Sitefinity.Modules.Events.Web.UI;
 using Telerik.Sitefinity.Modules.Forms.Web.UI;
 using Telerik.Sitefinity.Modules.Forms.Web.UI.Fields;
+using Telerik.Sitefinity.Modules.GenericContent.Web.UI;
+using Telerik.Sitefinity.Modules.Libraries;
 using Telerik.Sitefinity.Modules.Libraries.Web.UI.Documents;
 using Telerik.Sitefinity.Modules.Libraries.Web.UI.Images;
 using Telerik.Sitefinity.Modules.Libraries.Web.UI.Videos;
 using Telerik.Sitefinity.Modules.Lists.Web.UI;
 using Telerik.Sitefinity.Modules.Lists.Web.UI.Expanded;
+using Telerik.Sitefinity.Modules.News;
 using Telerik.Sitefinity.Modules.News.Web.UI;
+using Telerik.Sitefinity.Modules.Pages;
+using Telerik.Sitefinity.Pages.Model;
+using Telerik.Sitefinity.Publishing;
+using Telerik.Sitefinity.Publishing.Configuration;
+using Telerik.Sitefinity.Publishing.Model;
+using Telerik.Sitefinity.Publishing.Pipes;
+using Telerik.Sitefinity.Publishing.PublishingPoints;
+using Telerik.Sitefinity.Publishing.Web.Services;
+using Telerik.Sitefinity.Publishing.Web.Services.Data;
+using Telerik.Sitefinity.Samples.Common;
+using Telerik.Sitefinity.Security.Web.UI;
+using Telerik.Sitefinity.Services;
+using Telerik.Sitefinity.Services.Comments.Proxies;
+using Telerik.Sitefinity.Services.Search.Publishing;
+using Telerik.Sitefinity.Services.Search.Web.UI.Public;
+using Telerik.Sitefinity.Utilities.MS.ServiceModel.Web;
 using Telerik.Sitefinity.Web.Model;
+using Telerik.Sitefinity.Web.UI;
 using Telerik.Sitefinity.Web.UI.Fields;
 using Telerik.Sitefinity.Web.UI.NavigationControls;
 using Telerik.Sitefinity.Web.UI.PublicControls;
-using Telerik.Sitefinity.Abstractions;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using Telerik.Sitefinity.Samples.Common;
-using Telerik.Sitefinity.Modules.GenericContent.Web.UI;
-using Telerik.Sitefinity.Web.UI;
-using Telerik.Sitefinity;
-using Telerik.Sitefinity.Modules.Ecommerce.Catalog;
-using Telerik.Sitefinity.Data.Metadata;
-using Telerik.Sitefinity.Ecommerce.Catalog.Model;
-using Telerik.Sitefinity.Modules.Ecommerce.Catalog.Web.Services;
-using System.Text.RegularExpressions;
-using Telerik.Sitefinity.Data.ContentLinks;
-using Telerik.Sitefinity.Model.ContentLinks;
-using Telerik.Sitefinity.Modules.Libraries;
-using Telerik.Sitefinity.GenericContent.Model;
-using Telerik.Sitefinity.Modules.Ecommerce.Catalog.Web.UI;
-using Telerik.Sitefinity.Modules.Ecommerce.Orders.Web.UI.ShoppingCartSummaryViews;
-using Telerik.Sitefinity.Modules.Ecommerce.Orders.Web.UI;
-using Telerik.Sitefinity.Configuration;
-using Telerik.Sitefinity.Services;
-using Telerik.Sitefinity.Modules.Ecommerce.Configuration;
-using Telerik.Sitefinity.Ecommerce.Orders.Model;
-using Telerik.Sitefinity.Modules.Ecommerce.Orders;
-using Telerik.Sitefinity.Modules.Ecommerce.Orders.Interfaces;
-using Telerik.Sitefinity.Modules.Ecommerce.Shipping;
-using Telerik.Sitefinity.Ecommerce.Shipping.Model;
-using Telerik.Sitefinity.Services.Search.Web.UI.Public;
-using Telerik.Sitefinity.Publishing.Web.Services.Data;
-using Telerik.Sitefinity.Publishing;
-using Telerik.Sitefinity.Publishing.Model;
-using Telerik.Sitefinity.Publishing.PublishingPoints;
-using Telerik.Sitefinity.Publishing.Web.Services;
-using Telerik.Sitefinity.Publishing.Configuration;
-using Telerik.Sitefinity.Localization;
-using Telerik.Sitefinity.Utilities.MS.ServiceModel.Web;
-using Telerik.Sitefinity.Publishing.Pipes;
-using System.Globalization;
-using Telerik.Sitefinity.Services.Search.Publishing;
-using Telerik.Sitefinity.Modules.Pages;
-using Telerik.Sitefinity.Security.Web.UI;
-using Telerik.Sitefinity.Pages.Model;
 using Telerik.Sitefinity.Workflow;
-using Telerik.Sitefinity.Data.OA;
-using Telerik.Sitefinity.Services.Comments.Proxies;
-using Telerik.Sitefinity.Modules.News;
-using Telerik.Sitefinity.Modules.Blogs;
-using Telerik.Sitefinity.Modules.Ecommerce.Common;
-using Telerik.Sitefinity.Modules.Ecommerce.Catalog.Workflows;
 
 namespace SitefinityWebApp
 {
@@ -85,14 +85,14 @@ namespace SitefinityWebApp
 
         protected void Application_Start(object sender, EventArgs e)
         {
-            SystemManager.ApplicationStart += new EventHandler<EventArgs>(SystemManager_ApplicationStart);
+            SystemManager.ApplicationStart += new EventHandler<EventArgs>(this.SystemManager_ApplicationStart);
         }
 
-        void SystemManager_ApplicationStart(object sender, EventArgs e)
+        private void SystemManager_ApplicationStart(object sender, EventArgs e)
         {
-            SystemManager.RunWithElevatedPrivilegeDelegate sampleWorker = new SystemManager.RunWithElevatedPrivilegeDelegate(CreateSampleWorker);
+            SystemManager.RunWithElevatedPrivilegeDelegate sampleWorker = new SystemManager.RunWithElevatedPrivilegeDelegate(this.CreateSampleWorker);
             SystemManager.RunWithElevatedPrivilege(sampleWorker);
-            SystemManager.RunWithElevatedPrivilegeDelegate searchPipesWorker = new SystemManager.RunWithElevatedPrivilegeDelegate(CreateSearchPipes);
+            SystemManager.RunWithElevatedPrivilegeDelegate searchPipesWorker = new SystemManager.RunWithElevatedPrivilegeDelegate(this.CreateSearchPipes);
             SystemManager.RunWithElevatedPrivilege(searchPipesWorker);
         }
 
@@ -242,6 +242,7 @@ namespace SitefinityWebApp
                 SampleUtilities.AddControlToLocalizedPage(new Guid(SampleConstants.RegistrationPageId), registrationForm, "content", "Registrierung", "de");
             }
         }
+
         private void CreateProfilePage()
         {
             Guid parentPageID = new Guid(SampleConstants.InternalResourcesGroupPageId);
@@ -271,6 +272,7 @@ namespace SitefinityWebApp
                 SampleUtilities.AddControlToLocalizedPage(new Guid(SampleConstants.ProfilePageId), profile, "content", "Profil", "de");
             }
         }
+
         private void CreateLoginPage()
         {
             Guid parentPageID = new Guid(SampleConstants.InternalResourcesGroupPageId);
@@ -310,7 +312,7 @@ namespace SitefinityWebApp
                 LoginWidget login = new LoginWidget();
                 SampleUtilities.AddControlToLocalizedPage(new Guid(SampleConstants.LoginPageId), login, "Main_Left", "Login", "en");
 
-                string registerPageUrl = "";
+                string registerPageUrl = string.Empty;
                 var count = 0;
                 App.WorkWith().Pages().Where(pN => pN.Id == new Guid(SampleConstants.RegistrationPageId)).Count(out count);
                 if (count != 0)
@@ -374,7 +376,7 @@ namespace SitefinityWebApp
                 LoginWidget login = new LoginWidget();
                 SampleUtilities.AddControlToLocalizedPage(new Guid(SampleConstants.LoginPageId), login, "Main_Left", "Login", "de");
 
-                string registerPageUrl = "";
+                string registerPageUrl = string.Empty;
                 var count = 0;
                 App.WorkWith().Pages().Where(pN => pN.Id == new Guid(SampleConstants.RegistrationPageId)).Count(out count);
                 if (count != 0)
@@ -428,7 +430,7 @@ namespace SitefinityWebApp
                 SearchBox searchBox = new SearchBox();
                 searchBox.ResultsPageId = SampleConstants.SearchResultsPageId;
                 searchBox.WordsMode = WordsMode.AllWords;
-                searchBox.SearchIndexPipeId = GetDefaultSearchIndexPipeID();
+                searchBox.SearchIndexPipeId = this.GetDefaultSearchIndexPipeID();
 
                 SampleUtilities.AddControlToTemplate(new Guid(SampleConstants.EducationTemplateId), searchBox, "LanguageSearch_Left", "Search box");
             }
@@ -438,12 +440,13 @@ namespace SitefinityWebApp
 
         private Guid GetDefaultSearchIndexPipeID()
         {
-            List<PublishingPipeViewModel> pipes = GetOutgoingPublishingPipes();
+            List<PublishingPipeViewModel> pipes = this.GetOutgoingPublishingPipes();
             Guid result = (from pipe in pipes
                            where pipe.Title.Equals(SampleConstants.SearchIndexName)
                            select pipe.ID).FirstOrDefault();
             return result;
         }
+
         private List<PublishingPipeViewModel> GetOutgoingPublishingPipes()
         {
             List<PublishingPipeViewModel> pipesList = new List<PublishingPipeViewModel>();
@@ -469,13 +472,13 @@ namespace SitefinityWebApp
 
         private void CreateSearchPublishingPoint()
         {
-            PublishingPointDetailViewModel pointDetailViewModel = CreateSearchPointInfo();
+            PublishingPointDetailViewModel pointDetailViewModel = this.CreateSearchPointInfo();
             PublishingAdminService service = new PublishingAdminService();
             Guid itemId = pointDetailViewModel.Id;
 
-            if (!PublishingPointExists(pointDetailViewModel, service, itemId))
+            if (!this.PublishingPointExists(pointDetailViewModel, service, itemId))
             {
-                PublishingPoint savePoint = PublishingMan.CreatePublishingPoint();
+                PublishingPoint savePoint = this.PublishingMan.CreatePublishingPoint();
                 PublishingPointFactory.CreatePublishingPointDataItem(pointDetailViewModel.PublishingPointDefinition, savePoint);
 
                 savePoint.Name = pointDetailViewModel.Title;
@@ -485,12 +488,12 @@ namespace SitefinityWebApp
                 var fullSet = new List<WcfPipeSettings>();
                 fullSet.AddRange(pointDetailViewModel.InboundSettings);
                 fullSet.AddRange(pointDetailViewModel.OutboundSettings);
-                ClearDeletedSettings(savePoint, fullSet);
+                this.ClearDeletedSettings(savePoint, fullSet);
 
                 this.FillPipeSettings(savePoint, pointDetailViewModel.InboundSettings);
                 this.FillPipeSettings(savePoint, pointDetailViewModel.OutboundSettings);
 
-                var pipeSettings = PublishingMan.GetPipeSettings<RssPipeSettings>();
+                var pipeSettings = this.PublishingMan.GetPipeSettings<RssPipeSettings>();
 
                 foreach (var currentPipeSettings in savePoint.PipeSettings.Where(ps => ps.GetType().FullName == typeof(RssPipeSettings).FullName))
                 {
@@ -498,19 +501,19 @@ namespace SitefinityWebApp
                     var pipeSettingsUrl = ((RssPipeSettings)currentPipeSettings).UrlName;
                     if (pipeSettings.Where(ps => ps.IsInbound == false && ps.UrlName == pipeSettingsUrl && ps.Id != currentId).Any())
                     {
-                        ThrowDuplicateUrlException(((RssPipeSettings)currentPipeSettings).UrlName);
+                        this.ThrowDuplicateUrlException(((RssPipeSettings)currentPipeSettings).UrlName);
                     }
                 }
 
-                PublishingMan.SaveChanges();
+                this.PublishingMan.SaveChanges();
                 pointDetailViewModel.Id = savePoint.Id;
                 MetadataManager.GetManager().SaveChanges(true);
                 service.ReschedulePublishingPointPipes(savePoint, string.Empty);
 
-                var pipeSettingsReset = PublishingMan.GetPipeSettings<SearchIndexPipeSettings>().Where(ps => ps.PublishingPoint.Id == pointDetailViewModel.Id).FirstOrDefault();
+                var pipeSettingsReset = this.PublishingMan.GetPipeSettings<SearchIndexPipeSettings>().Where(ps => ps.PublishingPoint.Id == pointDetailViewModel.Id).FirstOrDefault();
                 pipeSettingsReset.CatalogName = System.Text.RegularExpressions.Regex.Replace(SampleConstants.SearchIndexName.ToLowerInvariant(),
                             SampleConstants.SearchIndexFilterExpression, SampleConstants.SearchIndexReplacementString);
-                PublishingMan.SaveChanges();
+                this.PublishingMan.SaveChanges();
 
                 service.ReindexSearchContent(PublishingConfig.SearchProviderName, savePoint.Id.ToString());
             }
@@ -521,14 +524,15 @@ namespace SitefinityWebApp
             var model = new PublishingPointDetailViewModel();
             model.Id = Guid.Empty;
             model.Title = SampleConstants.SearchIndexName;
-            model.PublishingPointDefinition = CreatePublishingPointDefinition();
+            model.PublishingPointDefinition = this.CreatePublishingPointDefinition();
             model.Description = null;
             model.IsActive = true;
             model.PublishingPointBusinessObjectName = null;
-            model.InboundSettings = CreatePublishingPointInboundSettings();
-            model.OutboundSettings = CreatePublishingPointOutboundSettings();
+            model.InboundSettings = this.CreatePublishingPointInboundSettings();
+            model.OutboundSettings = this.CreatePublishingPointOutboundSettings();
             return model;
         }
+
         private bool PublishingPointExists(PublishingPointDetailViewModel pointDetailViewModel, PublishingAdminService service, Guid itemId)
         {
             return service.GetPublishingPoints(PublishingConfig.SearchProviderName, string.Empty, -1, -1, string.Empty).Items.Where(ppoint => ppoint.Title.ToLower()
@@ -546,16 +550,17 @@ namespace SitefinityWebApp
             setting.PipeName = "SearchIndex";
             setting.IsActive = true;
             setting.IsInbound = false;
-            setting.MappingSettings = CreateDefaultOutboundMappingSettings();
+            setting.MappingSettings = this.CreateDefaultOutboundMappingSettings();
 
             outboundSettings.Add(setting);
 
             return outboundSettings;
         }
+
         private MappingSettingsViewModel CreateDefaultOutboundMappingSettings()
         {
             var defaultOutboundMappings = SearchIndexOutboundPipe.GetDefaultMappings();
-            return GetDefaultMappingSettings(defaultOutboundMappings);
+            return this.GetDefaultMappingSettings(defaultOutboundMappings);
         }
 
         private List<WcfPipeSettings> CreatePublishingPointInboundSettings()
@@ -567,7 +572,7 @@ namespace SitefinityWebApp
             setting.IsInbound = true;
             setting.PipeName = PageInboundPipe.PipeName;
             setting.UIName = "Static HTML in pages";
-            setting.MappingSettings = CreateDefaultInboundMappingSettings(setting);
+            setting.MappingSettings = this.CreateDefaultInboundMappingSettings(setting);
             setting.Settings = "{\"ApplicationName\":null,\"Description\":null,\"FilterExpression\":\"Visible = true && Status = Live && PublicationDate<= DateTime.UtcNow\",\"InvocationMode\":1,\"IsActive\":true,\"IsInbound\":true,\"MaxItems\":0,\"PipeName\":\"PagePipe\",\"ResourceClassId\":\"PublishingMessages\",\"ScheduleDay\":0,\"ScheduleType\":0,\"Title\":null,\"UIName\":\"PagePipe\"}";
             inboundSettings.Add(setting);
 
@@ -577,7 +582,7 @@ namespace SitefinityWebApp
             setting.IsInbound = true;
             setting.PipeName = ContentInboundPipe.PipeName;
             setting.UIName = "Sitefinity content";
-            setting.MappingSettings = CreateDefaultInboundMappingSettings(setting);
+            setting.MappingSettings = this.CreateDefaultInboundMappingSettings(setting);
             setting.Settings = "{\"ApplicationName\":null,\"Description\":null,\"FilterExpression\":null,\"InvocationMode\":1,\"IsActive\":true,\"IsInbound\":true,\"MaxItems\":0,\"PipeName\":\"ContentInboundPipe\",\"ResourceClassId\":\"PublishingMessages\",\"ScheduleDay\":0,\"ScheduleType\":0,\"Title\":null,\"UIName\":\"ContentPipeName\",\"BackLinksPageId\":null,\"ContentLinks\":[],\"ContentTypeName\":\"Telerik.Sitefinity.News.Model.NewsItem\",\"ImportItemAsPublished\":false,\"ImportedItemParentId\":\"00000000-0000-0000-0000-000000000000\",\"ProviderName\":null}";
             setting.ContentLocationPageID = new Guid(SampleConstants.NewsPageId);
             setting.ContentName = "News";
@@ -589,7 +594,7 @@ namespace SitefinityWebApp
             setting.IsInbound = true;
             setting.PipeName = ContentInboundPipe.PipeName;
             setting.UIName = "Sitefinity content";
-            setting.MappingSettings = CreateDefaultInboundMappingSettings(setting);
+            setting.MappingSettings = this.CreateDefaultInboundMappingSettings(setting);
             setting.Settings = "{\"ApplicationName\":null,\"Description\":null,\"FilterExpression\":null,\"InvocationMode\":1,\"IsActive\":true,\"IsInbound\":true,\"MaxItems\":0,\"PipeName\":\"ContentInboundPipe\",\"ResourceClassId\":\"PublishingMessages\",\"ScheduleDay\":0,\"ScheduleType\":0,\"Title\":null,\"UIName\":\"ContentPipeName\",\"BackLinksPageId\":null,\"ContentLinks\":[],\"ContentTypeName\":\"Telerik.Sitefinity.Events.Model.Event\",\"ImportItemAsPublished\":false,\"ImportedItemParentId\":\"00000000-0000-0000-0000-000000000000\",\"ProviderName\":null}";
             setting.ContentLocationPageID = new Guid(SampleConstants.EventsPageId);
             setting.ContentName = "Events";
@@ -601,7 +606,7 @@ namespace SitefinityWebApp
             setting.IsInbound = true;
             setting.PipeName = ContentInboundPipe.PipeName;
             setting.UIName = "Sitefinity content";
-            setting.MappingSettings = CreateDefaultInboundMappingSettings(setting);
+            setting.MappingSettings = this.CreateDefaultInboundMappingSettings(setting);
             setting.Settings = "{\"ApplicationName\":null,\"Description\":null,\"FilterExpression\":null,\"InvocationMode\":1,\"IsActive\":true,\"IsInbound\":true,\"MaxItems\":0,\"PipeName\":\"ContentInboundPipe\",\"ResourceClassId\":\"PublishingMessages\",\"ScheduleDay\":0,\"ScheduleType\":0,\"Title\":null,\"UIName\":\"ContentPipeName\",\"BackLinksPageId\":null,\"ContentLinks\":[],\"ContentTypeName\":\"Telerik.Sitefinity.Blogs.Model.BlogPost\",\"ImportItemAsPublished\":false,\"ImportedItemParentId\":\"00000000-0000-0000-0000-000000000000\",\"ProviderName\":null}";
             setting.ContentLocationPageID = new Guid(SampleConstants.TIUBlogPageId);
             setting.ContentName = "Blog";
@@ -613,7 +618,7 @@ namespace SitefinityWebApp
             setting.IsInbound = true;
             setting.PipeName = ContentInboundPipe.PipeName;
             setting.UIName = "Sitefinity content";
-            setting.MappingSettings = CreateDefaultInboundMappingSettings(setting);
+            setting.MappingSettings = this.CreateDefaultInboundMappingSettings(setting);
             setting.Settings = "{\"ApplicationName\":null,\"Description\":null,\"FilterExpression\":null,\"InvocationMode\":1,\"IsActive\":true,\"IsInbound\":true,\"MaxItems\":0,\"PipeName\":\"ContentInboundPipe\",\"ResourceClassId\":\"PublishingMessages\",\"ScheduleDay\":0,\"ScheduleType\":0,\"Title\":null,\"UIName\":\"ContentPipeName\",\"BackLinksPageId\":null,\"ContentLinks\":[],\"ContentTypeName\":\"Telerik.Sitefinity.GenericContent.Model.ContentItem\",\"ImportItemAsPublished\":false,\"ImportedItemParentId\":\"00000000-0000-0000-0000-000000000000\",\"ProviderName\":null}";
             setting.ContentLocationPageID = new Guid(SampleConstants.HomePageId);
             setting.ContentName = "Home";
@@ -625,7 +630,7 @@ namespace SitefinityWebApp
             setting.IsInbound = true;
             setting.PipeName = ContentInboundPipe.PipeName;
             setting.UIName = "Sitefinity content";
-            setting.MappingSettings = CreateDefaultInboundMappingSettings(setting);
+            setting.MappingSettings = this.CreateDefaultInboundMappingSettings(setting);
             setting.Settings = "{\"ApplicationName\":null,\"Description\":null,\"FilterExpression\":null,\"InvocationMode\":1,\"IsActive\":true,\"IsInbound\":true,\"MaxItems\":0,\"PipeName\":\"ContentInboundPipe\",\"ResourceClassId\":\"PublishingMessages\",\"ScheduleDay\":0,\"ScheduleType\":0,\"Title\":null,\"UIName\":\"ContentPipeName\",\"BackLinksPageId\":null,\"ContentLinks\":[],\"ContentTypeName\":\"Telerik.Sitefinity.Lists.Model.ListItem\",\"ImportItemAsPublished\":false,\"ImportedItemParentId\":\"00000000-0000-0000-0000-000000000000\",\"ProviderName\":null}";
             setting.ContentLocationPageID = new Guid(SampleConstants.HomePageId);
             setting.ContentName = "Home";
@@ -637,7 +642,7 @@ namespace SitefinityWebApp
             setting.IsInbound = true;
             setting.PipeName = ProductInboundPipe.PipeName;
             setting.UIName = "Sitefinity content";
-            setting.MappingSettings = CreateDefaultInboundMappingSettings(setting);
+            setting.MappingSettings = this.CreateDefaultInboundMappingSettings(setting);
             setting.Settings = "{\"ApplicationName\":null,\"Description\":null,\"FilterExpression\":null,\"InvocationMode\":1,\"IsActive\":true,\"IsInbound\":true,\"MaxItems\":0,\"PipeName\":\"ProductInboundPipe\",\"ResourceClassId\":\"PublishingMessages\",\"ScheduleDay\":0,\"ScheduleType\":0,\"Title\":null,\"UIName\":\"ContentPipeName\",\"BackLinksPageId\":null,\"ContentLinks\":[],\"ContentTypeName\":\"Telerik.Sitefinity.Ecommerce.Catalog.Model.Product\",\"ImportItemAsPublished\":false,\"ImportedItemParentId\":\"00000000-0000-0000-0000-000000000000\",\"ProviderName\":null}";
             setting.ContentLocationPageID = new Guid(SampleConstants.ShopBasePageId);
             setting.ContentName = "Products";
@@ -645,10 +650,11 @@ namespace SitefinityWebApp
 
             return inboundSettings;
         }
+
         private MappingSettingsViewModel CreateDefaultInboundMappingSettings(WcfPipeSettings settings)
         {
             var defaultInboundMappings = PublishingSystemFactory.GetPipeMappings(settings.PipeName, settings.IsInbound);
-            return GetDefaultMappingSettings(defaultInboundMappings);
+            return this.GetDefaultMappingSettings(defaultInboundMappings);
         }
 
         private MappingSettingsViewModel GetDefaultMappingSettings(IList<Mapping> defaultMapping)
@@ -667,6 +673,7 @@ namespace SitefinityWebApp
                         TranslatorSettings = translation.TranslatorSettings
                     });
                 }
+
                 model.Mappings.Add(new MappingViewModel()
                 {
                     ApplicationName = item.ApplicationName,
@@ -678,8 +685,10 @@ namespace SitefinityWebApp
                     Translations = mappingTraslations
                 });
             }
+
             return model;
         }
+
         private List<SimpleDefinitionField> CreatePublishingPointDefinition()
         {
             List<SimpleDefinitionField> definition = new List<SimpleDefinitionField>();
@@ -858,14 +867,15 @@ namespace SitefinityWebApp
 
             return definition;
         }
+
         private void FillPipeSettings(PublishingPoint modelPublishingPoint, List<WcfPipeSettings> allViewModelSettings)
         {
-            var providerName = PublishingMan.Provider.Name;
+            var providerName = this.PublishingMan.Provider.Name;
             foreach (var viewModelSetting in allViewModelSettings)
             {
                 var vmID = viewModelSetting.Id;
                 var tempSetting = viewModelSetting.ConvertToModel(providerName);
-                tempSetting.ApplicationName = PublishingMan.Provider.ApplicationName;
+                tempSetting.ApplicationName = this.PublishingMan.Provider.ApplicationName;
                 if (string.IsNullOrEmpty(tempSetting.Description))
                 {
                     tempSetting.Description = modelPublishingPoint.Description;
@@ -887,6 +897,7 @@ namespace SitefinityWebApp
                             SampleConstants.SearchIndexFilterExpression, SampleConstants.SearchIndexReplacementString);
                     }
                 }
+
                 if (tempSetting is SitefinityContentPipeSettings)
                 {
                     var contentSettings = tempSetting as SitefinityContentPipeSettings;
@@ -895,6 +906,7 @@ namespace SitefinityWebApp
                         contentSettings.BackLinksPageId = viewModelSetting.ContentLocationPageID;
                     }
                 }
+
                 if (tempSetting is SearchIndexPipeSettings)
                 {
                     var searchIndexSettings = tempSetting as SearchIndexPipeSettings;
@@ -905,22 +917,26 @@ namespace SitefinityWebApp
                             SampleConstants.SearchIndexFilterExpression, SampleConstants.SearchIndexReplacementString);
                     }
                 }
-                PipeSettings modelPipeSettings = PublishingMan.GetPipeSettings().Where(s => s.Id == vmID).SingleOrDefault();
+
+                PipeSettings modelPipeSettings = this.PublishingMan.GetPipeSettings().Where(s => s.Id == vmID).SingleOrDefault();
                 if (modelPipeSettings == null)
                 {
                     IPipe pipe = null;
                     pipe = PublishingSystemFactory.GetPipe(viewModelSetting.PipeName);
-                    modelPipeSettings = PublishingMan.CreatePipeSettings(pipe.PipeSettingsType);
+                    modelPipeSettings = this.PublishingMan.CreatePipeSettings(pipe.PipeSettingsType);
                     modelPublishingPoint.PipeSettings.Add(modelPipeSettings);
                 }
+
                 tempSetting.CopySettings(modelPipeSettings);
-                viewModelSetting.MappingSettings.CopyToModel(PublishingMan, modelPipeSettings.Mappings);
+                viewModelSetting.MappingSettings.CopyToModel(this.PublishingMan, modelPipeSettings.Mappings);
             }
         }
+
         private void ThrowDuplicateUrlException(string url)
         {
             throw new WebProtocolException(System.Net.HttpStatusCode.InternalServerError, String.Format(Res.Get<PublishingMessages>().DuplicateUrlException, url), null);
         }
+
         private void ClearDeletedSettings(PublishingPoint point, List<WcfPipeSettings> settings)
         {
             List<PipeSettings> toRemove = new List<PipeSettings>();
@@ -932,10 +948,11 @@ namespace SitefinityWebApp
                     toRemove.Add(setting);
                 }
             }
+
             foreach (var item in toRemove)
             {
                 point.PipeSettings.Remove(item);
-                PublishingMan.DeletePipeSettings(item);
+                this.PublishingMan.DeletePipeSettings(item);
             }
         }
 
@@ -4090,34 +4107,34 @@ Transform, wie Sie mit Ihren Mitarbeitern, Studenten, Besucher, Kunden und mehr 
         {
             string defaultTaxTitle = "Texas State Sales Tax";
 
-            var tax = OrdersMan.GetTaxes().Where(t => t.Title == defaultTaxTitle).FirstOrDefault();
+            var tax = this.OrdersMan.GetTaxes().Where(t => t.Title == defaultTaxTitle).FirstOrDefault();
             if (tax == null)
             {
-                var newTax = OrdersMan.CreateTax();
+                var newTax = this.OrdersMan.CreateTax();
                 newTax.Title = defaultTaxTitle;
                 newTax.ApplyTaxToShipping = true;
                 newTax.StandardTaxRate = 6.25m;
                 newTax.Country = "United States";
                 newTax.State = "Texas";
-                OrdersMan.SaveChanges();
+                this.OrdersMan.SaveChanges();
             }
         }
 
         private void CreateEcommercePaymentMethod()
         {
             string title = SampleConstants.PaymentMethodName;
-            OrdersMan.Provider.SuppressSecurityChecks = true;
+            this.OrdersMan.Provider.SuppressSecurityChecks = true;
 
-            var method = OrdersMan.GetPaymentMethods().Where(m => m.Title == title).FirstOrDefault();
+            var method = this.OrdersMan.GetPaymentMethods().Where(m => m.Title == title).FirstOrDefault();
             if (method == null)
             {
-                PaymentMethod paymentMethod = OrdersMan.CreatePaymentMethod();
+                PaymentMethod paymentMethod = this.OrdersMan.CreatePaymentMethod();
                 paymentMethod.Title = title;
                 paymentMethod.PaymentMethodType = PaymentMethodType.Offline;
                 paymentMethod.IsActive = true;
 
-                OrdersMan.SaveChanges();
-                OrdersMan.Provider.SuppressSecurityChecks = false;
+                this.OrdersMan.SaveChanges();
+                this.OrdersMan.Provider.SuppressSecurityChecks = false;
             }
         }
 
@@ -4164,7 +4181,7 @@ Transform, wie Sie mit Ihren Mitarbeitern, Studenten, Besucher, Kunden und mehr 
 
         private void SetDefaultSMTPSettings()
         {
-            var config = ConfigMan.GetSection<SystemConfig>();
+            var config = this.ConfigMan.GetSection<SystemConfig>();
 
             config.SmtpSettings.Host = "127.0.0.1";
             config.SmtpSettings.Port = 25;
@@ -4172,15 +4189,15 @@ Transform, wie Sie mit Ihren Mitarbeitern, Studenten, Besucher, Kunden und mehr 
             config.SmtpSettings.Password = "smtp_password";
             config.SmtpSettings.DefaultSenderEmailAddress = "tuishop@telerikuniversity.com";
 
-            ConfigMan.SaveSection(config);
+            this.ConfigMan.SaveSection(config);
         }
 
         private void SetEcommerceMerchantEmail()
         {
 
-            var config = ConfigMan.GetSection<EcommerceConfig>();
+            var config = this.ConfigMan.GetSection<EcommerceConfig>();
             config.MerchantEmail = "tiu@telerik.com";
-            ConfigMan.SaveSection(config);
+            this.ConfigMan.SaveSection(config);
         }
 
         private void CreateShoppingCartPage()
@@ -4566,7 +4583,7 @@ Transform, wie Sie mit Ihren Mitarbeitern, Studenten, Besucher, Kunden und mehr 
 
         public ProductType GetProductTypeByTitle(string title)
         {
-            ProductType productType = EcommerceMan.GetProductTypes().Where(x => x.Title == title).SingleOrDefault();
+            ProductType productType = this.EcommerceMan.GetProductTypes().Where(x => x.Title == title).SingleOrDefault();
 
             return productType;
         }
@@ -4677,7 +4694,7 @@ Transform, wie Sie mit Ihren Mitarbeitern, Studenten, Besucher, Kunden und mehr 
                 shoppingCartSummary.ShoppingCartUrl = "~/tiu-shop/shopping-cart";
 
                 // set the Simple list template!
-                shoppingCartSummary.TemplateKey = GetShoppingCartSummaryTemplateKey();
+                shoppingCartSummary.TemplateKey = this.GetShoppingCartSummaryTemplateKey();
 
                 SampleUtilities.AddControlToLocalizedPage(new Guid(SampleConstants.ShopBasePageId), shoppingCartSummary, "Main_Right", "Shopping cart summary", "en");
             }
@@ -4686,7 +4703,7 @@ Transform, wie Sie mit Ihren Mitarbeitern, Studenten, Besucher, Kunden und mehr 
         private string GetShoppingCartSummaryTemplateKey()
         {
             string key = String.Empty;
-            var myItem = PageMan.GetPresentationItems<ControlPresentation>().Where(p => p.Name == "Simple Link").FirstOrDefault();
+            var myItem = this.PageMan.GetPresentationItems<ControlPresentation>().Where(p => p.Name == "Simple Link").FirstOrDefault();
             if (myItem != null)
                 key = myItem.Id.ToString();
             return key;
@@ -4706,16 +4723,6 @@ Transform, wie Sie mit Ihren Mitarbeitern, Studenten, Besucher, Kunden und mehr 
             }
         }
 
-        //public CatalogManager CatalogMan
-        //{
-        //    get
-        //    {
-        //        if (this.catalogManager == null)
-        //            this.catalogManager = CatalogManager.GetManager();
-        //        return this.catalogManager;
-        //    }
-        //}
-
         public MetadataManager MetadataMan
         {
             get
@@ -4725,6 +4732,7 @@ Transform, wie Sie mit Ihren Mitarbeitern, Studenten, Besucher, Kunden und mehr 
                 return this.metadataManager;
             }
         }
+
         public PublishingManager PublishingMan
         {
             get
@@ -4734,6 +4742,7 @@ Transform, wie Sie mit Ihren Mitarbeitern, Studenten, Besucher, Kunden und mehr 
                 return this.publishingManager;
             }
         }
+
         public PageManager PageMan
         {
             get
@@ -4743,6 +4752,7 @@ Transform, wie Sie mit Ihren Mitarbeitern, Studenten, Besucher, Kunden und mehr 
                 return this.pageManager;
             }
         }
+
         public OrdersManager OrdersMan
         {
             get
@@ -4752,6 +4762,7 @@ Transform, wie Sie mit Ihren Mitarbeitern, Studenten, Besucher, Kunden und mehr 
                 return this.ordersManager;
             }
         }
+
         public ConfigManager ConfigMan
         {
             get
@@ -4794,6 +4805,7 @@ Transform, wie Sie mit Ihren Mitarbeitern, Studenten, Besucher, Kunden und mehr 
                     ColumnWidthPercentage = 71,
                     PlaceholderId = "Left"
                 };
+
                 mainLayoutColumns.Add(mainLayoutColumn1);
                 ColumnDetails mainLayoutColumn2 = new ColumnDetails()
                 {
@@ -4801,6 +4813,7 @@ Transform, wie Sie mit Ihren Mitarbeitern, Studenten, Besucher, Kunden und mehr 
                     ColumnWidthPercentage = 29,
                     PlaceholderId = "Right"
                 };
+
                 mainLayoutColumns.Add(mainLayoutColumn2);
 
                 mainLayoutControl.Layout = SampleUtilities.GenerateLayoutTemplate(mainLayoutColumns, string.Empty);
@@ -5367,7 +5380,7 @@ Transform, wie Sie mit Ihren Mitarbeitern, Studenten, Besucher, Kunden und mehr 
                 if (currentTitle.Contains(a))
                 {
 
-                    var trimResources = currentTitle.ToString().Replace(a, "");
+                    var trimResources = currentTitle.ToString().Replace(a, string.Empty);
                     var resClass = trimResources.Split(',')[0];
                     var resKey = trimResources.Split(',')[1];
                     var resManager = ResourceManager.GetManager();
