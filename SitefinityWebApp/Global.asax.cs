@@ -85,24 +85,15 @@ namespace SitefinityWebApp
 
         protected void Application_Start(object sender, EventArgs e)
         {
-            // Code that runs on application startup
-            Telerik.Sitefinity.Abstractions.Bootstrapper.Initialized += new EventHandler<Telerik.Sitefinity.Data.ExecutedEventArgs>(Bootstrapper_Initialized);
             SystemManager.ApplicationStart += new EventHandler<EventArgs>(SystemManager_ApplicationStart);
         }
 
         void SystemManager_ApplicationStart(object sender, EventArgs e)
         {
-            SystemManager.RunWithElevatedPrivilegeDelegate worker = new SystemManager.RunWithElevatedPrivilegeDelegate(CreateSearchPipes);
-            SystemManager.RunWithElevatedPrivilege(worker);
-        }
-
-        private void Bootstrapper_Initialized(object sender, Telerik.Sitefinity.Data.ExecutedEventArgs args)
-        {
-            if (args.CommandName == "Bootstrapped")
-            {
-                SystemManager.RunWithElevatedPrivilegeDelegate worker = new SystemManager.RunWithElevatedPrivilegeDelegate(CreateSampleWorker);
-                SystemManager.RunWithElevatedPrivilege(worker);
-            }
+            SystemManager.RunWithElevatedPrivilegeDelegate sampleWorker = new SystemManager.RunWithElevatedPrivilegeDelegate(CreateSampleWorker);
+            SystemManager.RunWithElevatedPrivilege(sampleWorker);
+            SystemManager.RunWithElevatedPrivilegeDelegate searchPipesWorker = new SystemManager.RunWithElevatedPrivilegeDelegate(CreateSearchPipes);
+            SystemManager.RunWithElevatedPrivilege(searchPipesWorker);
         }
 
         private void CreateSearchPipes(object[] args)
