@@ -23,8 +23,9 @@ Using the Education sample, you can:
 
 ### Requirements
 
-* Sitefinity license
-
+* Sitefinity 7.1 Beta license
+ 
+  **NOTE**: For more information about acquiring a Sitefinity Beta license, contact [sales@sitefinity.com](sales@sitefinity.com)
 * .NET Framework 4
 
 * Visual Studio 2012
