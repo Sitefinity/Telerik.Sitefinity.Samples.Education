@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
@@ -484,10 +484,11 @@ namespace SitefinityWebApp
             PublishingPointDetailViewModel pointDetailViewModel = this.CreateSearchPointInfo();
             PublishingAdminService service = new PublishingAdminService();
             Guid itemId = pointDetailViewModel.Id;
+            var publishingManager = PublishingManager.GetManager();
 
             if (!this.PublishingPointExists(pointDetailViewModel, service, itemId))
             {
-                PublishingPoint savePoint = this.PublishingMan.CreatePublishingPoint();
+                PublishingPoint savePoint = publishingManager.CreatePublishingPoint();
                 PublishingPointFactory.CreatePublishingPointDataItem(pointDetailViewModel.PublishingPointDefinition, savePoint);
 
                 savePoint.Name = pointDetailViewModel.Title;
@@ -502,7 +503,7 @@ namespace SitefinityWebApp
                 this.FillPipeSettings(savePoint, pointDetailViewModel.InboundSettings);
                 this.FillPipeSettings(savePoint, pointDetailViewModel.OutboundSettings);
 
-                var pipeSettings = this.PublishingMan.GetPipeSettings<RssPipeSettings>();
+                var pipeSettings = publishingManager.GetPipeSettings<RssPipeSettings>();
 
                 foreach (var currentPipeSettings in savePoint.PipeSettings.Where(ps => ps.GetType().FullName == typeof(RssPipeSettings).FullName))
                 {
@@ -514,15 +515,15 @@ namespace SitefinityWebApp
                     }
                 }
 
-                this.PublishingMan.SaveChanges();
+                publishingManager.SaveChanges();
                 pointDetailViewModel.Id = savePoint.Id;
                 MetadataManager.GetManager().SaveChanges(true);
                 service.ReschedulePublishingPointPipes(savePoint, string.Empty);
 
-                var pipeSettingsReset = this.PublishingMan.GetPipeSettings<SearchIndexPipeSettings>().Where(ps => ps.PublishingPoint.Id == pointDetailViewModel.Id).FirstOrDefault();
+                var pipeSettingsReset = publishingManager.GetPipeSettings<SearchIndexPipeSettings>().Where(ps => ps.PublishingPoint.Id == pointDetailViewModel.Id).FirstOrDefault();
                 pipeSettingsReset.CatalogName = System.Text.RegularExpressions.Regex.Replace(SampleConstants.SearchIndexName.ToLowerInvariant(),
                             SampleConstants.SearchIndexFilterExpression, SampleConstants.SearchIndexReplacementString);
-                this.PublishingMan.SaveChanges();
+                publishingManager.SaveChanges();
 
                 service.ReindexSearchContent(PublishingConfig.SearchProviderName, savePoint.Id.ToString());
             }
@@ -879,12 +880,13 @@ namespace SitefinityWebApp
 
         private void FillPipeSettings(PublishingPoint modelPublishingPoint, List<WcfPipeSettings> allViewModelSettings)
         {
-            var providerName = this.PublishingMan.Provider.Name;
+            var publishingManager = PublishingManager.GetManager();
+            var providerName = publishingManager.Provider.Name;
             foreach (var viewModelSetting in allViewModelSettings)
             {
                 var vmID = viewModelSetting.Id;
                 var tempSetting = viewModelSetting.ConvertToModel(providerName);
-                tempSetting.ApplicationName = this.PublishingMan.Provider.ApplicationName;
+                tempSetting.ApplicationName = publishingManager.Provider.ApplicationName;
                 if (string.IsNullOrEmpty(tempSetting.Description))
                 {
                     tempSetting.Description = modelPublishingPoint.Description;
@@ -927,17 +929,17 @@ namespace SitefinityWebApp
                     }
                 }
 
-                PipeSettings modelPipeSettings = this.PublishingMan.GetPipeSettings().Where(s => s.Id == vmID).SingleOrDefault();
+                PipeSettings modelPipeSettings = publishingManager.GetPipeSettings().Where(s => s.Id == vmID).FirstOrDefault();
                 if (modelPipeSettings == null)
                 {
                     IPipe pipe = null;
                     pipe = PublishingSystemFactory.GetPipe(viewModelSetting.PipeName);
-                    modelPipeSettings = this.PublishingMan.CreatePipeSettings(pipe.PipeSettingsType);
+                    modelPipeSettings = publishingManager.CreatePipeSettings(pipe.PipeSettingsType);
                     modelPublishingPoint.PipeSettings.Add(modelPipeSettings);
                 }
 
                 tempSetting.CopySettings(modelPipeSettings);
-                viewModelSetting.MappingSettings.CopyToModel(this.PublishingMan, modelPipeSettings.Mappings);
+                viewModelSetting.MappingSettings.CopyToModel(publishingManager, modelPipeSettings.Mappings);
             }
         }
 
@@ -948,10 +950,11 @@ namespace SitefinityWebApp
 
         private void ClearDeletedSettings(PublishingPoint point, List<WcfPipeSettings> settings)
         {
+            var publishingManager = PublishingManager.GetManager();
             List<PipeSettings> toRemove = new List<PipeSettings>();
             foreach (var setting in point.PipeSettings)
             {
-                var wcfSetting = settings.SingleOrDefault(p => p.Id == setting.Id);
+                var wcfSetting = settings.FirstOrDefault(p => p.Id == setting.Id);
                 if (wcfSetting == null)
                 {
                     toRemove.Add(setting);
@@ -961,7 +964,7 @@ namespace SitefinityWebApp
             foreach (var item in toRemove)
             {
                 point.PipeSettings.Remove(item);
-                this.PublishingMan.DeletePipeSettings(item);
+                publishingManager.DeletePipeSettings(item);
             }
         }
 
@@ -4116,34 +4119,38 @@ Transform, wie Sie mit Ihren Mitarbeitern, Studenten, Besucher, Kunden und mehr 
         {
             string defaultTaxTitle = "Texas State Sales Tax";
 
-            var tax = this.OrdersMan.GetTaxes().Where(t => t.Title == defaultTaxTitle).FirstOrDefault();
+            var ordersManager = OrdersManager.GetManager();
+
+            var tax = ordersManager.GetTaxes().Where(t => t.Title == defaultTaxTitle).FirstOrDefault();
             if (tax == null)
             {
-                var newTax = this.OrdersMan.CreateTax();
+                var newTax = ordersManager.CreateTax();
                 newTax.Title = defaultTaxTitle;
                 newTax.ApplyTaxToShipping = true;
                 newTax.StandardTaxRate = 6.25m;
                 newTax.Country = "United States";
                 newTax.State = "Texas";
-                this.OrdersMan.SaveChanges();
+                ordersManager.SaveChanges();
             }
         }
 
         private void CreateEcommercePaymentMethod()
         {
-            string title = SampleConstants.PaymentMethodName;
-            this.OrdersMan.Provider.SuppressSecurityChecks = true;
+            var ordersManager = OrdersManager.GetManager();
 
-            var method = this.OrdersMan.GetPaymentMethods().Where(m => m.Title == title).FirstOrDefault();
+            string title = SampleConstants.PaymentMethodName;
+            ordersManager.Provider.SuppressSecurityChecks = true;
+
+            var method = ordersManager.GetPaymentMethods().Where(m => m.Title == title).FirstOrDefault();
             if (method == null)
             {
-                PaymentMethod paymentMethod = this.OrdersMan.CreatePaymentMethod();
+                PaymentMethod paymentMethod = ordersManager.CreatePaymentMethod();
                 paymentMethod.Title = title;
                 paymentMethod.PaymentMethodType = PaymentMethodType.Offline;
                 paymentMethod.IsActive = true;
 
-                this.OrdersMan.SaveChanges();
-                this.OrdersMan.Provider.SuppressSecurityChecks = false;
+                ordersManager.SaveChanges();
+                ordersManager.Provider.SuppressSecurityChecks = false;
             }
         }
 
@@ -4190,7 +4197,8 @@ Transform, wie Sie mit Ihren Mitarbeitern, Studenten, Besucher, Kunden und mehr 
 
         private void SetDefaultSMTPSettings()
         {
-            var config = this.ConfigMan.GetSection<SystemConfig>();
+            var configManager = ConfigManager.GetManager();
+            var config = configManager.GetSection<SystemConfig>();
 
             config.SmtpSettings.Host = "127.0.0.1";
             config.SmtpSettings.Port = 25;
@@ -4198,15 +4206,15 @@ Transform, wie Sie mit Ihren Mitarbeitern, Studenten, Besucher, Kunden und mehr 
             config.SmtpSettings.Password = "smtp_password";
             config.SmtpSettings.DefaultSenderEmailAddress = "tuishop@telerikuniversity.com";
 
-            this.ConfigMan.SaveSection(config);
+           configManager.SaveSection(config);
         }
 
         private void SetEcommerceMerchantEmail()
         {
-
-            var config = this.ConfigMan.GetSection<EcommerceConfig>();
+            var configManager = ConfigManager.GetManager();
+            var config = configManager.GetSection<EcommerceConfig>();
             config.MerchantEmail = "tiu@telerik.com";
-            this.ConfigMan.SaveSection(config);
+            configManager.SaveSection(config);
         }
 
         private void CreateShoppingCartPage()
@@ -4438,12 +4446,12 @@ Transform, wie Sie mit Ihren Mitarbeitern, Studenten, Besucher, Kunden und mehr 
             CatalogManager manager = CatalogManager.GetManager();
             var ecommerceManager = EcommerceManager.GetManager();
 
-            if (manager.GetProducts().Where(t => t.Title == title).SingleOrDefault() != null)
+            if (manager.GetProducts().FirstOrDefault(t => t.Title == title) != null)
             {
                 return Guid.Empty;     // Product already exists
             }
 
-            ProductType productType = ecommerceManager.GetProductTypes().Where(t => t.Title == productTypeName).SingleOrDefault();
+            ProductType productType = ecommerceManager.GetProductTypes().FirstOrDefault(t => t.Title == productTypeName);
             if (productType == null)
             {
                 return Guid.Empty;     // Product Type does not exist
@@ -4486,7 +4494,7 @@ Transform, wie Sie mit Ihren Mitarbeitern, Studenten, Besucher, Kunden und mehr 
         private void LinkProductToImage(Guid productId, Guid imageId)
         {
             CatalogManager catManager = CatalogManager.GetManager();
-            Product p = catManager.GetProducts().Where(x => x.Id == productId).SingleOrDefault();
+            Product p = catManager.GetProducts().Where(x => x.Id == productId).FirstOrDefault();
             if (p == null)
             {
                 return; // Product does not exist
@@ -4592,7 +4600,9 @@ Transform, wie Sie mit Ihren Mitarbeitern, Studenten, Besucher, Kunden und mehr 
 
         public ProductType GetProductTypeByTitle(string title)
         {
-            ProductType productType = this.EcommerceMan.GetProductTypes().Where(x => x.Title == title).SingleOrDefault();
+            var ecommerceManager = EcommerceManager.GetManager();
+
+            ProductType productType = ecommerceManager.GetProductTypes().Where(x => x.Title == title).FirstOrDefault();
 
             return productType;
         }
@@ -4711,84 +4721,13 @@ Transform, wie Sie mit Ihren Mitarbeitern, Studenten, Besucher, Kunden und mehr 
 
         private string GetShoppingCartSummaryTemplateKey()
         {
+            var pageManager = PageManager.GetManager();           
             string key = String.Empty;
-            var myItem = this.PageMan.GetPresentationItems<ControlPresentation>().Where(p => p.Name == "Simple Link").FirstOrDefault();
+            var myItem = pageManager.GetPresentationItems<ControlPresentation>().Where(p => p.Name == "Simple Link").FirstOrDefault();
             if (myItem != null)
                 key = myItem.Id.ToString();
             return key;
         }
-
-        #endregion
-
-        #region Managers
-
-        public EcommerceManager EcommerceMan
-        {
-            get
-            {
-                if (this.ecommerceManager == null)
-                    this.ecommerceManager = EcommerceManager.GetManager();
-                return this.ecommerceManager;
-            }
-        }
-
-        public MetadataManager MetadataMan
-        {
-            get
-            {
-                if (this.metadataManager == null)
-                    this.metadataManager = MetadataManager.GetManager();
-                return this.metadataManager;
-            }
-        }
-
-        public PublishingManager PublishingMan
-        {
-            get
-            {
-                if (this.publishingManager == null)
-                    this.publishingManager = PublishingManager.GetManager(PublishingConfig.SearchProviderName);
-                return this.publishingManager;
-            }
-        }
-
-        public PageManager PageMan
-        {
-            get
-            {
-                if (this.pageManager == null)
-                    this.pageManager = PageManager.GetManager();
-                return this.pageManager;
-            }
-        }
-
-        public OrdersManager OrdersMan
-        {
-            get
-            {
-                if (this.ordersManager == null)
-                    this.ordersManager = OrdersManager.GetManager();
-                return this.ordersManager;
-            }
-        }
-
-        public ConfigManager ConfigMan
-        {
-            get
-            {
-                if (this.configManager == null)
-                    this.configManager = ConfigManager.GetManager();
-                return this.configManager;
-            }
-        }
-
-        private EcommerceManager ecommerceManager;
-        private CatalogManager catalogManager;
-        private MetadataManager metadataManager;
-        private PageManager pageManager;
-        private PublishingManager publishingManager;
-        private OrdersManager ordersManager;
-        private ConfigManager configManager;
 
         #endregion
 
