@@ -58,4 +58,3 @@ To login to Sitefinity backend, use the following credentials:
 **Username:** admin
 **Password:** password
 
-
