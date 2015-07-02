@@ -518,7 +518,7 @@ namespace SitefinityWebApp
                 publishingManager.SaveChanges();
                 pointDetailViewModel.Id = savePoint.Id;
                 MetadataManager.GetManager().SaveChanges(true);
-                service.ReschedulePublishingPointPipes(savePoint, string.Empty);
+                service.ReschedulePublishingPointPipes(savePoint, null);
 
                 var pipeSettingsReset = publishingManager.GetPipeSettings<SearchIndexPipeSettings>().Where(ps => ps.PublishingPoint.Id == pointDetailViewModel.Id).FirstOrDefault();
                 pipeSettingsReset.CatalogName = System.Text.RegularExpressions.Regex.Replace(SampleConstants.SearchIndexName.ToLowerInvariant(),
