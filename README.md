@@ -5,7 +5,7 @@ Telerik.Sitefinity.Samples.Education
 
 Telerik International University (TIU) is a sample university website, which demonstrates how you can build an interactive and engaging university website using Sitefinity's default functionality. You can develop the website entirely through Sitefinity's web-based UI. 
 
-This website can created by 1 designer and 1 developer for just 1 week - a demostration of the productivity gains offered by Sitefinity. 
+This website can be created by 1 designer and 1 developer for just 1 week - a demostration of the productivity gains offered by Sitefinity. 
 
 Telerik International University (TIU) is a sample university website that can be reused for commercial purposes. To run the sample you must have standard or higher license. 
 
@@ -40,6 +40,7 @@ The solution in this repository relies on NuGet packages with automatic package 
 For a full list of the referenced packages and their versions see the [packages.config](https://github.com/Sitefinity-SDK/Telerik.Sitefinity.Samples.Education/blob/master/SitefinityWebApp/packages.config) file.    
 For a history and additional information related to package versions on different releases of this repository, see the [Releases page](https://github.com/Sitefinity-SDK/Telerik.Sitefinity.Samples.Education/releases).    
 
+Before starting the site, make sure your **Sitefinity.lic** file is located in the **...\SitefinityWebApp\App_Data\Sitefinity folder**.
 
 ### Installation instructions: SDK Samples from GitHub
 
