@@ -49,9 +49,6 @@
         <Reference Include="Microsoft.CSharp" />
         <Reference Include="System.Data" />
         <Reference Include="System.Xml" />
-        <Reference Include="Microsoft.IdentityModel">
-          <SpecificVersion>False</SpecificVersion>
-        </Reference>
       </ItemGroup>
     </When>
     <Otherwise>
@@ -161,8 +158,8 @@
     <None Include="Settings.StyleCop" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.IdentityModel.Extensions">
-      <HintPath>..\SitefinityWebApp\packages\Microsoft.Identity.Model.Extensions.2.0.1459.0\lib\Microsoft.IdentityModel.Extensions.dll</HintPath>
+    <Reference Include="Microsoft.IdentityModel">
+      <HintPath>..\SitefinityWebApp\packages\Microsoft.IdentityModel.6.1.7600.16394\lib\net35\Microsoft.IdentityModel.dll</HintPath>
     </Reference>
     <Reference Include="Telerik.OpenAccess, Version=2015.2.624.1, Culture=neutral, PublicKeyToken=7ce17eeaf1d59342, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
