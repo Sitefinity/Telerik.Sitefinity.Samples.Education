@@ -1,9 +1,9 @@
-Telerik.Sitefinity.Samples.Education
+Progress.Sitefinity.Samples.Education
 ====================================
 
 [![Build Status](http://sdk-jenkins-ci.cloudapp.net/buildStatus/icon?job=Telerik.Sitefinity.Samples.Education.CI)](http://sdk-jenkins-ci.cloudapp.net/job/Telerik.Sitefinity.Samples.Education.CI/)
 
-Telerik International University (TIU) is a sample university website, which demonstrates how you can build an interactive and engaging university website using Sitefinity's default functionality. You can develop the website entirely through Sitefinity's web-based UI. 
+Telerik International University (TIU) is a sample university website, which demonstrates how you can build an interactive and engaging university website using default functionality of Sitefinity CMS. You can develop the website entirely through the Sitefinity CMS web-based UI. 
 
 This website can be created by 1 designer and 1 developer for just 1 week - a demostration of the productivity gains offered by Sitefinity. 
 
@@ -23,7 +23,7 @@ Using the Education sample, you can:
 
 ### Requirements
 
-* Sitefinity license
+* Sitefinity CMS license
 * .NET Framework 4
 * Visual Studio 2012
 * Microsoft SQL Server 2008R2 or later versions
@@ -50,11 +50,11 @@ For a history and additional information related to package versions on differen
 2. Modify the **connectionString** value to match your server address.
 3. Build the solution.
 
-For version-specific details about the required Sitefinity NuGet packages for this sample application, click on [Releases] (https://github.com/Sitefinity-SDK/Telerik.Sitefinity.Samples.Education/releases).
+For version-specific details about the required Sitefinity CMS NuGet packages for this sample application, click on [Releases] (https://github.com/Sitefinity-SDK/Telerik.Sitefinity.Samples.Education/releases).
 
 ### Login
 
-To login to Sitefinity backend, use the following credentials:  
+To login into the Sitefinity CMS backend, use the following credentials:  
 **Username:** admin   
 **Password:** password
 
