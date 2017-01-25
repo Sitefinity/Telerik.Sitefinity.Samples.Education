@@ -7,7 +7,7 @@ Telerik International University (TIU) is a sample university website, which dem
 
 This website can be created by 1 designer and 1 developer for just 1 week - a demostration of the productivity gains offered by Sitefinity. 
 
-Telerik International University (TIU) is a sample university website that can be reused for commercial purposes. To run the sample you must have standard or higher license. 
+Telerik International University (TIU) is a sample university website that can be reused for commercial purposes. To run the sample you must have Professional or higher license. 
 
 Using the Education sample, you can:
 
